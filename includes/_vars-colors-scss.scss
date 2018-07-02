@@ -1,0 +1,18 @@
+// UI Colors as SCSS Vars
+//
+// Makes colors from colors-maps.scss
+// available as hardcoded colors (not CSS Vars)
+// in SCSS
+
+// Why?
+// MS Esdge sometimes does not understand CSS Vars
+// for example with input type range
+
+// Usage (will use the 4th color from the main line):
+//.test { color: color(main, 4) }
+
+$all-colors: map-merge($colors, $shades);
+
+@function color($scheme, $tone) {
+  @return map-get(map-get($all-colors, $scheme), $tone);
+}

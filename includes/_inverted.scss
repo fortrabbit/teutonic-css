@@ -1,0 +1,48 @@
+// Inverted
+// Turns everything in a faux-inverted style
+
+.inverted {
+
+  // Manually re-setting vars (for now)
+  --color-main-1: var(--main-5);
+  --color-main-2: var(--main-4);
+  --color-main-4: var(--main-2);
+  --color-main-5: var(--main-1);
+
+  --color-prime-1: var(--prime-5);
+  --color-prime-2: var(--prime-4);
+  --color-prime-4: var(--prime-2);
+  --color-prime-5: var(--prime-1);
+
+  --color-warn-1: var(--warn-5);
+  --color-warn-2: var(--warn-4);
+  --color-warn-4: var(--warn-2);
+  --color-warn-5: var(--warn-1);
+
+  --color-danger-1: var(--danger-5);
+  --color-danger-2: var(--danger-4);
+  --color-danger-4: var(--danger-2);
+  --color-danger-5: var(--danger-1);
+
+  --color-success-1: var(--success-5);
+  --color-success-2: var(--success-4);
+  --color-success-4: var(--success-2);
+  --color-success-5: var(--success-1);
+
+  .progress, .meter { --bar-border-color: var(--highlight-1) }
+
+  background-color: var(--color-main-1);
+  
+  .disabled, :disabled { 
+    * { color: var(--color-shadow-2) }
+    &:not(.loading):not(.range) { 
+      color: var(--color-highlight-3);
+      &:hover { color: var(--color-highlight-2) }
+    }
+  }
+
+  .input, .textarea {
+    &::placeholder           { color: var(--color-highlight-2);}
+    &:-ms-input-placeholder  { color: var(--color-highlight-2);}
+  }
+}

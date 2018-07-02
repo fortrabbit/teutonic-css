@@ -1,0 +1,59 @@
+// Tables
+// Beautiful data tables
+
+
+// opinionated reset
+th { text-align: left }
+
+// standard
+.table, .article table {
+
+  font-variant-numeric: lining-nums tabular-nums; // whishful thinking
+  width: 100%;
+  border-collapse: collapse;
+
+  td, th {
+    overflow: hidden;
+    vertical-align: top;
+    padding: var(--space-s);
+    border: var(--space-px) solid;
+  }
+
+  &.bo-v {
+    th, td {
+      border-top: none;
+      border-bottom: none;
+      &:first-child { border-left: none }
+      &:last-child  { border-right: none }
+    }
+  }
+  &.bo-h {
+    th, td {
+      border-left: none;
+      border-right: none;
+    }
+    tr:first-child { th, td { border-top: none } }
+    tr:last-child  { th, td { border-bottom: none } }
+  }
+  &.bo-no { th, td { border: none } }
+
+  // Styles
+  &.auto  { width: auto; }
+  &.fixed { table-layout: fixed; }
+
+  // Spacing
+  &.dense    {
+    td, th { @include padding-fix(xs) } // MS Edge fix
+  }
+  &.space    {
+    td, th { @include padding-fix(m) } // MS Edge fix
+  }
+}
+
+// Ugly hack for inverted table rows...
+tr.inverted, .table.inverted {
+  th:first-child, td:first-child  { border-left-color:  var(--color-main-1) }
+  th:first-child, td:first-child  { border-left-color:  var(--color-main-1) }
+  th:last-child,  td:last-child   { border-right-color: var(--color-main-1) }
+  th:last-child,  td:last-child   { border-right-color: var(--color-main-1) }
+}

@@ -1,0 +1,32 @@
+// No gutter
+// Special Grid case with table-like collapsing borders
+// boxes with outlines that overlap
+// Applis to CSS Columns, CSS Grid and CSS Flex methods (see local rules)
+// and even without
+
+// Vertical stacking
+.gap-no {
+   > *           { margin-bottom: calc(-1 * var(--space-px)) } // Applies to all
+  > .gap-no     { margin-bottom: 0; } // Overwrite the rule above for nested no-gaps
+}
+
+// Stacked in CSS Grid
+
+// [class*="grid"].gap-no {
+.grid.gap-no, .grid-auto.gap-no {
+  --gap-space : 0px; // This needs to be 0px for some reason
+  margin-left: var(--space-px);
+  > * {  margin-left: calc(-1 * var(--space-px)) }
+}
+
+// Stacked Flexbox grid
+.flex.gap-no {
+  margin-left: var(--space-px); 
+  margin-bottom: 0;
+  > * {  margin-left: calc(-1 * var(--space-px))  }
+  >.span-twothird { flex-basis: calc(66.6666% + var(--space-px)); }
+  >.span-half     { flex-basis: calc(50%      + var(--space-px)); }
+  >.span-third    { flex-basis: calc(33.3333% + var(--space-px)); }
+  >.span-quarter  { flex-basis: calc(25%      + var(--space-px)); }
+  >.span-fifth    { flex-basis: calc(20%      + var(--space-px)); }
+}

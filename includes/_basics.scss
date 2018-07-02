@@ -1,0 +1,19 @@
+// Basics
+
+* { 
+  box-sizing: border-box; // inline padding everywhere
+  color: var(--color, var(--color-main-5));
+  -webkit-overflow-scrolling: touch; // scrolling smooth as butter Momentum Scrolling TODO
+}
+
+// init some opinionated styles
+body {
+  font-family:      var(--font-family, var(--font-standard));
+  background-color: var(--color-bg-1,  var(--color-main-1));
+  --line-height:    var(--text-ratio); // 1.25, see modular-scale-vars
+  line-height:      var(--line-height);
+  --font-size:      var(--text-base);  // 1rem, see modular-scale-vars
+  font-size:        var(--font-size);
+}
+
+ul { list-style: none; }

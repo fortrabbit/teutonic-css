@@ -1,0 +1,9 @@
+// Padding fix mixin
+
+@mixin padding-fix($size) {
+  //padding:    var(--space-#{$size}); // < Doesn't work in MS Edge, so we have to:
+  padding-top:    var(--space-#{$size});
+  padding-bottom: var(--space-#{$size});
+  padding-left:   var(--space-#{$size});
+  padding-right:  var(--space-#{$size})
+}

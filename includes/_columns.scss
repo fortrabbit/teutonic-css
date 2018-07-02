@@ -1,0 +1,57 @@
+// Columns
+//
+// CSS columns can make list items or text flow over columns.
+
+.columns {
+  column-gap: var(--gap-size, 0);
+  // Gutter
+  &.gap-no { margin-left: 1px; > * { margin-left: -1px; margin-bottom: -1px  } }
+
+  &.gap_px , &.gap-h_px  { column-gap: var(--space-px) }
+  &.gap_xs , &.gap-h_xs  { column-gap: var(--space-xs) }
+  &.gap_s  , &.gap-h_s   { column-gap: var(--space-s)  }
+  &.gap_m  , &.gap-h_m   { column-gap: var(--space-m)  }
+  &.gap_l  , &.gap-h_l   { column-gap: var(--space-l)  }
+  &.gap_xl , &.gap-h_xl  { column-gap: var(--space-xl) }
+
+  &.gap-bo_px { column-rule: var(--space-px) solid }
+  &.gap-bo_xs { column-rule: var(--space-xs) solid }
+  &.gap-bo_s  { column-rule:  var(--space-s) solid }
+  //&.gap-bo_m  { column-rule:  var(--space-m) solid }
+
+  // Don't let the childs break
+  &:not(.break-inside) > * {
+    -webkit-column-break-inside: avoid; // Chrome, Safari, Opera
+              page-break-inside: avoid; // Firefox
+                   break-inside: avoid; // IE 10+
+  }
+
+  &:not(.article) > *:not(:first-child) { margin-top: var(--gap-space, 0) }
+
+  // Column count 
+  column-count: 2; // default column count
+  // Custom column count
+  @for $i from 3 through 10 {
+    &.cols-#{$i} { column-count: #{$i} }
+  }
+
+  // span an element over all columns
+  .span-all { column-span: all }
+}
+
+
+// CSS Columns breakpoints
+
+@media #{$tablet}  { 
+   @for $i from 2 through 6 {
+     .columns.cols-#{$i}-t { column-count: #{$i} }
+   }
+  /* Hello. You there? */
+  .columns.collapse-t { column-count: 1 !important; }
+}
+@media #{$phone}   { 
+   @for $i from 2 through 6 {
+     .columns.cols-#{$i}-p { column-count: #{$i} }
+   }
+  .columns.collapse-p { column-count: 1 !important; }
+}

@@ -1,0 +1,27 @@
+// Grid Auto
+
+// Flexible count of columns
+// with auto-widths and minmax
+
+$grid-auto-min-sizes: (
+  m:  12rem,
+  l:  16rem,
+  xl: 22rem
+);
+
+.grid-auto {
+  display: grid;
+  grid-gap: var(--gap-space, var(--space-s));
+  grid-template-columns: 
+    repeat(
+      auto-fit, 
+      minmax(var(--grid-auto-min, 8rem), 
+      var(--grid-auto-max, 1fr))
+    );
+  grid-auto-flow: dense; // opinionated
+}
+
+// Some default min sizes
+@each $min-key, $min-value in $grid-auto-min-sizes {
+  .grid-auto.min_#{$min-key} { --grid-auto-min: #{$min-value}; }
+}

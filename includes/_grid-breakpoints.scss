@@ -1,0 +1,16 @@
+// CSS grid media queries
+// Breakpoint helpers
+
+@media #{$tablet} {
+  [class*="grid"].collapse-t { grid-template-columns: 1fr; }
+  @for $i from 3 through 12 {
+    [class*="grid"]  > .span-#{$i}-t { grid-column: span #{$i} }
+  }
+}
+
+@media #{$phone} {
+  [class*="grid"].collapse-p { grid-template-columns: 1fr; }
+  @for $i from 6 through 12 {
+    [class*="grid"]  > .span-#{$i}-p { grid-column: span #{$i} }
+  }
+}

@@ -1,0 +1,10 @@
+// Stop border mixin
+//
+// For some kind of chart
+// used within meter, progress or charts
+// to have a little more contrast
+
+@mixin stop-border-t { border-top:    1px solid var(--bar-border-color, var(--color-shadow-1)) }
+@mixin stop-border-r { border-right:  1px solid var(--bar-border-color, var(--color-shadow-1)) }
+@mixin stop-border-l { border-left:   1px solid var(--bar-border-color, var(--color-shadow-1)) }
+@mixin stop-border-b { border-bottom: 1px solid var(--bar-border-color, var(--color-shadow-1)) }

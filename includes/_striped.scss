@@ -1,0 +1,21 @@
+// Striped background overlay
+// Experimental
+// Actually used for loading anim
+
+// vars
+
+$stripe-size: 12px;
+
+@mixin striped {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--color-shadow-1),
+    var(--color-shadow-1) $stripe-size,
+    var(--color-highlight-1) $stripe-size,
+    var(--color-highlight-1) $stripe-size*2
+  );
+}
+
+.striped {
+  @include striped;
+}

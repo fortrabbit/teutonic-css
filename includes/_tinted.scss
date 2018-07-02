@@ -1,0 +1,29 @@
+// Colors everything within a container
+
+$tinted-states: "warn", "success", "danger", "prime";
+
+// Border + text color (and some magif)
+@each $state in $tinted-states {
+  .tinted-#{$state}, .tinted-#{$state} * {
+    --color: var(--color-#{$state}-4);
+  }
+}
+
+// Background color
+@each $state in $tinted-states {
+  .tinted-bg-#{$state}, .tinted-bg-#{$state} * {
+    @for $i from 1 through 5 {
+      $transposed-index: $i;
+      --color-bg-#{$i}: var(--color-#{$state}-#{$transposed-index});
+    }
+  }
+}
+
+// Tint images
+[class*="tinted-bg-"].media, [class*="tinted-bg-"] .media {
+  img, .img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+  }
+}

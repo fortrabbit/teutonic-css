@@ -1,0 +1,24 @@
+// Container for media
+// images …
+
+.media {
+  background-color: var(--color-bg-3, var(--color-main-3));
+  position: relative;
+
+  img:not(.cover) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  iframe, embed, object, video { border: 0; } // Opinionated reset
+}
+
+// Cover image container
+// works for img directly and for background-images
+.cover {
+  background-size: cover; // for backround images
+  background-position: var(--cover-v, top) var(--cover-h, center);
+  object-fit: cover; // for images
+}

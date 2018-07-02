@@ -1,0 +1,83 @@
+// Scale Spacings
+
+// Otherwise 2:
+// Mention on website that MS Edge is not supported (yet)
+
+
+// Switch:
+// if true: the browser will calculate sizes using (lot's of) calc
+// if false: SCSS will calculate the sizes!
+$space-calc    : "css" !default;
+
+// Space base settings
+$space-base    : .25rem !default;
+$space-ratio   : $major-tenth !default;    // 2.5 (see modular scale presets)
+
+:root {
+
+  // CSS Vars definition
+  
+  // Space scale 
+  // for paddings & margins, for boxes and page layout
+  // Modular scale — all your BASE (and RATIO) are belong to us!
+  
+  --space-base  : #{$space-base};
+  --space-ratio : #{$space-ratio};
+
+  // Do the calc in the browser, calc of calc encapsulated in CSS Vars
+  @if $space-calc == "css" {
+    
+    --space-xs  : var(--space-base);                             // bigger ⤵
+    --space-s   : calc(var(--space-ratio) * var(--space-xs));
+    --space-m   : calc(var(--space-ratio) * var(--space-s));
+    --space-l   : calc(var(--space-ratio) * var(--space-m));
+    --space-xl  : calc(var(--space-ratio) * var(--space-l));
+    --space-xxl : calc(var(--space-ratio) * var(--space-xl));
+
+  // Do the calc in the browser, but not encapsulated
+  } @elseif $space-calc == "css-detailed" {
+
+    // This does the same as above, 
+    // but you can better the calc of the calc
+    // It's an attempt to solve issues with MS Edge
+    // Idea by Manuel Lehmann
+
+    // Nicely written
+    --space-xs  :                                                                                                                        var(--space-base);
+    --space-s   : calc(                                                                                             var(--space-ratio) * var(--space-base) );
+    --space-m   : calc(                                                                      var(--space-ratio) * ( var(--space-ratio) * var(--space-base) ));
+    --space-l   : calc(                                               var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * var(--space-base) )));
+    --space-xl  : calc(                        var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * var(--space-base) ))));
+    --space-xxl : calc( var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * var(--space-base) )))));
+
+    // Do the calc in the browser, but not encapsulated and DENSE
+  } @elseif $space-calc == "css-detailed-dense" {
+
+    // No spaces version (punctation bug in MS Edge?)
+    --space-xs  : var(--space-base);
+    --space-s   : calc(var(--space-ratio)*var(--space-base));
+    --space-m   : calc(var(--space-ratio)*(var(--space-ratio)*var(--space-base)));
+    --space-l   : calc(var(--space-ratio)*(var(--space-ratio)*(var(--space-ratio)*var(--space-base))));
+    --space-xl  : calc(var(--space-ratio)*(var(--space-ratio)*(var(--space-ratio)*(var(--space-ratio)*var(--space-base)))));
+    --space-xxl : calc(var(--space-ratio)*(var(--space-ratio)*(var(--space-ratio)*(var(--space-ratio)*(var(--space-ratio)*var(--space-base))))));
+
+  // Do the calc in SCSS > hardcoded CSS Vars
+  } @else {
+
+    $space-s    : $space-ratio * $space-base;
+    $space-m    : $space-ratio * $space-s;
+    $space-l    : $space-ratio * $space-m;
+    $space-xl   : $space-ratio * $space-l;
+    $space-xxl  : $space-ratio * $space-xl;
+
+    --space-xs  : #{$space-base};
+    --space-s   : #{$space-s};
+    --space-m   : #{$space-m};
+    --space-l   : #{$space-l};
+    --space-xl  : #{$space-xl};
+    --space-xxl : #{$space-xxl};
+  }
+
+  // EXTRA: Hairline borders
+  --space-px    : 1px;
+}

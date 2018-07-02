@@ -1,0 +1,22 @@
+// UI colors as CSS classes
+
+// as colors, for text and border
+
+
+// TODO: Reconsider this. It's too close to tinted styles!
+// TODO: Use colors-map?! it should already be loaded
+
+$colors: "main", "prime", "warn", "danger", "success";
+$shades: "shadow", "highlight";
+
+@each $color in $colors {
+  @for $i from 1 through 5 {
+    .bo-#{$color}-#{$i} { border-color: var(--color-#{$color}-#{$i}) }
+   }
+}
+
+@each $shade in $shades {
+  @for $i from 0 through 2 {
+    .bo-#{$shade}-#{$i} { border-color: var(--color-#{$shade}-#{$i}) }
+   }
+}

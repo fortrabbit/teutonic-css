@@ -1,0 +1,11 @@
+// UI colors as CSS classes
+
+// as background colors, colors are defined in color-map.scss
+
+@each $item, $color in $colors {
+  @each $index, $value in $color {
+    [class*="bg-#{$item}-#{$index}"] {
+      background-color: var(--color-#{$item}-#{$index});
+    }
+  }
+}

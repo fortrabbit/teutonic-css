@@ -1,0 +1,45 @@
+// Border radius
+//
+// This is a set of utility classed for rounded corners to be applied on many elements,
+// common for buttons and form elements but also shapes.
+
+$radius-sizes:  "xs", "s", "m";
+$radius-pill-sizes: "290486px";
+
+// Diagonal directions (NE, SE, SW, NW) clockwise:
+$diagonal-directions: (
+  top-right    : tr,
+  bottom-right : br,
+  bottom-left  : bl,
+  top-left     : tl
+);
+
+@each $size in $radius-sizes {
+  // all 4 sides
+  .ra_#{$size} { border-radius: var(--space-#{$size}); }
+
+  // 2 sides combined (top, right, bottom, left)
+  .ra-t_#{$size} { border-top-right-radius:   var(--space-#{$size}); border-top-left-radius:     var(--space-#{$size}); }
+  .ra-r_#{$size} { border-top-right-radius:   var(--space-#{$size}); border-bottom-right-radius: var(--space-#{$size}); }
+  .ra-b_#{$size} { border-bottom-left-radius: var(--space-#{$size}); border-bottom-right-radius: var(--space-#{$size}); }
+  .ra-l_#{$size} { border-bottom-left-radius: var(--space-#{$size}); border-top-left-radius:     var(--space-#{$size}); }
+
+  // Single corner radi
+  @each $long-dir, $short-dir in $diagonal-directions {
+    .ra-#{$short-dir}_#{$size} { border-#{$long-dir}-radius: var(--space-#{$size}) }
+  }
+}
+
+// Pill
+.ra-pill    { border-radius: #{$radius-pill-sizes}; }
+.ra-pill-l  { border-top-left-radius: #{$radius-pill-sizes}; border-bottom-left-radius: #{$radius-pill-sizes}; }
+.ra-pill-r  { border-top-right-radius: #{$radius-pill-sizes}; border-bottom-right-radius: #{$radius-pill-sizes}; }
+
+// Perfectly rounded square
+// combine with square media container
+.ra-circle { border-radius: 50% }
+
+// Radius resets
+.ra-no   { border-radius: 0 !important; }
+@media #{$tablet} { .ra-no-t { border-radius: 0 !important; } }
+@media #{$phone}  { .r-no-p { border-radius: 0 !important; } }

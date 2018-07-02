@@ -1,0 +1,32 @@
+// Box shadow
+// A little bit of Marterial design
+
+
+// Basic box shadow
+[class*="bs_"] {
+  --shadow-left: 0;
+  --shadow-top:  0;
+  --shadow-size: 0;
+  box-shadow:     var(--shadow-left) var(--shadow-top) var(--shadow-size) var(--shadow-color, var(--color-shadow-2));
+}
+
+// Sizes
+.bs_xs {
+  --shadow-top:  var(--space-px);
+  --shadow-size: var(--space-xs)
+}
+.bs_s {
+  --shadow-top:  var(--space-xs);
+  --shadow-size: var(--space-s)
+}
+.bs_m {
+  --shadow-top:  var(--space-s);
+  --shadow-size: var(--space-m)
+}
+.bs_l {
+  --shadow-top:  var(--space-m);
+  --shadow-size: var(--space-l)
+}
+
+// No box shadow, explicit
+.bs-no { box-shadow: none }

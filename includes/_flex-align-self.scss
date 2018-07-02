@@ -1,0 +1,13 @@
+// Flex align self
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
+
+.self-start      { align-self:  flex-start } // default
+.self-center     { align-self:  center     }
+.self-end        { align-self:  flex-end   }
+
+// Self justify classes
+// Lacking browser support, for now...
+// .justify-self-center { justify-self:  center     }
+// .justify-self-end    { justify-self:  flex-end   }
+// .justify-self-start  { justify-self:  flex-start }

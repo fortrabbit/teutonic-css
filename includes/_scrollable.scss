@@ -1,0 +1,43 @@
+// Scrollable
+
+// A wrapper for scrollable content
+// poor mans responsive design
+// may fit code examples 
+// overflow-x, overflow-y
+
+// nowrap
+
+
+$scrollbar-size: 8px;
+
+.scroll-h, .scroll-v { 
+  //-webkit-overflow-scrolling: touch; // bouncy scrolling on iOS
+  //-ms-overflow-style: -ms-autohiding-scrollbar; // hide scroller
+}
+
+.scroll-h { 
+  overflow-x: scroll;
+  white-space: nowrap;
+  &.show-scrollbar {
+    &::-webkit-scrollbar { height: #{$scrollbar-size} }
+  }
+}
+
+.scroll-v { 
+  overflow-y: scroll;
+  &.show-scrollbar {
+    &::-webkit-scrollbar { width: #{$scrollbar-size} }
+  }
+}
+
+// Visible scollbar for Webkit/Blink
+.scroll-h.show-scrollbar, .scroll-v.show-scrollbar {
+  &::-webkit-scrollbar-track { 
+    background: var(--color-main-5);
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 2px solid var(--color-main-5);
+    border-radius: #{$scrollbar-size};
+    background: var(--color-main-3);
+  }
+}

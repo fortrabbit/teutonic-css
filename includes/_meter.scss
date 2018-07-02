@@ -1,0 +1,67 @@
+// HTML meter
+
+// STATUS: It's complicated
+
+
+.meter { 
+
+  --bar-border-color:       var(--color-shadow-2);
+  --bar-color:              var(--color-main-1);
+  --optimum-color:          var(--color-success-2);
+  --suboptimum-color:       var(--color-warn-2);
+  --even-less-good-color:   var(--color-danger-2);
+
+  //border: var(--space-px) solid var(--color-main-5);
+  border: 0;
+  outline: var(--space-px) solid;
+  background: var(--bar-color);
+  display: block; // opnionated reset
+  width: 100%;    // opnionated reset
+  min-height: 20px;
+
+  // Background
+  &::-webkit-meter-bar { 
+    background: var(--bar-color)
+  }
+  &:-moz-meter-bar {
+    -moz-appearance: meterchunk;
+    background: var(--bar-color)
+  }
+  &:-ms-fill {
+    background: var(--bar-color)
+  }
+
+  // Green
+  &:-moz-meter-optimum::-moz-meter-bar         { background: var(--optimum-color); @include stop-border-r; }
+  &::-webkit-meter-optimum-value               { background: var(--optimum-color); @include stop-border-r; }
+
+  // Yellow
+  &:-moz-meter-sub-optimum::-moz-meter-bar     { background: var(--suboptimum-color); @include stop-border-r; }
+  &::-webkit-meter-suboptimum-value            { background: var(--suboptimum-color); @include stop-border-r; }
+
+  // Red
+  &:-moz-meter-sub-sub-optimum::-moz-meter-bar { background: var(--even-less-good-color); @include stop-border-r; }
+  &::-webkit-meter-even-less-good-value        { background: var(--even-less-good-color); @include stop-border-r; }
+
+}
+
+.meter-box {
+  position: relative;
+  padding: var(--padding, var(--space-s));
+  --border-width: var(--space-px);
+  border: var(--border-width) solid;
+  @include min-height;
+  > *:not(.meter) {
+    position: relative;
+    z-index: 1;
+  }
+  .meter {
+    position: absolute;
+    border: 0;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+  }
+}

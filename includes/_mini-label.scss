@@ -1,0 +1,15 @@
+// mini label
+// best used in combination with labelbox
+
+.mini-label {
+  background-color: transparent; // textarea overflow
+  font-size: var(--text-s);
+  position: absolute;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 3;
+  left: var(--space-s);
+  top:  var(--space-s);
+  font-weight: normal;
+  font-family: var(--font-standard);
+}

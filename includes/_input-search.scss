@@ -1,0 +1,47 @@
+// Fancy .search in a box
+
+
+
+.search-box {
+
+  $magnifier-position: .8rem;
+  $magnifier-space:   2.2rem;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  &:before {
+    $size: 24px;
+    position: absolute;
+    content: '⚲';
+    transform: rotate(-45deg);
+    font-size:   $size;
+    line-height: $size;
+    height:      $size;
+    margin-top:  $size/-1.9;
+    z-index: 12;
+    user-select: none;
+    pointer-events: none;
+    top: 50%;
+    left: var(--padding, #{$magnifier-position});
+  }
+  // make some space for the magnifier icon
+  .input[type="search"]   { padding-left: #{$magnifier-space} }
+  
+  // extra class to put the magnifier to the right
+  // + when in form-box, magnifier is also on the right
+  &.right, &.form-box {
+    .input[type="search"] { 
+      padding-right: #{$magnifier-space};
+      padding-left: var(--padding, var(--space-s));
+      &::-webkit-search-cancel-button { -webkit-appearance: none}
+    }
+    &:before {
+      left: auto; // reset
+      right: #{$magnifier-position};
+      transform: rotate(45deg);
+      .input[type="search"] { padding-left: auto }
+    }
+  }
+}
+
+

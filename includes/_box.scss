@@ -1,0 +1,30 @@
+// Boxes
+//
+// Simple box shapes are interface building blocks. 
+
+// Passive box
+.box {
+  padding: var(--space-s); // default padding
+  --border-width: var(--space-px);
+  border: var(--border-width) solid;
+  color: var(--color, var(--color-main-5));
+  position: relative;
+  display: block; // just in case
+  min-width: 0px; // fix size to match with clip FF
+
+  &:target {
+    border-color: currentColor;
+    z-index: 1;
+  }
+}
+
+// Active box
+a.box, button.box, label.box {
+  cursor: pointer;
+  background-color: var(--color-bg-1, var(--color-prime-1));
+  &:hover {
+    background-color: var(--color-bg-2, var(--color-prime-2));
+    z-index: 3;
+  }
+  &:focus { @extend .focusstyle; }
+}

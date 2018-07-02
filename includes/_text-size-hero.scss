@@ -1,0 +1,11 @@
+// Extra large marketing.
+// including VARs for customization
+
+.text-hero_l   { 
+  line-height: 1; 
+  font-size: calc(var(--text-xxxl) + var(--text-hero-l,   4vw))
+}
+.text-hero_m   { 
+  line-height: 1; 
+  font-size: calc(var(--text-xxxl) + var(--text-hero-m,   2.5vw))
+}

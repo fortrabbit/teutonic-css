@@ -1,0 +1,46 @@
+// Media Queries
+// 
+// for devices from large to small (iPad, iPhone, aNdroid)
+// globally used media queries are here
+// there might be some local ones around
+
+
+// Breakpoints
+// for mediaqueries (max-width)
+// Please mind that CSS vars don't work in media queries
+
+$breakpoint-desktop:   1600px !default;
+//$breakpoint-laptop:    1300px;
+$breakpoint-tablet:    800px !default;
+$breakpoint-phone:     400px !default;
+
+$desktop:              "(min-width:#{$breakpoint-desktop})";
+//$laptop:               #{"(max-width:#{$breakpoint-laptop)}"};
+$tablet:               "(max-width:#{$breakpoint-tablet})";
+$phone:                "(max-width:#{$breakpoint-phone})";
+
+// Make everything smaller
+// on smaller devices
+$tablet-font-size:  90% !default;
+$phone-font-size:   80% !default;
+
+
+@media #{$tablet} {
+  .hide-t { display: none !important }
+  // CSS Columns
+  .columns.collapse-t { column-count: 1 !important }
+}
+
+@media #{$phone} {
+  .hide-p { display: none !important }
+  // CSS columns
+  .columns.collapse-p { column-count: 1 !important }
+}
+
+// Make everything smaller on mobile devices
+// Most sizing is made with REM, 
+// this single value everything
+// See SCSS vars & fuild_scale for more
+
+@media #{$tablet} { html { font-size: #{$tablet-font-size}; } }
+@media #{$phone}  { html { font-size: #{$phone-font-size};  } }

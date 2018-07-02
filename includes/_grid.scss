@@ -1,0 +1,31 @@
+// Grid
+// 
+// This is a "rigid" CSS grid based grid system
+// It aims to replace standard float:left systems
+// It's based on 12 columns by default
+
+// calc stuff seems complicated, but the only way I know
+// not run into too much overflow trouble with bigger gaps
+// Based on Michael_Bs answer here:
+// https://stackoverflow.com/questions/45090726/
+
+
+.grid {
+
+  // MODIFY: Number of columns, best: 8 - 18
+  --grid-cols: 12;
+  // There is one less Gap than Columns
+  --grid-gaps: calc(var(--grid-cols) - 1);
+  // Percentage for each col
+  --col-size:  calc(100%/var(--grid-cols));
+  // Total Space in Grid occupied within the Gaps
+  --gap-total: calc(var(--gap-space, 0px) * var(--grid-gaps));
+  // Space to substract by each col for gaps
+  --gap-subst: calc(var(--gap-total) / var(--grid-cols));
+
+  display: grid;
+  // Default                    12 columns              8.333333%      - ………
+  grid-template-columns: repeat(var(--grid-cols), calc(var(--col-size) - var(--gap-subst)));
+  grid-gap: var(--gap-space, 0px);
+  grid-auto-flow: dense; // opinionated
+}

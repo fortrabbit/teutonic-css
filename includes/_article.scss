@@ -1,0 +1,71 @@
+// Article post
+//
+// A container for generared HTML content - think Markdown, CMS …
+
+$article-line-height: $fifth;
+
+.article {
+
+  // images are full width
+  img {
+    width: 100%;
+    margin: 0;
+    border: var(--space-px) solid var(--color-main-5);
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-skip: ink;
+  }
+
+  // code examples
+  pre { margin: var(--space-xs) calc(-1 * var(--space-m)) ; }
+
+  // Accronym
+  accr { border-bottom: 1px dotted var(--color-main-5); }
+
+  // Horizontal line
+  hr {  margin: var(--space-l) 0 }
+
+  ul    { list-style-type: disc; }
+  ul ul { list-style-type: circle; }
+  // Margin for block elements
+  p, ul, ol, dl, table { 
+    margin-top:    var(--space-s);
+    margin-bottom: var(--space-s);
+  }
+
+  dd { margin-left: var(--space-s) }
+
+  li, blockquote, dt, dd { font-family: var(--font-body); }
+
+  blockquote {
+    font-size: 120%;
+    border-left:  var(--space-xs) solid var(--color-main-5);
+    margin-left:  calc(-1 * var(--space-m) );
+    padding-left: calc(var(--space-m)  - var(--space-xs));
+  }
+
+  p, li, dt, dd          { line-height: $article-line-height; }
+  //h1, h2, h3, h4, h5     { line-height: $article-line-height; }
+
+  li {
+    margin-top:    var(--space-xs);
+    margin-bottom: var(--space-xs);
+  }
+
+  // Unify 
+  table { font-family: var(--font-body); }
+
+  // Spacing on top for headlines!
+  h1:not(:first-child)   { margin-top: var(--space-xxl); }
+  h2:not(:first-child)   { margin-top: var(--space-xl); }
+  h3:not(:first-child)   { margin-top: var(--space-l); }
+  h4:not(:first-child)   { margin-top: var(--space-m); }
+  h5:not(:first-child)   { margin-top: var(--space-s); }
+
+  // nested lists
+  li > ul, li > ol { margin-left: var(--space-m); }
+
+}

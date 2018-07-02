@@ -1,0 +1,38 @@
+// Select elements
+
+.select {  
+  appearance: none;      // reset standard
+  -moz-appearance: none; // reset firefox
+  cursor: pointer;
+
+  //background-image: url('#{$svg-triangle}');
+
+  $tri-color: 'var(--color, var(--color-main-5))';
+  $tri-size: 14px;
+  $tri-half: $tri-size/4;
+
+  @mixin triangle($bg-color) {
+    background-image: 
+      linear-gradient( 45deg, transparent 50%, #{$bg-color} 50%), 
+      linear-gradient(-45deg, transparent 50%, #{$bg-color} 50%), 
+      linear-gradient(to top, #{$tri-color}, #{$tri-color});
+  }
+
+            @include triangle('var(--color-bg-1, var(--color-prime-1))');
+  &:hover { @include triangle('var(--color-bg-2, var(--color-prime-2))') }
+
+  
+  background-size: $tri-size $tri-size;
+  background-repeat: no-repeat;
+  background-position: right .8rem top calc(50% - #{$tri-half}); // hide the arrow below firefox UI
+  position: relative;
+
+  &:disabled { 
+    background-size: 100% 100%;    // reset
+    background-position: left top; // reset
+  }
+
+  optgroup        { color: var(--colored-5, var(--color-main-5)) }
+  option:disabled { color: var(--color-main-3) } // wishful thinking
+  &:-ms-expand { display: none } // IE reset
+}

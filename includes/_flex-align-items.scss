@@ -1,0 +1,9 @@
+// Flex align items
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+
+.items-stretch   { align-items: stretch }
+//.items-start     { align-items: flex-start } // default
+.items-end       { align-items: flex-end }
+.items-center    { align-items: center }
+.items-baseline  { align-items: baseline }

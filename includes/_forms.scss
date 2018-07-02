@@ -1,0 +1,100 @@
+// Forms
+// 
+// Common form input elements (select, input, textarea …)
+// styled in a similar boxy way that aligns nicely. 
+
+
+// Form resets
+menu { padding: 0; margin: 0 }
+form { display: block; width: 100%; }
+
+// Shared basics styles reset
+.button, .input, .select, .textarea {
+  font-size: var(--text-m);
+}
+
+// Firefox focus reset
+input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
+
+.input,
+.button,
+.textarea,
+.select {
+  -webkit-appearance: none; // iOs fix
+  border-radius: 0; // iOs fix
+  @include padding-fix(s);
+  margin: 0; // Safari reset required
+  font-family: var(--font-standard); // reset
+  text-align: left;
+  line-height: var(--line-height);
+  border: var(--space-px) solid;
+  outline: none;
+  background-color: var(--color-bg-1, var(--color-prime-1));
+  color: var(--color, var(--color-main-5));
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-bg-2, var(--color-prime-2));
+    z-index: 2;
+  }
+  &:focus { 
+    background-color: var(--color-bg-1, var(--color-prime-1));
+    @extend .focusstyle;
+  }
+}
+
+.input, 
+.textarea,
+.select {
+  display: block;
+  width: 100%;
+}
+
+.button:not(.block) { display: inline-block; }
+
+// Text inputs shared
+
+.input, .textarea {
+
+  @include bevel();
+
+  // Placeholder text styling
+  &::placeholder           { color: var(--color-shadow-2);}
+  &:-ms-input-placeholder  { color: var(--color-shadow-2);}
+    
+  // readonly
+  &[readonly] {
+    user-select: all; // select all, when clicked
+    -moz-user-select: text; // FF BUG!
+    // background-color: var(--color-main-1);
+    // &:hover, &:focus { background-color: var(--color-prime-1); }
+  }
+}
+
+// Moderate styling for not (yet) valid inputs
+.input:invalid { 
+  border-color: var(--color, var(--color-main-5)) ;
+  color: var(--color-danger-4);
+}
+
+// Textarea
+.textarea {
+  resize: vertical; // Resizeonly in one direction!
+  width: 100%;
+  min-height: var(--textarea-height, 3.6rem);
+}
+
+
+// Some standards for labels
+.label {
+  user-select: none;
+  cursor: pointer;
+
+  // Special required class for labels
+  // Show an asterix as a hint
+  &.required:after {
+    content: '*';
+    color: var(--color-main-5);
+    padding-left: var(--space-xs);
+  }
+}

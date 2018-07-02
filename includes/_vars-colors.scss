@@ -1,0 +1,20 @@
+// UI Colors
+//
+// loops over the color map and writes it as CSS vars
+// 1. assign the actual value
+// 2. assign the color var (needed for inverted style)
+
+:root {
+  @each $name, $color in $colors {
+    @each $index, $value in $color {
+      --#{$name}-#{$index}: #{$value};
+      --color-#{$name}-#{$index}: var(--#{$name}-#{$index});
+    }
+  }
+  @each $name, $shade in $shades {
+    @each $index, $value in $shade {
+      --#{$name}-#{$index}: #{$value};
+      --color-#{$name}-#{$index}: var(--#{$name}-#{$index});
+    }
+  }
+}

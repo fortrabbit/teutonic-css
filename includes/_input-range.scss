@@ -1,0 +1,130 @@
+// Styling Cross-Browser Compatible Range Inputs with Sass
+
+// Stolen from:
+// https://github.com/darlanrod/input-range-sass
+// Darlan Rod
+
+$thumb-radius:        50%                                    !default;
+$thumb-size:          20px                                   !default;
+$thumb-border-width:  1px                                    !default;
+$thumb-shadow-size:   2px                                    !default;
+$thumb-shadow-blur:   2px                                    !default;
+
+$track-height:        6px                                    !default;
+$track-border-width:  1px                                    !default;
+$track-radius:        229939393px                            !default;
+
+$thumb-shadow-color:  var(--color-shadow-2)                  !default;
+$thumb-border-color:  var(--colored-5, var(--color-main-5))  !default;
+$thumb-color:         var(--colored-2, var(--color-prime-2)) !default;
+$thumb-color-h:       var(--colored-3, var(--color-prime-3)) !default;
+$track-color:         var(--colored-4, var(--color-main-4))  !default;
+$track-border-color:  var(--colored-5, var(--color-main-5))  !default;
+
+// MS Edge debugging
+// CSS variables don't inherit into range input track, fill, thumb
+// https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/12837456/
+//
+// the function "color(color, step)" will use the colors map.
+// Not Perfect: Will of course not respect .inverted styles or other theming
+
+
+@mixin track(
+    $height:            $track-height,
+    $background-color:  $track-color,
+    $border-color:      $track-border-color
+  ) {
+  cursor: pointer;
+  height: $height;
+  background-color: $background-color;
+  border: $track-border-width solid $border-color;
+  border-radius: $track-radius;
+  //width: $track-width;
+}
+
+@mixin thumb(
+    $size:             $thumb-size, 
+    $shadow-color:     $thumb-shadow-color,
+    $border-color:     $thumb-border-color,
+    $background-color: $thumb-color
+  ) {
+  background-color: $background-color;
+  background-image: linear-gradient(transparent, var(--color-shadow-2));
+  border: $thumb-border-width solid $border-color;
+  border-radius: $thumb-radius;
+  height: $size;
+  width:  $size;
+  cursor: pointer;
+  box-shadow: 0 $thumb-shadow-size $thumb-shadow-blur $shadow-color;
+}
+
+
+
+[type='range'].range {
+//[type='range'].range {
+  margin: 0;
+  height: ( $thumb-size + ($thumb-border-width*2)); // For MS Edge against overflow
+  background-color: transparent; // For WebKit Safari
+  // Webkit specific (Chrome + Safari)
+  -webkit-appearance: none;
+  &::-webkit-slider-thumb {
+    @include thumb();
+    -webkit-appearance: none;
+    margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-size / 2);
+  }
+  &::-webkit-slider-runnable-track { 
+    @include track();
+  }
+
+  // Firefox specific
+  &::-moz-range-track { 
+    @include track(4px);
+    margin-bottom: 2px;
+  }
+  &::-moz-range-thumb { @include thumb(); }
+
+
+  // MS Edge specific
+  &::-ms-track {
+    @include track();
+    //background: transparent;
+    //border-color: transparent;
+    //color: transparent;
+    border-width: 1px;
+    //border-width: ($thumb-size / 2) 0;
+  }
+
+  // part of the track filled
+  &::-ms-fill-lower {
+    background-color: color(prime, 4);
+    border: $track-border-width solid color(main, 5);
+    border-radius: $track-radius;
+  }
+  // part of the track NOT filled
+  &::-ms-fill-upper {
+    background-color: color(main, 4);;
+    border: $track-border-width solid color(main, 5);
+    border-radius: $track-radius;
+  }
+  &::-ms-thumb {
+    // uses the harecoded colors from vars-colors-scss
+    //             size, shadow-color,    border-color,    background-color
+    @include thumb(14px, color(shadow, 2), color(main, 5), color(prime, 2));
+    margin-top: 2px;
+  }
+
+
+  &:focus, &:hover {
+    outline: 0;
+    &::-moz-range-thumb      { background-color: $thumb-color-h }
+    &::-webkit-slider-thumb  { background-color: $thumb-color-h }
+    &::-ms-thumb             { background-color: color(prime, 3) }
+  }
+
+  // outer ring on focus
+  &:focus, &:active  {
+    &::-moz-range-thumb      { box-shadow: 0 0 0 2px var(--color-main-5) }
+    &::-webkit-slider-thumb  { box-shadow: 0 0 0 2px var(--color-main-5) }
+    &::-ms-thumb             { box-shadow: 0 0 0 2px color(main, 5) }
+  }
+}

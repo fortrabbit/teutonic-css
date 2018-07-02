@@ -1,0 +1,67 @@
+// Scale Spacings
+
+// Alternative non-modular-scale approach to spacing things
+
+// More linear than exponential
+
+// 1st Approach: was to use the same class names
+// 2nd Approach: new class names
+
+
+
+// Advantatages
+// * easier to learn, get and use
+// * more predictable
+// * works for MS Edge
+// * bootsrap, tachyons and bulma are using this as well
+// * More options = better tuning, but more code and ugly pages
+
+// Disadvantages
+// * need to understand Modualr scale anyways for Type
+// * need more spacing steps in small, less in large
+// * …
+
+
+
+// Return to a non-modular scale?
+// Ismayil suggested multiplies
+// Research that one more time, checkout bulma & bootstrap for that
+
+// https://tailwindcss.com/docs/spacing
+
+// http://getbootstrap.com/docs/4.0/utilities/spacing/
+//  https://github.com/twbs/bootstrap/blob/v4-dev/scss/utilities/_spacing.scss
+//  https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss < search for spacers
+
+// http://tachyons.io/docs/layout/spacing/
+//  https://github.com/tachyons-css/tachyons/blob/master/src/_spacing.css
+// The concept, demo and intro is quite appealing
+// Code not sooo much
+
+
+
+
+// SCSS space base settings
+$space-multi-base        : 2rem !default;
+$space-multiplier        : 2;
+$space-multiplier-start  : 3;
+
+// CSS Vars definition
+:root {
+
+  // Space scale 
+  // for paddings & margins, for boxes and page layout
+
+  --space-base : #{$space-multi-base};
+
+  --space-xs    : calc(var(--space-base) / 6);;
+  --space-s     : calc(var(--space-base) / 3);
+  --space-m     : var(--space-base);
+  --space-l     : calc(var(--space-base) * 3);
+  --space-xl    : calc(var(--space-base) * 6);
+  --space-xxl   : calc(var(--space-base) * 12);
+
+  // EXTRA: Hairline borders
+  --space-px    : 1px;
+
+}

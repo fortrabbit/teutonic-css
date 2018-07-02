@@ -1,0 +1,16 @@
+// Skeuomorph style
+
+// text inputs  bevel 
+// buttons      emboss
+
+// Inset bevel
+// for text input elememts
+// bevel highlights and shadows
+// used for .input, .textarea
+@mixin bevel() { box-shadow: inset 0 calc(var(--space-px)*2) 0 var(--color-shadow-1) }
+
+// Emboss effect 
+// for buttonish elements
+// emboss highlights and shadows
+// used for .button
+@mixin emboss() { background-image:  linear-gradient(transparent, var(--color-shadow-1)) }

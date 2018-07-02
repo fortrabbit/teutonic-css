@@ -1,0 +1,10 @@
+// Focus style
+// Fix browser default :focus rendering
+// Can be used alone or as include, works for boxes!
+
+.focusstyle {
+  position: relative;
+  z-index: 1; // bring it to front, essential for negativ margin styles
+  box-shadow: inset 0 0 0 3px var(--color, var(--color-main-5));
+  transition: box-shadow .4s ease-out;
+}

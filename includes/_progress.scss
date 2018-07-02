@@ -1,0 +1,89 @@
+// HTML progress element
+
+// the progress element represents 
+// the completion progress of a task. 
+
+.progress {
+
+  --bar-border-color: var(--color-shadow-1);
+  --value-color:      var(--color-bg-3, var(--color-main-3));
+  --background-color: var(--color-bg-1, var(--color-main-1));
+
+  outline: none;
+  appearance: none;
+  background-color: var(--background-color);
+  border: var(--border-width, var(--space-px)) solid; // when not inside box
+  display: block;
+  width: 100%;
+  min-height: 20px;
+  
+  border-color: var(--color-main-5);
+  color: var(--value-color); // MS Edge background color of bar
+  &::-webkit-progress-bar   { background-color: transparent }
+  &::-webkit-progress-value { background-color: var(--value-color); @include stop-border-r }
+  &::-moz-progress-bar      { background-color: var(--value-color); @include stop-border-r }
+  //&:-ms-fill                { background-color: var(--value-color); @include stop-border-r }
+
+  // as long as no value is given
+  // show animation waiting for progress bar
+  // MS Edge has a cutsom animation
+  position: relative;
+  overflow: hidden;
+  &:not([value]):after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    background: linear-gradient(
+      to left, 
+      var(--background-color), 
+      var(--color-main-3), 
+      var(--background-color)
+    );
+    background-size: 100% 100%;
+    animation: scroll-background 4s infinite alternate;
+    //animation-fill-mode: both;
+    //transition-timing-function: ease;
+  }
+  &::-ms-fill { border: none }
+}
+
+// Animation for indeterminate
+@keyframes scroll-background { 
+  0%   { transform: translateX(90%); }
+  100% { transform: translateX(-90%); }
+}
+
+
+
+
+
+
+
+
+
+
+
+.progress-box {
+  position: relative;
+  padding: var(--padding, var(--space-s));
+  --border-width: var(--space-px);
+  border: var(--border-width) solid;
+  @include min-height;
+  > *:not(.progress) {
+    position: relative;
+    z-index: 1;
+  }
+  .progress {
+    position: absolute;
+    border: 0;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+  }
+}

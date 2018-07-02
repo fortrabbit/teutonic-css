@@ -1,0 +1,51 @@
+// Simple CSS (only) tooltips
+
+// can be attached to almost any element
+// basic usage: <em data-tooltip="em em em em em">em</em>
+// used pixles here, so no mess when changing CSS vars.
+// after:   the tooltop content itself
+// before:  the triangle shape
+
+
+[data-tooltip]{
+
+  position: relative;
+  z-index: 1000000;
+
+  &:before, &:after {
+    font-family: var(--font-standard); // reset
+    transition: transform .8s;
+    transform: translateX(-50%) translateY(-9px);
+    position: absolute;
+    visibility: hidden;
+  }
+
+  &:hover, &:focus {
+    z-index: 2;
+    &:before, &:after {
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+
+  // The triangle
+  @extend .arrow; // see triangle.scss
+  &:before {
+    top:  -10px;
+  }
+
+  // the tooltip itself
+  &:after {
+    content:     attr(data-tooltip);
+    top:         -30px;
+    text-align:  center;
+    font-weight: normal;
+    left:        50%;
+    font-size:   11px;
+    background:  var(--color-main-5);
+    color:       var(--color-main-1);
+    padding:     4px;
+    max-width:   500px;
+    white-space: nowrap;
+  }
+}

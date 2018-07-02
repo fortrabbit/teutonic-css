@@ -1,0 +1,16 @@
+// Simple step navigaton 
+
+.steps {
+  border-top: var(--space-px) solid var(--color-main-1);
+  background-color: var(--color-main-3);
+  > * {
+    counter-increment: steps-counter;
+    padding-right: var(--space-px);
+    &.active { font-weight: bold; }
+    &:after {
+      content: '›';
+      padding-left: var(--space-xs);
+    }
+    &:last-child:after { content: '' }
+  }
+}

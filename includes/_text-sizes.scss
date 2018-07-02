@@ -1,0 +1,23 @@
+// Text sizes
+
+// Text size classes & headline text sizes
+// One --font-size VAR is always accessible
+.text_xxxl, h1         { --font-size: var(--text-xxxl) }
+.text_xxl , h2         { --font-size: var(--text-xxl)  }
+.text_xl  , h3         { --font-size: var(--text-xl)   }
+.text_l   , h4         { --font-size: var(--text-l)    }
+.text_m   , h5, h6     { --font-size: var(--text-m)    }
+.text_s                { --font-size: var(--text-s)    }
+.text_xs               { --font-size: var(--text-xs)   }
+
+[class*="text_"], 
+h1, h2, h3, h4, h5, h6 {
+  font-size: var(--font-size)
+}
+
+// Multiline headlines
+// look much better when the closer together
+.text_m, .text_l, .text_xl, .text_xxl, .text_xxxl,
+h1, h2, h3, h4 {
+  line-height: 1.15;
+}

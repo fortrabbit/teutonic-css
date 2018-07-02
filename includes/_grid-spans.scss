@@ -1,0 +1,9 @@
+// CSS Grid grid spans
+
+@for $i from 1 through 16 {
+  .span-#{$i}    { grid-column:  span #{$i} } // Span cols across tracks
+  .start-#{$i}   { grid-column-start: #{$i} } // Define a horizontal start point
+  .end-#{$i}     { grid-column-end:   #{$i} } // Define an horizontal end point
+  .start-y-#{$i} { grid-row-start:    #{$i} } // Define a vertical start point
+  .end-y-#{$i}   { grid-row-end:      #{$i} } // Define an vertical end point
+}

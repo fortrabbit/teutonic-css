@@ -1,0 +1,22 @@
+// SVG Icons
+// just a few little SVG Icons
+
+// Data URI prefix
+$svg-prefix: 'data:image/svg+xml;charset=utf-8,';
+
+// Multiply sign (x), close
+//$svg-close-image:  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect x="2.01" y="7.5" width="15.97" height="5" transform="translate(-4.14 10) rotate(-45)"/><rect x="7.5" y="2.01" width="5" height="15.97" transform="translate(-4.14 10) rotate(-45)"/></svg>';
+//$svg-close:        $svg-prefix + $svg-close-image;
+
+// Magnifier glass, search
+//$svg-magnify-image:  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><text transform="rotate(45)">⚲</text></svg>';
+//$svg-magnify-image:   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 135"><g transform="translate(63, 71) rotate(-315) translate(-63, -71) translate(8, -6)"><path d="M55,110 C24.6243388,110 0,85.3756612 0,55 C0,24.6243388 24.6243388,0 55,0 C85.3756612,0 110,24.6243388 110,55 C110,85.3756612 85.3756612,110 55,110 Z M55.5,88 C73.4492544,88 88,73.4492544 88,55.5 C88,37.5507456 73.4492544,23 55.5,23 C37.5507456,23 23,37.5507456 23,55.5 C23,73.4492544 37.5507456,88 55.5,88 Z"/><rect x="44" y="98" width="22" height="56"/></g></svg>';
+//$svg-magnify:         $svg-prefix + $svg-magnify-image;
+
+// Triangle down, select
+//$svg-triangle-image: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="hsl(40,7%,10%)" d="M2.5,6l5,5l5,-5z"/></svg>';
+//$svg-triangle-image:  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="var(--colored, var(--color-main-5))" d="M2.5,6l5,5l5,-5z"/></svg>';
+//$svg-triangle-image:  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="currentColor" d="M2.5,6l5,5l5,-5z"/></svg>';
+//$svg-triangle:         $svg-prefix + $svg-triangle-image;
+
+

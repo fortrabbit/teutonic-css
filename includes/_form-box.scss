@@ -1,0 +1,46 @@
+// label and input or box together
+//
+// The `form-box` wrapper combines an input element with a label 
+// and an optional tooltip (called the mini-info).
+
+.form-box {
+
+  display:  block;     // for absolute positioned childs
+  position: relative;  // for absolute positioned childs
+  overflow: hidden;
+
+  // make some space for .mini-label
+  &:not(.no-label) {
+    .input, .button, .textarea, .select { padding-top: calc(1 * var(--space-m)) !important }
+  }
+
+  &.active, &:hover {
+    z-index: 2;
+    .mini-info { visibility: visible }
+  }
+  // 1. place mini-info after form elem in HTML
+  // 2. when form elem is focus/hover mini-info will be shown
+  .input ~ .mini-info, 
+  .select ~ .mini-info, 
+  .textarea ~ .mini-info { visibility: hidden }
+  .input, .select, .input, .textarea {
+    &:hover ~ .mini-info,
+    &:focus ~ .mini-info { visibility: visible }
+  }
+
+  // Add a padding size to 
+  // adjust the inner paddings of the inputs
+  &.pa_m {
+    padding: 0;
+    .input, .button, .textarea, .select { 
+      padding-left: var(--space-m);
+      padding-right: var(--space-m);
+      padding-top: calc(1.3 * var(--space-m)) !important;
+      padding-bottom: calc(.7 * var(--space-m)) !important;
+    }
+    .mini-label { 
+      left: var(--space-m);
+      top: calc(1.6 * var(--space-s));
+    }
+  }
+}

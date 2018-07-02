@@ -1,0 +1,22 @@
+// Gaps
+// General gutter classes based on modular scale
+// for vertically stacked items
+
+$f-gap-sizes: "xs", "s", "m", "l", "xl";
+
+@each $gap-size in $f-gap-sizes {
+  .flex.gap_#{$gap-size} {
+    margin-left:   calc(-1 * var(--gap-space, var(--space-#{$gap-size})));
+    margin-bottom: calc(-1 * var(--gap-space, var(--space-#{$gap-size})));
+    > * {
+      padding-left:   var(--gap-space, var(--space-#{$gap-size}));
+      padding-bottom: var(--gap-space, var(--space-#{$gap-size}));
+    }
+  }
+  .flex.gap-h_#{$gap-size} {
+    margin-left: calc(-1 * var(--gap-space, var(--space-#{$gap-size}))) !important;
+    > * {
+      padding-left: var(--gap-space, var(--space-#{$gap-size})) !important
+    }
+  }
+}

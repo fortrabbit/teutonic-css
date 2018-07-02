@@ -1,0 +1,122 @@
+// Welcome to the infamous Teutonic CSS framework
+// this is the root file, that imports the actual includes
+
+// Debug position stuff:
+//* { outline: 1px solid red }
+
+// Variables & helpers
+@import "includes/color-map";           // SCSS color map
+@import "includes/modular-scale-presets"; // Optional SCSS helper to translate ratios in words
+
+@import "includes/vars-colors";          // makes color map available as CSS vars
+@import "includes/vars-colors-scss";     // makes color map available as SCSS vars
+@import "includes/vars-space-scale";     // layout spacing
+@import "includes/vars-type-scale";      // layout spacing
+
+@import "includes/typeface-vars";       // font stacks
+@import "includes/skeuo-style";         // subtile skeuomorphic effects
+@import "includes/padding-fix";         // Quick mixin FIX for MS Edge padding bugs
+
+// Layout
+@import "includes/resets";              // remove some browser defaults
+@import "includes/basics";              // Opinionated standards
+@import "includes/media-queries";       // mobile styles break points
+@import "includes/min-height";          // min-height hack
+
+// Forms
+@import "includes/stop-border-mixin";   // Helper to give charts some more contrast
+@import "includes/z-index";             // stacking order
+@import "includes/forms";               // shared styles for various form elements and states
+@import "includes/select";              // select normalize & styling
+@import "includes/input-search";        // resets type=search
+@import "includes/form-box";            // wrapper for label and input and info together
+@import "includes/mini-label";          // element for label-box
+@import "includes/mini-info";           // small tooltip like info box
+@import "includes/radio-checkbox";      // checkboxes & radios normalize & styling
+@import "includes/progress";            // progess bar
+@import "includes/meter";               // meter element
+@import "includes/input-number";        // resets type=number
+@import "includes/input-range";         // input type range normalize & styling
+@import "includes/range-box";           // wrapper for .range elements
+@import "includes/input-color";         // input type color normalize & styling
+@import "includes/input-file";          // file uploads
+@import "includes/button";              // CTA buttons
+@import "includes/focus";               // styles for ::focus pseudoclass
+@import "includes/active";              // active classes combined
+
+// Typography
+@import "includes/typography";          // font, text sizes etc
+@import "includes/link";                // a link in text (visited …)
+@import "includes/text-helpers";        // standard text classes
+@import "includes/text-sizes";          // small to large text, mapping on headlines
+@import "includes/text-size-all";       // make everything bigger
+@import "includes/text-size-hero";      // even bigger hero text
+@import "includes/read-widths";         // Optimal radings widths
+@import "includes/text-overflow";       // Control text clip and word wrap
+@import "includes/anchor";              // headline anchors
+@import "includes/article";             // styling for long text entries
+
+// Interface
+@import "includes/table";              // data tables
+@import "includes/scrollable";         // overflow = poor mans responsiveness
+@import "includes/inverted";           // inverted styles
+
+// Code examples
+@import "includes/code";               // basic code examples styling
+@import "includes/code-highlight";     // syntax highlighting for different engines
+
+// Interface & navigation
+@import "includes/box";                // recantgles
+@import "includes/active-tab";         // tab style active
+@import "includes/media";              // media container
+@import "includes/aspect-ratio";       // 16:9, 4:3, 2:1 … sizes for media
+@import "includes/fixed-sizes";        // "fixed" sizes and min-sizes
+@import "includes/viewport-sizes";     // viewport based min sizes
+@import "includes/arrow";              // triangle, active class addition
+@import "includes/tooltip";            // :hover toolip based on data-tooltip
+@import "includes/striped";            // striped state
+@import "includes/loading";            // loading state
+@import "includes/position-helpers";   // relative, absolute, sticky …
+@import "includes/position-defaults";  // top right bottom left etc –
+@import "includes/disabled";           // helper class for disabled stuff
+
+// CSS Grid
+@import "includes/grid";               // CSS grid base — Z style rows
+@import "includes/grid-spans";         // CSS grid child spans
+@import "includes/grid-gaps";          // CSS grid gaps
+@import "includes/grid-auto";          // CSS grid alternative layout, container query style
+@import "includes/grid-breakpoints";   // CSS grid media queries
+
+// Flexbox Grid
+@import "includes/flex";               // Flexbox grid system — Z style rows
+@import "includes/flex-spans";         // Flexbox grid child spans
+@import "includes/flex-gaps";          // Flexbox grid child gaps
+@import "includes/flex-breakpoints";   // CSS grid media queries
+@import "includes/flex-align-content"; // Helper classes to distribute stuff
+@import "includes/flex-align-items";   // Helper classes to distribute stuff
+@import "includes/flex-align-justify"; // Helper classes to distribute stuff
+@import "includes/flex-align-self";    // Helper classes to distribute stuff
+@import "includes/margin-auto";        // margin auto align class
+
+// CSS Columns
+@import "includes/columns";            // И - column content wrapping
+@import "includes/gap-no";             // Overlapping boxes for all grid flavors
+@import "includes/gaps";               // Gaps for vertically stacked elems
+
+// Layout helpers
+@import "includes/box-shadow";         // Box shadow
+@import "includes/border-size";        // borders size helpers
+@import "includes/margin";             // margin classes for layout
+@import "includes/radius";             // margin classes for layout
+@import "includes/visibility";         // visually hidden and shown
+@import "includes/display";            // inline or block or inline-flex
+@import "includes/block-link";         // a blocky link
+@import "includes/padding";            // padding for boxes
+
+// Color theming
+@import "includes/background-colors";  // The UI colors as CSS classes for background color
+@import "includes/background-colors-h";// Hoverable UI background containers
+@import "includes/background-shades";  // The shading colors
+@import "includes/colors-alphabet";    // Hue Spectrum of nice colors!
+@import "includes/tinted";             // colored states (success, warn, error)
+

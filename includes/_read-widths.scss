@@ -1,0 +1,7 @@
+// Optimal reading widths
+
+
+.read_s  { max-width: var( --read-w-s,  24rem) }
+.read_m  { max-width: var( --read-w-m,  28rem) }
+.read_l  { max-width: var( --read-w-l,  37rem) }
+.read_xl { max-width: var( --read-w-xl, 47rem) }

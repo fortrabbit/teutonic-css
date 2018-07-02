@@ -1,0 +1,15 @@
+// Crop overflow text where it shouldn't wrap
+// Helps with nasty chrome new lines bugs
+
+.text-clip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.text-keep     { white-space: nowrap } // Just don't wrap text!
+.text-hyphen   { hyphens: auto }       // word separation with hyphens
+
+// Overflow helper
+.ov-h  { overflow: hidden;}

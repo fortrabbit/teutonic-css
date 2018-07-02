@@ -1,0 +1,15 @@
+// Auto margin 
+
+// for centered containers (flexbox)
+// replace with justify self one day maybe
+
+.ma-auto   { margin: auto }
+.ma-v-auto { margin-top: auto; margin-bottom: auto; }
+.ma-h-auto { margin-left: auto; margin-right: auto; }
+
+// Auto margin for all directions
+// important is needed for flexbox with grid childs
+.ma-t-auto { margin-top:    auto !important;  }
+.ma-r-auto { margin-right:  auto !important;  }
+.ma-b-auto { margin-bottom: auto !important;  }
+.ma-l-auto { margin-left:   auto !important;  }

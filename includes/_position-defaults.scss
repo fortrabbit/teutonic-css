@@ -1,0 +1,21 @@
+// Position defaults
+
+// position elements on different corners
+// of an pos-r element
+// can be used for custom .mini-info position
+// parent container better be position relative (pos-r)
+
+// Corner edges
+.pos-tl     { top: 0;    right: auto; bottom: auto;  left:  0     }
+.pos-tr     { top: 0;    right: 0;    bottom: auto;  left:  auto  }
+.pos-bl     { top: auto; right: auto; bottom: 0;     left:  0     }
+.pos-br     { top: auto; right: 0;    bottom: 0;     left:  auto  }
+
+// Monie in the middle
+.pos-c      { top: 50%;  right: auto; bottom: auto;  left: 50%; transform: translate(-50%, -50%) }
+
+// Centered on edge in cardinal directions
+.pos-ct     { top: 0;    right: auto; bottom: auto;  left: 50%;  transform: translate(-50%,  0) }
+.pos-cb     { top: auto; right: auto; bottom: 0;     left: 50%;  transform: translate(-50%,  0) }
+.pos-cr     { top: 50%;  right: 0;    bottom: auto;  left: auto; transform: translate(0,  -50%) }
+.pos-cl     { top: 50%;  right: auto; bottom: auto;  left: 0;    transform: translate(0,  -50%) }

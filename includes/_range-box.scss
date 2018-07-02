@@ -1,0 +1,11 @@
+// A range inside a box
+.range-box {
+  position: relative;
+  padding: var(--padding, var(--space-s));
+  --border-width: var(--space-px);
+  border: var(--border-width) solid;
+  > .range {
+    //transform: translateY($track-height/-2);
+    width: 100%;
+  }
+}

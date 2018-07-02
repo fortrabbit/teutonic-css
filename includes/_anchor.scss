@@ -1,0 +1,28 @@
+// Anchor and targets
+// 
+// Helper class for text heavy pages to easily jump to deeplinks, aka hashlinks. 
+// A headline with an ID can have a visual anchor which adds a "¶" character. 
+// Linked targets get a visual highlight.
+
+.anchor {
+  &:after { content: "¶" }
+  font-weight: lighter;
+  color: currentcolor;
+  text-decoration: none;
+  padding: 0 .5em;
+  opacity: 0;
+  box-shadow: none;
+  &:hover   { opacity:  1 !important; }
+}
+
+// headlines with an ¶
+h1, h2, h3, h4, h5, h6 {
+  &:hover .anchor { opacity: .2; }
+}
+
+// Inline links (hashlinks) colored, when called
+// Used mostly for headlines
+*:target {
+  background-color: var(--color-warn-2);
+  box-shadow: 0 0 0 var(--space-xs) var(--color-warn-2);
+}

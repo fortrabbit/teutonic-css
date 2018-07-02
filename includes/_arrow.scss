@@ -1,0 +1,25 @@
+// Display a triangle
+// on the bottom of an active element
+// for tooltips and actice states!
+
+
+[class*="arrow"] { position: relative; }
+
+.arrow    { --t-size:  8px; }
+.arrow_l  { --t-size: 12px; }
+.arrow_xl { --t-size: 18px; }
+
+.arrow:before, 
+.arrow_l:before, 
+.arrow_xl:before {
+  content:      '';
+  position:     absolute;
+  left:         50%;
+  bottom:       calc(var(--t-size) * -1);
+  width:        0;
+  height:       0;
+  border-style: solid;
+  border-color: var(--color, var(--color-main-5)) transparent transparent transparent;
+  border-width: var(--t-size) var(--t-size) 0 var(--t-size);
+  transform:    translateX( calc(var(--t-size) * -1));
+}

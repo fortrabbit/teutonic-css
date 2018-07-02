@@ -1,0 +1,24 @@
+// Flexbox Grid spans
+// Fractional naming and units
+// because there is amount of cols defined upfront
+
+.flex {
+  // setting a standard for given widths
+  >.span-twothird,
+  >.span-half,
+  >.span-third,
+  >.span-quarter,
+  >.span-fifth,
+  >.span-media,
+  >.span-auto {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  >.span-full        { flex-basis: 100%; }
+  >.span-twothird    { flex-basis: 66.6666%; }
+  >.span-half        { flex-basis: 50%; }
+  >.span-third       { flex-basis: 33.3333%; }
+  >.span-quarter     { flex-basis: 25%; }
+  >.span-fifth       { flex-basis: 20%; }
+  >.span-auto        { flex:       0 0 auto; }
+}

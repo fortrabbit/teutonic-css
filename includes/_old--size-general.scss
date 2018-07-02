@@ -1,0 +1,8 @@
+// General sizes
+// Or maybe not
+
+$general-sizes:      "px", "xs", "s", "m", "l", "xl", "xxl", "xxxl";
+
+@each $size in $general-sizes {
+  [class*="s_#{$size}"] { --size: var(--space-#{$size}) }
+}

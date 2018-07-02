@@ -1,0 +1,50 @@
+// 
+// input[type=color].color
+
+.color {
+  --border-width: var(--space-px);
+  border: var(--border-width) solid;
+  //border: none;
+  outline: none;
+  background: transparent;
+  margin: 0;
+  width: 100%;
+  min-height: 20px;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+
+  &::-webkit-color-swatch-wrapper { padding: 0 }
+  &::-webkit-color-swatch         { border: none }
+  &::-moz-color-swatch            { border: none }
+
+  &::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+
+  &:focus    { outline: none }
+  &:disabled::-moz-color-swatch    { background: var(--color-main-2) !important }
+  &:disabled::-webkit-color-swatch { background: var(--color-main-2) !important }
+}
+
+.color-box {
+  position: relative;
+  padding: var(--padding, var(--space-s));
+  --border-width: var(--space-px);
+  border: var(--border-width) solid;
+  @include min-height;
+  > *:not(.color) { 
+    position: relative;
+    z-index: 1;
+  }
+  .color {
+    position: absolute;
+    border: 0;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+  }
+}

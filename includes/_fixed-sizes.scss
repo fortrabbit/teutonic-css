@@ -1,0 +1,12 @@
+// "Fixed" size containers
+
+$fixed-sizes: "s", "m", "l", "xl", "xxl";
+
+@each $size in $fixed-sizes {
+  .width_#{$size}      { width:      var(--space-#{$size}) }
+  .min-width_#{$size}  { min-width:  var(--space-#{$size}) }
+  .height_#{$size}     { height:     var(--space-#{$size}) }
+  .min-height_#{$size} { min-height: var(--space-#{$size}) }
+  .size_#{$size}       { width:      var(--space-#{$size}); height:     var(--space-#{$size}) }
+  .min-size_#{$size}   { min-width:  var(--space-#{$size}); min-height: var(--space-#{$size}) }
+}

@@ -1,0 +1,31 @@
+// Code highlighting
+// YEAH! one style for multiple code syntax engines
+
+// http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html
+
+// 1st class:    Rouge/Pygments     > .c, .cs, .go …
+// 2nd class:    Highlight.js       > .hljs-*
+// 3rd class:    Prism              > .token.*
+// Rainbow???
+
+pre {
+  .hll                                                                                      { background-color: hsl(60, 100%, 40%) }
+  .ge                                                                                       { font-style: italic } // Generic.Emph
+  .gs                                                                                       { font-weight: bold }  // Generic.Strong
+  .c, .cs, .cm, .hljs-comment, .token.comment, .token.prolog, .token.doctype, .token.cdata  { color: hsl(192, 99%, 40%); font-style: italic }
+  .gt,.gh,.nn,.nt, .hljs-tag                                                                { color: hsl(210, 20%, 44%) }
+  .na,.s,.nl,.nf, .hljs-function                                                            { color: hsl(270, 20%, 50%) }
+  .vc,.vg,.vi,.nv,.ni,.n, .token.function, .hljs-title                                      { color: hsl(280, 50%, 50%) }
+  .gu,.gd, .hljs-variable                                                                   { color: hsl(300, 70%, 35%) }
+  .nc,.no,.nb, .hljs-built_in, .namespace,                                                  { color: hsl(120, 90%, 30%) }
+  .k, .kc, .kd, .kn, .kp, .kr, .ne, .mf, .mh,  .mo,.gi, .n, .token.keyword, .hljs-keyword   { color: hsl(160, 60%, 40%) }
+  .mi, .m, .hljs-number                                                                     { color: hsl(150, 40%, 30%) }
+  .hljs-attr, .hljs-literal                                                                 { color: hsl(210, 30%, 30%) }
+  .cp, .c1, .hljs-preprocessor                                                              { color: hsl(200, 40%, 40%) }
+  .si, .sb, .sc, .sd, .s1, .s2, .se, .sh, .sx, .token.string, .hljs-string                  { color: hsl( 20, 60%, 30%) }
+  .gr, .kt, .gp, .sr, .hljs-regexp, .token.regex                                            { color: hsl(  0, 60%, 40%) }
+  .err                                                                                      { color: hsl(  0, 90%, 51%) }
+  .w,.o,.ow,.p, .token.operator, .token.punctuation                                         { color: hsl(  0,  0%, 50%) }
+  .go,.ss,.il,.bp, .hljs-name                                                               { color: hsl(  0,  5%, 40%) }
+  .nd, .hljs-params                                                                         { color: hsl(  0,  0%, 30%) }
+}

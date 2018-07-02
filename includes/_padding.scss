@@ -1,0 +1,32 @@
+// Padding classes
+//
+// Applies spacing in four directons (T,R,B,L) at once
+// Used for .box, .button, input …
+
+$padding-directions: (
+  top    : t,
+  right  : r,
+  bottom : b,
+  left   : l
+);
+
+$padding-sizes: "px", "xs", "s", "m", "l",  "xl";
+
+@each $size in $padding-sizes {
+  .pa_#{$size} { 
+    @include padding-fix($size);
+  }
+  .pa-v_#{$size} { 
+    padding-top:    var(--space-#{$size}); 
+    padding-bottom: var(--space-#{$size}); 
+  }
+  .pa-h_#{$size} { 
+    padding-left:   var(--space-#{$size}); 
+    padding-right:  var(--space-#{$size}); 
+  }
+  @each $direction, $letter in $padding-directions {
+    .pa-#{$letter}_#{$size} { padding-#{$direction}:  var(--space-#{$size}) }
+  }
+}
+
+.pa-no { padding: 0 !important }

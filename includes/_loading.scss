@@ -1,0 +1,30 @@
+// Loading
+// 
+// element in progress
+// was just click and now shows that something is happening
+
+.loading {
+  cursor: wait;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    @extend .striped;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: .7s;
+    animation-timing-function: linear;
+  }
+}
+
+// keyframes for in progress
+@keyframes move {
+  0%   { transform: translateX($stripe-size*-2.8); }
+  100% { transform: translateX(0); }
+}

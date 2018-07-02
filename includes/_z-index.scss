@@ -1,0 +1,13 @@
+// Z-Index
+// Shamelessly stolen from Tachyons
+// Z-index standards
+
+[class*="zi-"] { position: relative }
+
+.zi-0    { z-index: 0 }
+.zi-1    { z-index: 1 }
+.zi-2    { z-index: 2 }
+.zi-3    { z-index: 3 }
+.zi-4    { z-index: 4 }
+.zi-99   { z-index: 99 }
+.zi-max  { z-index: 9999 }

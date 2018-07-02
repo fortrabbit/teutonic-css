@@ -1,0 +1,42 @@
+// Disabled state
+// (helper class which is extended)
+// Indicate that something doesn't work at the moment
+
+.disabled, :disabled {
+  &:focus { box-shadow: none !important } // reset
+}
+
+.disabled, 
+:disabled {
+  cursor: not-allowed;
+  //* { color: var(--color-shadow-2) }
+
+  .mini-label { color: var(--color-main-3)  }
+  &:not(.loading):not(.range) {
+                   border-color: var(--color, var(--color-main-5));
+                          color: var(--color-main-3);
+               background-color: var(--color-bg-1, var(--color-prime-1));
+    &:hover  { background-color: var(--color-bg-1, var(--color-prime-1)) } // reset
+    @include striped;
+  }
+
+  // That's an ugly overwrite
+  &.button {
+    //color: var(--colored-3, var(--color-main-3));
+    border-color: var(--color-5, var(--color-main-5));
+    &:hover { background-color: var(--color--bg-1, var(--color-prime-1)) }
+  }
+
+  // disabled prime button
+  &.button.prime {
+    cursor: not-allowed;
+    
+    @mixin prime-disabled {
+             background-color: var(--color-bg-3, var(--color-prime-3));
+                        color: var(--color-prime-2);
+    }
+
+    @include prime-disabled;
+    &:hover { @include prime-disabled } // reset
+  }
+}

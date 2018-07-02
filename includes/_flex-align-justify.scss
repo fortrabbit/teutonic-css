@@ -1,0 +1,9 @@
+// Flex algin justify
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items
+
+.justify-start   { justify-content: flex-start } // ? default
+.justify-end     { justify-content: flex-end }
+.justify-center  { justify-content: center }
+.justify-between { justify-content: space-between }
+.justify-around  { justify-content: space-around }

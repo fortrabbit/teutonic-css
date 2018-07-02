@@ -1,0 +1,37 @@
+// Text helper classes
+
+.text-thin       { font-weight: lighter }
+.text-normal     { font-weight: normal  }
+.text-bold       { font-weight: bold    }
+.text-black      { font-weight: bolder  }
+.text-italic     { font-style:  italic  }
+.text-center     { text-align:  center  }
+.text-right      { text-align:  right   }
+
+// Select text
+.text-select-all { 
+          user-select: all;
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+}
+
+.text-select-no  {
+          user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+}
+.text-point-no   { pointer-events: none }
+
+
+// Typeface assignment
+
+.text-sans      { font-family: #{$font-sans}  }
+.text-serif     { font-family: #{$font-serif} }
+.text-mono      { font-family: #{$font-mono}  }
+
+input.text-mono,
+textarea.text-mono,
+.text-mono > input,
+.text-mono > textarea { font-family: #{$font-mono} }

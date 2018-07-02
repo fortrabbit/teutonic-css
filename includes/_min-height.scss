@@ -1,0 +1,12 @@
+// Min height 
+
+// Make an box as high as a box with text
+// so the box itself can have paddign classes as well as text-size classes
+// This while funky, is 100% bullet proof, currently in use with color input
+
+@mixin min-height {
+  --border-height-t:  calc(2 * var(--border-width));
+  --padding-height-t: calc(2 * var(--padding, var(--space-s)));
+  --line-height-t:    calc(var(--font-size) * var(--line-height));
+  min-height: calc(var(--line-height-t) + var(--padding-height-t) + var(--border-height-t));
+}

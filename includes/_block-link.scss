@@ -1,0 +1,15 @@
+// link block
+//
+// A link that is a block element
+
+.block-link {
+  display: block;
+  @extend .link;
+  @extend .text-clip;
+  padding: var(--padding, var(--space-xs));
+  &.active { 
+    color: var(--color-main-1) !important;
+    &:hover  { background-color: var(--color-main-5); }
+  }
+  &:hover { background-color: var(--color-prime-2); }
+}

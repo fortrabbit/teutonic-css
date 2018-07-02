@@ -1,0 +1,49 @@
+// Modular Scale for Typography
+
+// Switch:
+// if true: the browser will calculate sizes using (lot's of) calc
+// if false: SCSS will calculate the sizes! See if/else below
+$type-calc    : css !default;
+
+// Typography base settings
+$text-base   : 1em !default;             // 16px @ 100% body text, this needs to be EM for text-size-all
+$text-ratio  : $minor-third !default;    // 1.2
+
+// CSS Vars definition
+
+:root {
+  // Set params
+  --text-base   : #{$text-base};
+  --text-ratio  : #{$text-ratio};
+
+  // Do the calc in the browser …
+  @if $type-calc == "css" {
+
+    --text-xxxl : calc(var(--text-ratio) * var(--text-xxl));   
+    --text-xxl  : calc(var(--text-ratio) * var(--text-xl));    
+    --text-xl   : calc(var(--text-ratio) * var(--text-l));     
+    --text-l    : calc(var(--text-ratio) * var(--text-m));     // bigger  ⤴
+    --text-m    : var(--text-base);                            // base
+    --text-s    : calc(var(--text-m)     / var(--text-ratio)); // smaller ⤵
+    --text-xs   : calc(var(--text-s)     / var(--text-ratio));
+
+  // … or do the calc in SCSS
+  } @else {
+
+    $text-m     : $text-base;
+    --text-m    : #{$text-m};
+    $text-s     : $text-m / $text-ratio;
+    --text-s    : #{$text-s};
+    $text-xs    : $text-s / $text-ratio;
+    --text-xs   : #{$text-xs};
+    $text-l     : $text-ratio * $text-m;
+    --text-l    : #{$text-l};
+    $text-xl    : $text-ratio * $text-l;
+    --text-xl   : #{$text-xl};
+    $text-xxl   : $text-ratio * $text-xl;
+    --text-xxl  : #{$text-xxl};
+    $text-xxxl  : $text-ratio * $text-xxl;
+    --text-xxxl : #{$text-xxxl};
+
+  }
+}

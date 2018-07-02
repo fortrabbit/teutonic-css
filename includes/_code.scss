@@ -1,0 +1,48 @@
+// Code
+//
+// This styles pre and code blocks
+// Support <pre><code></code></pre> markup as in MarkDown
+
+// Pre as class and for standard elements
+pre, code,
+.text-mono,
+input.text-mono,
+textarea.text-mono,
+.text-mono > input,
+.text-mono > textarea {
+  font-family: #{$font-mono};
+}
+
+pre {
+  //display: block;
+  position: relative;
+  > code {
+    //display: block;
+    margin: 0;
+    color: var(--color, var(--color-main-5));
+    overflow-y: auto;
+    display: block;
+    //padding: var(--padding, var(--space-m)); // < MS Edge >
+    padding-top:    var(--padding, var(--space-m)); 
+    padding-bottom: var(--padding, var(--space-m)); 
+    padding-left:   var(--padding, var(--space-m)); 
+    padding-right:  var(--padding, var(--space-m));
+    font-size: var(--text-s);
+  }
+  -webkit-text-size-adjust: none;
+  .code { white-space: pre }
+}
+
+// Code in a pre block
+pre > code {
+  background-color: var(--color-bg-2, var(--color-main-2));
+}
+
+// Inline code within normal text
+div > code, p > code, li > code {
+  font-size: .9em; // code is a bit smaller than usual text
+  background-color: var(--color-bg-2, var(--color-main-2));
+  box-shadow: 0 0 0 1px var(--color-bg-2, var(--color-main-2));
+  white-space: nowrap;
+  user-select: all;
+}

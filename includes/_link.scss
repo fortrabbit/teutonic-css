@@ -1,0 +1,11 @@
+// Link-style
+//
+// Textlinks within text blocks or navigation
+// should remember visited pages (or sections)
+
+.link {
+  color:                   var(--color-bg-4, var(--color-prime-4));
+  &:hover         { color: var(--color-bg-5, var(--color-prime-5)) }
+  &:visited       { color: var(--color-bg-3, var(--color-prime-3)) }
+  &:visited:hover { color: var(--color-bg-4, var(--color-prime-4)) }
+}
