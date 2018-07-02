@@ -9,7 +9,11 @@
     "url": "git+https://github.com/fortrabbit/teutonic-css.git"
   },
   "keywords": [
-    "scss",
+    "CSS grid",
+    "CSS vars",
+    "Flexbox",
+    "CSS Custom Properties",
+    "SCSS",
     "framework"
   ],
   "unpkg": "teutonic.min.css",
@@ -18,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/fortrabbit/teutonic-css/issues"
   },
-  "homepage": "https://teutonic.io",
+  "homepage": "https://teutonic.co",
   "devDependencies": {
     "hoek": "~4.2",
     "browser-sync": "2.24.5",
