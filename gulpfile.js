@@ -32,7 +32,7 @@ gulp.task('default', function () {
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(header(banner, { pkg : pkg } ))
-    .pipe(gzip({ append: false }))
+    //.pipe(gzip({ append: false }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./'));
 });
