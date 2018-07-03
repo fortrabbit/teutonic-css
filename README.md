@@ -2,6 +2,7 @@
 
 Teutonic CSS is a modern web design system to develop responsive, accessible websites and web applications. It's based on CSS Variables for easy customization and extension. It features cool tech like CSS Grid. The source is a collection of SCSS modules, but you can use the minified version, as it can be modified using CSS Vars.
 
+This repo only contains the pure SCSS files to build the CSS from, also check out the [Teutonic Docs](https://github.com/fortrabbit/teutonic-css-docs).
 
 ## Philosophy
 
@@ -130,7 +131,7 @@ Browse the GitHub repo and grab whatever you like. The main `teutonic.scss` file
 
 The GitHub repo contains the SCSS source files and the documentation files. The docs are based on Jekyll and are rendered as GitHub pages here.
 
-* [The docs on GitHub](https://github.com/fortrabbit/teutonic-docs)
+* [The Teutonic docs on GitHub](https://github.com/fortrabbit/teutonic-css-docs)
 
 ## Key- & Buzz-words
 
