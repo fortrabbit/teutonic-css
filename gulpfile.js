@@ -24,15 +24,23 @@ var banner = ['/**',
   ' */',
   ''].join('\n');
 
-// Generate
-// minified & gzipped CSS
-// for production
+// Generate minified CSS
 gulp.task('default', function () {
   return gulp.src(styleSourceFile)
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(header(banner, { pkg : pkg } ))
-    //.pipe(gzip({ append: false }))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./'));
+});
+
+// Generate minified & gzipped CSS
+gulp.task('gzipped', function () {
+  return gulp.src(styleSourceFile)
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(cleanCSS())
+    .pipe(header(banner, { pkg : pkg } ))
+    .pipe(gzip({ append: true }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./'));
 });
