@@ -1,12 +1,18 @@
 # TODO for Teutonic CSS
 
 
+
 ## IDEAS
 
-* [ ] **Make it slimmer**: Throw out unused classes!
+* [ ] Check if the min css is really min
+* [ ] Include min + gzip in built and as file
+* [ ] Naming vars: `dash` instead of `lodash` for sizes? 
 * [ ] All SCSS vars in one file?
+* [ ] Redo and rethink Modular Scale for spacing / Manuel…
+* [ ] Separate invert color generation to make that a bit more clear
 * [ ] fine tune `.range` alignment across browser (in .range-box)
 * [ ] Better Checkboxes for MS Edge with `::-ms-check`
+* [ ] **Make it slimmer**: Throw out unused classes!
 * [ ] Light border style > less strong border everywhere! (searchbox top)
 * [ ] Rethink border and text color classes > separate color and border-color?
 * [ ] Better mobile screen styles, normalize
