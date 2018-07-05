@@ -7,7 +7,7 @@ $type-calc    : css !default;
 
 // Typography base settings
 $text-base   : 1em !default;             // 16px @ 100% body text, this needs to be EM for text-size-all
-$text-ratio  : $minor-third !default;    // 1.2
+$text-ratio  : $major-third !default;    // 1.2 > see "modular-scale-presets.scss"
 
 // CSS Vars definition
 
@@ -21,7 +21,7 @@ $text-ratio  : $minor-third !default;    // 1.2
 
     --text-xxxl : calc(var(--text-ratio) * var(--text-xxl));   
     --text-xxl  : calc(var(--text-ratio) * var(--text-xl));    
-    --text-xl   : calc(var(--text-ratio) * var(--text-l));     
+    --text-xl   : calc(var(--text-ratio) * var(--text-l));     // calc(var(--text-ratio) * (var(--text-ratio) * var(--text-m));
     --text-l    : calc(var(--text-ratio) * var(--text-m));     // bigger  ⤴
     --text-m    : var(--text-base);                            // base
     --text-s    : calc(var(--text-m)     / var(--text-ratio)); // smaller ⤵
