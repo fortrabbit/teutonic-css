@@ -4,6 +4,8 @@
 
 ## IDEAS
 
+* [ ] Transitions & Delays (Manuel) > 
+* [ ] Predefined Cool Gradients (Manuel) > https://webgradients.com/, https://gradients.cssgears.com/
 * [ ] Redo and rethink Modular Scale for spacing / Manuel…
 * [ ] Check if the min css is really min
 * [ ] Naming vars: `dash` instead of `lodash` for sizes? 
