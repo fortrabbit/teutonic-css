@@ -100,10 +100,14 @@
 
 // CSS Columns
 @import "includes/columns";            // И - column content wrapping
-@import "includes/gap-no";             // Overlapping boxes for all grid flavors
-@import "includes/gaps";               // Gaps for vertically stacked elems
+@import "includes/column-breakpoints"; // Breakpoints for columns
+@import "includes/column-gaps";        // Gutters for columns
+@import "includes/column-borders";     // Border Columns
+
 
 // Layout helpers
+@import "includes/gap-no";             // Overlapping boxes for all grid flavors
+@import "includes/gaps";               // Gaps for vertically stacked elems
 @import "includes/box-shadow";         // Box shadow
 @import "includes/border-size";        // borders size helpers
 @import "includes/margin";             // margin classes for layout

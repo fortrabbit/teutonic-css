@@ -1,0 +1,12 @@
+// Columns count
+
+// How many columns should be painted?
+
+.columns {
+  // Column count 
+  column-count: 2; // default column count
+  // Custom column count
+  @for $i from 3 through 10 {
+    &.cols-#{$i} { column-count: #{$i} }
+  }
+}

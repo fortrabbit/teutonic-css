@@ -4,7 +4,7 @@
 
 ## IDEAS
 
-* [ ] Transitions & Delays (Manuel) > 
+* [ ] Transitions & Delays (Manuel) … http://tachyons.io/docs/themes/hovers/ ???
 * [ ] Predefined Cool Gradients (Manuel) > https://webgradients.com/, https://gradients.cssgears.com/
 * [ ] Redo and rethink Modular Scale for spacing / Manuel…
 * [ ] Check if the min css is really min
@@ -12,7 +12,7 @@
 * [ ] All SCSS vars in one file?
 * [ ] Separate invert color generation to make that a bit more clear
 * [ ] fine tune `.range` alignment across browser (in .range-box)
-* [ ] Better Checkboxes for MS Edge with `::-ms-check`
+* [ ] Better Checkboxes for MS Edge with `::-ms-check` ?
 * [ ] **Make it slimmer**: Throw out unused classes!
 * [ ] Light border style > less strong border everywhere! (searchbox top)
 * [ ] Rethink border and text color classes > separate color and border-color?
@@ -66,6 +66,7 @@
 
 ## Done (lately)
 
+* [x] Divide `_columns.scss` in multiple files.
 * [x] Include min + gzip in built and as file
 * [x] ~~??? Refactor: .labelinput > .input (remove the last one?)~~
 * [x] Enhanced color matrix > each color in 5 shades.

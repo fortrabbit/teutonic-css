@@ -1,0 +1,15 @@
+// CSS Columns breakpoints
+
+@media #{$tablet}  { 
+   @for $i from 2 through 6 {
+     .columns.cols-#{$i}-t { column-count: #{$i} }
+   }
+  /* Hello. You there? */
+  .columns.collapse-t { column-count: 1 !important; }
+}
+@media #{$phone}   { 
+   @for $i from 2 through 6 {
+     .columns.cols-#{$i}-p { column-count: #{$i} }
+   }
+  .columns.collapse-p { column-count: 1 !important; }
+}
