@@ -1,9 +1,14 @@
 # TODO for Teutonic CSS
 
+* [ ] Fix table border color when invert > see text sizes
+* [ ] Rethink line-height > see text sizes
+* [ ] Establish GitHub Release
 
 
 ## IDEAS
 
+* [ ] Loop over color map everywhere
+* [ ] Separated tinted and tinted background as two files
 * [ ] Transitions & Delays (Manuel) … http://tachyons.io/docs/themes/hovers/ ???
 * [ ] Predefined Cool Gradients (Manuel) > https://webgradients.com/, https://gradients.cssgears.com/
 * [ ] Redo and rethink Modular Scale for spacing / Manuel…
