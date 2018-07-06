@@ -23,8 +23,19 @@ var banner = ['/**',
   ' */',
   ''].join('\n');
 
+
+// Generate large CSS
 // Generate minified CSS
-gulp.task('default', function () {
+gulp.task('large', function () {
+  return gulp.src(styleSourceFile)
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(header(banner, { pkg : pkg } ))
+    .pipe(gulp.dest('./'));
+});
+
+// Generate minified CSS
+// That's the one to be included with UNKG
+gulp.task('minified', function () {
   return gulp.src(styleSourceFile)
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(cleanCSS())
@@ -43,3 +54,8 @@ gulp.task('gzipped', function () {
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./'));
 });
+
+
+// Default Task
+// to run all builds
+gulp.task('default', ['large', 'minified', 'gzipped']);
