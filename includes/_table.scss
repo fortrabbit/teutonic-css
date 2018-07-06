@@ -13,8 +13,7 @@ th { text-align: left }
   border-collapse: collapse;
 
   td, th {
-    overflow: hidden;
-    vertical-align: top;
+    vertical-align: middle;
     padding: var(--space-s);
     border: var(--space-px) solid;
   }
@@ -48,12 +47,4 @@ th { text-align: left }
   &.space    {
     td, th { @include padding-fix(m) } // MS Edge fix
   }
-}
-
-// Ugly hack for inverted table rows...
-tr.inverted, .table.inverted {
-  th:first-child, td:first-child  { border-left-color:  var(--color-main-1) }
-  th:first-child, td:first-child  { border-left-color:  var(--color-main-1) }
-  th:last-child,  td:last-child   { border-right-color: var(--color-main-1) }
-  th:last-child,  td:last-child   { border-right-color: var(--color-main-1) }
 }

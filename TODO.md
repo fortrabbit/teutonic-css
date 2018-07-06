@@ -1,9 +1,5 @@
 # TODO for Teutonic CSS
 
-* [ ] Fix table border color when invert > see text sizes
-* [ ] Rethink line-height > see text sizes
-* [ ] Establish GitHub Release
-
 
 ## IDEAS
 
@@ -71,6 +67,9 @@
 
 ## Done (lately)
 
+* [ ] ~~Fix table border color when invert > see text sizes~~ < no overwrites!
+* [x] Rethink line-height > see text sizes
+* [x] Establish GitHub Release
 * [x] Divide `_columns.scss` in multiple files.
 * [x] Include min + gzip in built and as file
 * [x] ~~??? Refactor: .labelinput > .input (remove the last one?)~~
