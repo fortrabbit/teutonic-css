@@ -1,6 +1,6 @@
 /**
  * teutonic-css - Yet another CSS framework — versatile, well documented.
- * @version v0.7.2
+ * @version v0.7.3
  * @link https://teutonic.co
  * @license MIT
  */
@@ -1681,6 +1681,7 @@ a.box, button.box, label.box {
   display: grid;
   grid-template-columns: repeat(var(--grid-cols), calc(var(--col-size) - var(--gap-subst)));
   grid-gap: var(--gap-space, 0px);
+  gap: var(--gap-space, 0px);
   grid-auto-flow: dense; }
 
 .span-1 {
@@ -2008,6 +2009,7 @@ a.box, button.box, label.box {
   .flex > .button,
   .flex > .input {
     display: block;
+    overflow: hidden;
     flex-grow: 1; }
 
 .flex .flex {

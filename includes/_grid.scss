@@ -27,5 +27,6 @@
   // Default                    12 columns              8.333333%      - ………
   grid-template-columns: repeat(var(--grid-cols), calc(var(--col-size) - var(--gap-subst)));
   grid-gap: var(--gap-space, 0px);
+  gap: var(--gap-space, 0px); // supposed standard
   grid-auto-flow: dense; // opinionated
 }

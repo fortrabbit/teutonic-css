@@ -1,7 +1,7 @@
 // Basics
 
 * { 
-  box-sizing: border-box; // inline padding everywhere
+  box-sizing: border-box; // inline padding everywhere, hello IE!
   color: var(--color, var(--color-main-5));
   -webkit-overflow-scrolling: touch; // scrolling smooth as butter Momentum Scrolling TODO
 }
