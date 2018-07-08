@@ -3,7 +3,9 @@
   "version": "0.7.3",
   "description": "Yet another CSS framework — versatile, well documented.",
   "directories": {},
-  "scripts": {},
+  "scripts": {
+    "prepublishOnly" : "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fortrabbit/teutonic-css.git"
