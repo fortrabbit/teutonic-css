@@ -1,8 +1,12 @@
 # TODO for Teutonic CSS
 
+* [ ] Fix span width issues, with content in multi lines.
+
 
 ## IDEAS
 
+* [ ] Implement and try new `gap` classes (Flexbox, CSS Columns, CSS Grid)
+* [ ] Flex-grow helper classes!
 * [ ] Loop over color map everywhere
 * [ ] Separated tinted and tinted background as two files
 * [ ] Transitions & Delays (Manuel) … http://tachyons.io/docs/themes/hovers/ ???
