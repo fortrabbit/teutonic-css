@@ -4,7 +4,7 @@
   "description": "Yet another CSS framework — versatile, well documented.",
   "directories": {},
   "scripts": {
-    "prepublishOnly" : "gulp"
+    "prepublishOnly": "gulp"
   },
   "repository": {
     "type": "git",
