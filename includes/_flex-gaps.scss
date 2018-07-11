@@ -4,7 +4,7 @@
 
 $f-gap-sizes: "xs", "s", "m", "l", "xl";
 
-$gap-calc: "asd";
+$gap-calc: "margin";
 
 @if $gap-calc == "margin" {
   @each $gap-size in $f-gap-sizes {
