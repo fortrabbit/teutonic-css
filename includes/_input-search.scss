@@ -1,14 +1,13 @@
 // Fancy .search in a box
 
 
-
 .search-box {
 
   $magnifier-position: .8rem;
   $magnifier-space:   2.2rem;
   position: relative;
   padding: 0;
-  overflow: hidden;
+  //overflow: hidden; // removed for Alfolia docSearch…
   &:before {
     $size: 24px;
     position: absolute;
@@ -25,7 +24,9 @@
     left: var(--padding, #{$magnifier-position});
   }
   // make some space for the magnifier icon
-  .input[type="search"]   { padding-left: #{$magnifier-space} }
+  .input[type="search"]   { 
+    padding-left: #{$magnifier-space};
+  }
   
   // extra class to put the magnifier to the right
   // + when in form-box, magnifier is also on the right
