@@ -27,6 +27,8 @@ $radio-check-size: 12px;
   cursor: pointer;
   transition: box-shadow .4s;
   border-radius: 0;// ios7 reset 
+
+  align-self: center; // opinionated smart default for checkboxed within flex rows
   &:focus {
     //border-color: var(--colored, var(--color-main-5));
     box-shadow: 0 0 0 var(--space-px) var(--color, var(--color-main-5));
