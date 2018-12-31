@@ -419,7 +419,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   display: inline-block;
   cursor: pointer;
   transition: box-shadow .4s;
-  border-radius: 0; }
+  border-radius: 0;
+  align-self: center; }
   .radio:focus, .checkbox:focus {
     box-shadow: 0 0 0 var(--space-px) var(--color, var(--color-main-5)); }
   .radio:disabled, .checkbox:disabled {
@@ -1686,6 +1687,9 @@ a.box, button.box, label.box {
 .span-1 {
   grid-column: span 1; }
 
+.span-y-1 {
+  grid-column: span 1; }
+
 .start-1 {
   grid-column-start: 1; }
 
@@ -1699,6 +1703,9 @@ a.box, button.box, label.box {
   grid-row-end: 1; }
 
 .span-2 {
+  grid-column: span 2; }
+
+.span-y-2 {
   grid-column: span 2; }
 
 .start-2 {
@@ -1716,6 +1723,9 @@ a.box, button.box, label.box {
 .span-3 {
   grid-column: span 3; }
 
+.span-y-3 {
+  grid-column: span 3; }
+
 .start-3 {
   grid-column-start: 3; }
 
@@ -1729,6 +1739,9 @@ a.box, button.box, label.box {
   grid-row-end: 3; }
 
 .span-4 {
+  grid-column: span 4; }
+
+.span-y-4 {
   grid-column: span 4; }
 
 .start-4 {
@@ -1746,6 +1759,9 @@ a.box, button.box, label.box {
 .span-5 {
   grid-column: span 5; }
 
+.span-y-5 {
+  grid-column: span 5; }
+
 .start-5 {
   grid-column-start: 5; }
 
@@ -1759,6 +1775,9 @@ a.box, button.box, label.box {
   grid-row-end: 5; }
 
 .span-6 {
+  grid-column: span 6; }
+
+.span-y-6 {
   grid-column: span 6; }
 
 .start-6 {
@@ -1776,6 +1795,9 @@ a.box, button.box, label.box {
 .span-7 {
   grid-column: span 7; }
 
+.span-y-7 {
+  grid-column: span 7; }
+
 .start-7 {
   grid-column-start: 7; }
 
@@ -1789,6 +1811,9 @@ a.box, button.box, label.box {
   grid-row-end: 7; }
 
 .span-8 {
+  grid-column: span 8; }
+
+.span-y-8 {
   grid-column: span 8; }
 
 .start-8 {
@@ -1806,6 +1831,9 @@ a.box, button.box, label.box {
 .span-9 {
   grid-column: span 9; }
 
+.span-y-9 {
+  grid-column: span 9; }
+
 .start-9 {
   grid-column-start: 9; }
 
@@ -1819,6 +1847,9 @@ a.box, button.box, label.box {
   grid-row-end: 9; }
 
 .span-10 {
+  grid-column: span 10; }
+
+.span-y-10 {
   grid-column: span 10; }
 
 .start-10 {
@@ -1836,6 +1867,9 @@ a.box, button.box, label.box {
 .span-11 {
   grid-column: span 11; }
 
+.span-y-11 {
+  grid-column: span 11; }
+
 .start-11 {
   grid-column-start: 11; }
 
@@ -1849,6 +1883,9 @@ a.box, button.box, label.box {
   grid-row-end: 11; }
 
 .span-12 {
+  grid-column: span 12; }
+
+.span-y-12 {
   grid-column: span 12; }
 
 .start-12 {
@@ -1866,6 +1903,9 @@ a.box, button.box, label.box {
 .span-13 {
   grid-column: span 13; }
 
+.span-y-13 {
+  grid-column: span 13; }
+
 .start-13 {
   grid-column-start: 13; }
 
@@ -1879,6 +1919,9 @@ a.box, button.box, label.box {
   grid-row-end: 13; }
 
 .span-14 {
+  grid-column: span 14; }
+
+.span-y-14 {
   grid-column: span 14; }
 
 .start-14 {
@@ -1896,6 +1939,9 @@ a.box, button.box, label.box {
 .span-15 {
   grid-column: span 15; }
 
+.span-y-15 {
+  grid-column: span 15; }
+
 .start-15 {
   grid-column-start: 15; }
 
@@ -1909,6 +1955,9 @@ a.box, button.box, label.box {
   grid-row-end: 15; }
 
 .span-16 {
+  grid-column: span 16; }
+
+.span-y-16 {
   grid-column: span 16; }
 
 .start-16 {
