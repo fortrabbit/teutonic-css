@@ -66,7 +66,7 @@ No JavaScript here. Bring your own JS implementation.
 
 ### Name origins
 
-_"Teutonic by nature"_ is a philosophy by fortrabbit, 
+_"Teutonic by nature"_ is a philosophy by fortrabbit …
 
 
 ### The color system
