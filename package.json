@@ -26,12 +26,12 @@
   },
   "homepage": "https://teutonic.co",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.10.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
     "gulp-gzip": "^1.4.2",
     "gulp-header": "^2.0.7",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "hoek": "~5.0"
+    "hoek": "~6.1"
   }
 }
