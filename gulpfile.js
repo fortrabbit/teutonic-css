@@ -1,21 +1,29 @@
+"use strict";
+
 // INIT plugins
 
-var gulp       = require('gulp');
-var sass       = require('gulp-sass');
-var cleanCSS   = require('gulp-clean-css');
-var gzip       = require('gulp-gzip');
-var rename     = require('gulp-rename');
-var header     = require('gulp-header');
-
+const gulp      = require('gulp');
+const sass      = require('gulp-sass');
+const cleanCSS  = require('gulp-clean-css');
+const gzip      = require('gulp-gzip');
+const rename    = require('gulp-rename');
+const header    = require('gulp-header');
+const del       = require('del');
 
 // VARs
 
-var styleSourceFile = './teutonic.scss'; // The one file including all imports
+const styleSourceFile = './teutonic.scss'; // The one file including all imports
+
+const buildFiles = [
+  'teutonic.css',
+  'teutonic.min.css',
+  'teutonic.css.min.gz'
+]
 
 // Header banner
 
-var pkg = require('./package.json');
-var banner = ['/**',
+const pkg = require('./package.json');
+const banner = ['/**',
   ' * <%= pkg.name %> - <%= pkg.description %>',
   ' * @version v<%= pkg.version %>',
   ' * @link <%= pkg.homepage %>',
@@ -26,36 +34,51 @@ var banner = ['/**',
 
 // Generate large CSS
 // Generate minified CSS
-gulp.task('large', function () {
-  return gulp.src(styleSourceFile)
+function large() {
+  return gulp
+    .src(styleSourceFile)
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(header(banner, { pkg : pkg } ))
     .pipe(gulp.dest('./'));
-});
+}
 
 // Generate minified CSS
 // That's the one to be included with UNKG
-gulp.task('minified', function () {
-  return gulp.src(styleSourceFile)
+
+function minified() {
+  return gulp
+    .src(styleSourceFile)
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(header(banner, { pkg : pkg } ))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./'));
-});
+}
 
 // Generate minified & gzipped CSS
-gulp.task('gzipped', function () {
-  return gulp.src(styleSourceFile)
+function gzipped() {
+  return gulp
+    .src(styleSourceFile)
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(header(banner, { pkg : pkg } ))
     .pipe(gzip({ append: true }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./'));
-});
+}
+
+// Delete the build files
+function clean() {
+  return del(buildFiles);
+}
+
+// Tasks
+gulp.task("large", large);
+gulp.task("minified", minified);
+gulp.task("gzipped", gzipped);
+gulp.task("clean", clean);
 
 
 // Default Task
 // to run all builds
-gulp.task('default', ['large', 'minified', 'gzipped']);
+gulp.task('default', gulp.series('clean', gulp.parallel('large', 'minified', 'gzipped')));
