@@ -77,8 +77,4 @@ gulp.task("large", large);
 gulp.task("minified", minified);
 gulp.task("gzipped", gzipped);
 gulp.task("clean", clean);
-
-
-// Default Task
-// to run all builds
 gulp.task('default', gulp.series('clean', gulp.parallel('large', 'minified', 'gzipped')));
