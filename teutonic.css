@@ -1,6 +1,6 @@
 /**
  * teutonic-css - Yet another CSS framework — versatile, well documented.
- * @version v0.7.6
+ * @version v0.7.7
  * @link https://teutonic.co
  * @license MIT
  */
@@ -1688,7 +1688,7 @@ a.box, button.box, label.box {
   grid-column: span 1; }
 
 .span-y-1 {
-  grid-column: span 1; }
+  grid-row: span 1; }
 
 .start-1 {
   grid-column-start: 1; }
@@ -1706,7 +1706,7 @@ a.box, button.box, label.box {
   grid-column: span 2; }
 
 .span-y-2 {
-  grid-column: span 2; }
+  grid-row: span 2; }
 
 .start-2 {
   grid-column-start: 2; }
@@ -1724,7 +1724,7 @@ a.box, button.box, label.box {
   grid-column: span 3; }
 
 .span-y-3 {
-  grid-column: span 3; }
+  grid-row: span 3; }
 
 .start-3 {
   grid-column-start: 3; }
@@ -1742,7 +1742,7 @@ a.box, button.box, label.box {
   grid-column: span 4; }
 
 .span-y-4 {
-  grid-column: span 4; }
+  grid-row: span 4; }
 
 .start-4 {
   grid-column-start: 4; }
@@ -1760,7 +1760,7 @@ a.box, button.box, label.box {
   grid-column: span 5; }
 
 .span-y-5 {
-  grid-column: span 5; }
+  grid-row: span 5; }
 
 .start-5 {
   grid-column-start: 5; }
@@ -1778,7 +1778,7 @@ a.box, button.box, label.box {
   grid-column: span 6; }
 
 .span-y-6 {
-  grid-column: span 6; }
+  grid-row: span 6; }
 
 .start-6 {
   grid-column-start: 6; }
@@ -1796,7 +1796,7 @@ a.box, button.box, label.box {
   grid-column: span 7; }
 
 .span-y-7 {
-  grid-column: span 7; }
+  grid-row: span 7; }
 
 .start-7 {
   grid-column-start: 7; }
@@ -1814,7 +1814,7 @@ a.box, button.box, label.box {
   grid-column: span 8; }
 
 .span-y-8 {
-  grid-column: span 8; }
+  grid-row: span 8; }
 
 .start-8 {
   grid-column-start: 8; }
@@ -1832,7 +1832,7 @@ a.box, button.box, label.box {
   grid-column: span 9; }
 
 .span-y-9 {
-  grid-column: span 9; }
+  grid-row: span 9; }
 
 .start-9 {
   grid-column-start: 9; }
@@ -1850,7 +1850,7 @@ a.box, button.box, label.box {
   grid-column: span 10; }
 
 .span-y-10 {
-  grid-column: span 10; }
+  grid-row: span 10; }
 
 .start-10 {
   grid-column-start: 10; }
@@ -1868,7 +1868,7 @@ a.box, button.box, label.box {
   grid-column: span 11; }
 
 .span-y-11 {
-  grid-column: span 11; }
+  grid-row: span 11; }
 
 .start-11 {
   grid-column-start: 11; }
@@ -1886,7 +1886,7 @@ a.box, button.box, label.box {
   grid-column: span 12; }
 
 .span-y-12 {
-  grid-column: span 12; }
+  grid-row: span 12; }
 
 .start-12 {
   grid-column-start: 12; }
@@ -1904,7 +1904,7 @@ a.box, button.box, label.box {
   grid-column: span 13; }
 
 .span-y-13 {
-  grid-column: span 13; }
+  grid-row: span 13; }
 
 .start-13 {
   grid-column-start: 13; }
@@ -1922,7 +1922,7 @@ a.box, button.box, label.box {
   grid-column: span 14; }
 
 .span-y-14 {
-  grid-column: span 14; }
+  grid-row: span 14; }
 
 .start-14 {
   grid-column-start: 14; }
@@ -1940,7 +1940,7 @@ a.box, button.box, label.box {
   grid-column: span 15; }
 
 .span-y-15 {
-  grid-column: span 15; }
+  grid-row: span 15; }
 
 .start-15 {
   grid-column-start: 15; }
@@ -1958,7 +1958,7 @@ a.box, button.box, label.box {
   grid-column: span 16; }
 
 .span-y-16 {
-  grid-column: span 16; }
+  grid-row: span 16; }
 
 .start-16 {
   grid-column-start: 16; }
