@@ -6,9 +6,11 @@
 
 ## IDEAS
 
+* [ ] Triangle positioning classes?
+* [ ] Rethink Triangle VS inverted
 * [ ] Implement and try new `gap` classes (Flexbox, CSS Columns, CSS Grid)
 * [ ] Flex-grow helper classes!
-* [ ] Loop over color map everywhere
+* [ ] Loop over color maps everywhere
 * [ ] Separated tinted and tinted background as two files
 * [ ] Transitions & Delays (Manuel) … http://tachyons.io/docs/themes/hovers/ ???
 * [ ] Predefined Cool Gradients (Manuel) > https://webgradients.com/, https://gradients.cssgears.com/

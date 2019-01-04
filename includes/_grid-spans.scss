@@ -2,7 +2,7 @@
 
 @for $i from 1 through 16 {
   .span-#{$i}    { grid-column:  span #{$i} } // Span cols across tracks horizontally
-  .span-y-#{$i}  { grid-column:  span #{$i} } // Span cols across tracks verically
+  .span-y-#{$i}  { grid-row:     span #{$i} } // Span cols across tracks verically
   .start-#{$i}   { grid-column-start: #{$i} } // Define a horizontal start point
   .end-#{$i}     { grid-column-end:   #{$i} } // Define an horizontal end point
   .start-y-#{$i} { grid-row-start:    #{$i} } // Define a vertical start point
