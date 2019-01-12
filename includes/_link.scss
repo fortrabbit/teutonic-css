@@ -2,10 +2,9 @@
 //
 // Textlinks within text blocks or navigation
 // should remember visited pages (or sections)
+// respects: :visited status, child elements & coloring
 
-.link, .link * {
-  color:                   var(--color-bg-4, var(--color-prime-4));
-  &:hover         { color: var(--color-bg-5, var(--color-prime-5)) }
-  &:visited       { color: var(--color-bg-3, var(--color-prime-3)) }
-  &:visited:hover { color: var(--color-bg-4, var(--color-prime-4)) }
-}
+.link, .link *                             { color: var(--color-bg-4, var(--color-prime-4)) }
+.link:hover, .link:hover *                 { color: var(--color-bg-5, var(--color-prime-5)) }
+.link:visited, .link:visited *             { color: var(--color-bg-3, var(--color-prime-3)) }
+.link:visited:hover, .link:visited:hover * { color: var(--color-bg-4, var(--color-prime-4)) }
