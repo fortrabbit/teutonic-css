@@ -5,10 +5,10 @@ $gap-sizes: "xs", "s", "m", "l";
 
 // Exclude Flexbox and CSS grids but include CSS Columns!
 @each $gap-size in $gap-sizes {
-  .gap_#{$gap-size}:not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child)
+  .gap_#{$gap-size}:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child)
   { margin-top: var(--space-#{$gap-size}) }
 }
 
-.gap-custom:not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
+.gap-custom:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
   margin-top: var(--gap-size)
 }
