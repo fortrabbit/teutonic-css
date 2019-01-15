@@ -1,6 +1,6 @@
 /**
  * teutonic-css - Yet another CSS framework — versatile, well documented.
- * @version v0.7.8
+ * @version v0.7.9
  * @link https://teutonic.co
  * @license MIT
  */
@@ -855,12 +855,15 @@ abbr {
 
 .link, p a, td a, li a, .block-link, .link *, p a *, td a *, li a *, .block-link * {
   color: var(--color-bg-4, var(--color-prime-4)); }
-  .link:hover, p a:hover, td a:hover, li a:hover, .block-link:hover, .link *:hover, p a *:hover, td a *:hover, li a *:hover, .block-link *:hover {
-    color: var(--color-bg-5, var(--color-prime-5)); }
-  .link:visited, p a:visited, td a:visited, li a:visited, .block-link:visited, .link *:visited, p a *:visited, td a *:visited, li a *:visited, .block-link *:visited {
-    color: var(--color-bg-3, var(--color-prime-3)); }
-  .link:visited:hover, p a:visited:hover, td a:visited:hover, li a:visited:hover, .block-link:visited:hover, .link *:visited:hover, p a *:visited:hover, td a *:visited:hover, li a *:visited:hover, .block-link *:visited:hover {
-    color: var(--color-bg-4, var(--color-prime-4)); }
+
+.link:hover, p a:hover, td a:hover, li a:hover, .block-link:hover, .link:hover *, p a:hover *, td a:hover *, li a:hover *, .block-link:hover * {
+  color: var(--color-bg-5, var(--color-prime-5)); }
+
+.link:visited, p a:visited, td a:visited, li a:visited, .block-link:visited, .link:visited *, p a:visited *, td a:visited *, li a:visited *, .block-link:visited * {
+  color: var(--color-bg-3, var(--color-prime-3)); }
+
+.link:visited:hover, p a:visited:hover, td a:visited:hover, li a:visited:hover, .block-link:visited:hover, .link:visited:hover *, p a:visited:hover *, td a:visited:hover *, li a:visited:hover *, .block-link:visited:hover * {
+  color: var(--color-bg-4, var(--color-prime-4)); }
 
 .text-thin {
   font-weight: lighter; }

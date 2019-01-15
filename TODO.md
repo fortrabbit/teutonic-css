@@ -1,5 +1,7 @@
 # TODO for Teutonic CSS
 
+
+* [ ] Fix `.gap_s` with `.column` not to interfere with columns!
 * [ ] Review `.link` in `.inverted`
 * [ ] Fix span width issues, with content in multi lines.
 * [ ] Implement webpack scripts
