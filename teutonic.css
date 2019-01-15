@@ -2373,19 +2373,19 @@ a.box, button.box, label.box {
   .flex.gap-no > .span-fifth {
     flex-basis: calc(20%      + var(--space-px)); }
 
-.gap_xs:not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
+.gap_xs:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
   margin-top: var(--space-xs); }
 
-.gap_s:not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
+.gap_s:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
   margin-top: var(--space-s); }
 
-.gap_m:not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
+.gap_m:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
   margin-top: var(--space-m); }
 
-.gap_l:not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
+.gap_l:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
   margin-top: var(--space-l); }
 
-.gap-custom:not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
+.gap-custom:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
   margin-top: var(--gap-size); }
 
 [class*="bs_"] {
