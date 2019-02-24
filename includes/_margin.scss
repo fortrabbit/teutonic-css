@@ -6,18 +6,18 @@
 // with negative margins
 $margin-sizes:  "px", "xs", "s", "m", "l", "xl", "xxl";
 @each $size in $margin-sizes {
-  .ma-t_#{$size}  { margin-top:              var(--space-#{$size}); } // postive
-  .ma-t_#{$size}- { margin-top:    calc(-1 * var(--space-#{$size}); } // negative
-  .ma-r_#{$size}  { margin-right:            var(--space-#{$size}); } // postive
-  .ma-r_#{$size}- { margin-right:  calc(-1 * var(--space-#{$size}); } // negative
-  .ma-b_#{$size}  { margin-bottom:           var(--space-#{$size}); } // postive
-  .ma-b_#{$size}- { margin-bottom: calc(-1 * var(--space-#{$size}); } // negative
-  .ma-l_#{$size}  { margin-left:             var(--space-#{$size}); } // postive
-  .ma-l_#{$size}- { margin-left:   calc(-1 * var(--space-#{$size}); } // negative
-  .ma-v_#{$size}  { margin-top:              var(--space-#{$size}); margin-bottom:           var(--space-#{$size}); } // postive
-  .ma-v_#{$size}- { margin-top:    calc(-1 * var(--space-#{$size}); margin-bottom: calc(-1 * var(--space-#{$size}); } // negative
-  .ma-h_#{$size}  { margin-left:             var(--space-#{$size}); margin-right:            var(--space-#{$size}); } // postive
-  .ma-h_#{$size}- { margin-left:   calc(-1 * var(--space-#{$size}); margin-right:  calc(-1 * var(--space-#{$size}); } // negative
+  .ma-t_#{$size}  { margin-top:              var(--space-#{$size});  } // postive
+  .ma-t_#{$size}- { margin-top:    calc(-1 * var(--space-#{$size})); } // negative
+  .ma-r_#{$size}  { margin-right:            var(--space-#{$size});  } // postive
+  .ma-r_#{$size}- { margin-right:  calc(-1 * var(--space-#{$size})); } // negative
+  .ma-b_#{$size}  { margin-bottom:           var(--space-#{$size});  } // postive
+  .ma-b_#{$size}- { margin-bottom: calc(-1 * var(--space-#{$size})); } // negative
+  .ma-l_#{$size}  { margin-left:             var(--space-#{$size});  } // postive
+  .ma-l_#{$size}- { margin-left:   calc(-1 * var(--space-#{$size})); } // negative
+  .ma-v_#{$size}  { margin-top:              var(--space-#{$size});  margin-bottom:           var(--space-#{$size});  } // postive
+  .ma-v_#{$size}- { margin-top:    calc(-1 * var(--space-#{$size})); margin-bottom: calc(-1 * var(--space-#{$size})); } // negative
+  .ma-h_#{$size}  { margin-left:             var(--space-#{$size});  margin-right:            var(--space-#{$size});  } // postive
+  .ma-h_#{$size}- { margin-left:   calc(-1 * var(--space-#{$size})); margin-right:  calc(-1 * var(--space-#{$size})); } // negative
 }
 
 // Reset!
