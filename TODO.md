@@ -2,6 +2,7 @@
 
 
 * [ ] Fix `.gap_s` with `.column` not to interfere with columns!
+* [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`
 * [ ] Fix span width issues, with content in multi lines.
 * [ ] Implement webpack scripts
