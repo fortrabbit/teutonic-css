@@ -26,7 +26,7 @@
   },
   "homepage": "https://teutonic.co",
   "devDependencies": {
-    "del": "^5.0.0",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-gzip": "^1.4.2",
