@@ -1017,8 +1017,7 @@ h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover
 
 .article a {
   text-decoration: underline;
-  text-decoration-skip-ink: auto;
-  }
+  text-decoration-skip-ink: auto; }
 
 .article pre {
   margin: var(--space-xs) calc(-1 * var(--space-m)); }
