@@ -35,7 +35,7 @@
     "gulp-sass": "^4.1.0",
     "hoek": "~6.1"
   },
-  "dependencies": {
+  "peerDependencies": {
     "node-sass": "^5.0.0"
   }
 }
