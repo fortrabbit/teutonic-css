@@ -5,8 +5,7 @@
 * [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`
 * [ ] Fix span width issues, with content in multi lines.
-* [ ] Implement webpack scripts
-* [ ] Either update to Gulp 4 or skip Gulp totally
+* [ ] Skip Gulp totally in favor of Webpack or something else
 * [ ] CSS grid justify/align classes !!!! https://alligator.io/css/align-justify/
 
 ## IDEAS
