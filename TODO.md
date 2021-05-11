@@ -1,6 +1,6 @@
 # TODO for Teutonic CSS
 
-
+* [ ] Rewrite for Flex Gap
 * [ ] Fix `.gap_s` with `.column` not to interfere with columns!
 * [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`
