@@ -8,7 +8,8 @@
     "create-css": "sass teutonic.scss teutonic.css --no-source-map",
     "minify-css": "cleancss teutonic.css -o teutonic.min.css",
     "gzip": "gzip -c teutonic.min.css > teutonic.min.css.gz",
-    "build": "npm run create-css && npm run minify-css && npm run gzip"
+    "build": "npm run create-css && npm run minify-css && npm run gzip",
+    "test": ""
   },
   "repository": {
     "type": "git",
