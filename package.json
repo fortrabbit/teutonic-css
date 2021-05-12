@@ -1,9 +1,11 @@
 {
   "name": "teutonic-css",
-  "version": "0.7.14",
+  "version": "0.7.15",
   "description": "Yet another CSS framework — versatile, well documented.",
   "directories": {},
-  "files": ["*"],
+  "files": [
+    "*"
+  ],
   "scripts": {
     "create-css": "sass teutonic.scss teutonic.css --no-source-map",
     "minify-css": "cleancss teutonic.css -o teutonic.min.css",
