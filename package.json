@@ -3,6 +3,7 @@
   "version": "0.7.14",
   "description": "Yet another CSS framework — versatile, well documented.",
   "directories": {},
+  "files": ["*"],
   "scripts": {
     "create-css": "sass teutonic.scss teutonic.css --no-source-map",
     "minify-css": "cleancss teutonic.css -o teutonic.min.css",
