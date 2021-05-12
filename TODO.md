@@ -5,7 +5,6 @@
 * [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`
 * [ ] Fix span width issues, with content in multi lines.
-* [ ] Skip Gulp totally in favor of Webpack or something else
 * [ ] CSS grid justify/align classes !!!! https://alligator.io/css/align-justify/
 
 ## IDEAS
@@ -78,6 +77,7 @@
 
 ## Done (lately)
 
+* [x] Skip Gulp totally in favor of Webpack or something else (NPM run scripts)
 * [x] ".span-y-2" classes for CSS grid
 * [ ] ~~Fix table border color when invert > see text sizes~~ < no overwrites!
 * [x] Rethink line-height > see text sizes
