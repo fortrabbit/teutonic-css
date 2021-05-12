@@ -59,7 +59,7 @@ $text-ratio  : $minor-third !default;    // 1.2
     --space-xl  : calc(var(--space-ratio) * var(--space-l));
     --space-xxl : calc(var(--space-ratio) * var(--space-xl));
 
-  } @elseif $css-calc == "css-detailed" {
+  } @else if $css-calc == "css-detailed" {
 
     // This does the same as above, 
     // but you can better the calc of the calc

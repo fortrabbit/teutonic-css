@@ -35,7 +35,7 @@ $space-ratio   : $major-tenth !default;    // 2.5 (see modular scale presets)
     --space-xxl : calc(var(--space-ratio) * var(--space-xl));
 
   // Do the calc in the browser, but not encapsulated
-  } @elseif $space-calc == "css-detailed" {
+  } @else if $space-calc == "css-detailed" {
 
     // This does the same as above, 
     // but you can better the calc of the calc
@@ -51,7 +51,7 @@ $space-ratio   : $major-tenth !default;    // 2.5 (see modular scale presets)
     --space-xxl : calc( var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * ( var(--space-ratio) * var(--space-base) )))));
 
     // Do the calc in the browser, but not encapsulated and DENSE
-  } @elseif $space-calc == "css-detailed-dense" {
+  } @else if $space-calc == "css-detailed-dense" {
 
     // No spaces version (punctation bug in MS Edge?)
     --space-xs  : var(--space-base);
