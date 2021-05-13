@@ -1,14 +1,15 @@
 # TODO for Teutonic CSS
 
 * [ ] Rewrite for Flex Gap
+* [ ] Optional visited class
 * [ ] Fix `.gap_s` with `.column` not to interfere with columns!
 * [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`
-* [ ] Fix span width issues, with content in multi lines.
 * [ ] CSS grid justify/align classes !!!! https://alligator.io/css/align-justify/
 
 ## IDEAS
 
+* [ ] Fix span width issues, with content in multi lines.
 * [ ] Triangle positioning classes?
 * [ ] Rethink Triangle VS inverted
 * [ ] Implement and try new `gap` classes (Flexbox, CSS Columns, CSS Grid)
