@@ -1,18 +1,25 @@
 # TODO for Teutonic CSS
 
+* [ ] 
+* [ ] Accept border color for boxes and forms and some buttons (no border?)
 * [ ] Rewrite for Flex Gap
+  * [x] Post issue on Stackoverflow for Flex, see if there will be an answer
+        https://stackoverflow.com/questions/67607454/flexbox-percentage-based-spans-are-overusing-available-space-with-gap
+  * [ ] If not, remove the need to half Flexbox kinda fixed layouts
+* [ ] Fix the issue with too large grid parents 
 * [ ] Optional visited class
 * [ ] Fix `.gap_s` with `.column` not to interfere with columns!
 * [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`
-* [ ] CSS grid justify/align classes !!!! https://alligator.io/css/align-justify/
+* [ ] CSS grid justify/align classes https://alligator.io/css/align-justify/
+* [ ] Implement and try new `gap` classes (Flexbox, CSS Columns, CSS Grid)
+  * [ ] Remove Flexbox redundant flex-basis classes (can be done with grid)
 
 ## IDEAS
 
 * [ ] Fix span width issues, with content in multi lines.
 * [ ] Triangle positioning classes?
 * [ ] Rethink Triangle VS inverted
-* [ ] Implement and try new `gap` classes (Flexbox, CSS Columns, CSS Grid)
 * [ ] Flex-grow helper classes!
 * [ ] Loop over color maps everywhere
 * [ ] Separated tinted and tinted background as two files

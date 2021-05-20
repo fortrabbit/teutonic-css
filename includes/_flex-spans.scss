@@ -22,3 +22,12 @@
   >.span-fifth       { flex-basis: 20%; }
   >.span-auto        { flex:       0 0 auto; }
 }
+
+// .flex.gap_s {
+//   >.span-full        { flex-basis: calc(100% - var(--space-s));  }
+//   >.span-twothird    { flex-basis: calc(66.6666% - var(--space-s)); }
+//   >.span-half        { flex-basis: calc(50% - var(--space-s)); }
+//   >.span-third       { flex-basis: calc(33.3333% - var(--space-s)); }
+//   >.span-quarter     { flex-basis: calc(25% - var(--space-s)); }
+//   >.span-fifth       { flex-basis: calc(20%; - var(--space-s)); }
+// }

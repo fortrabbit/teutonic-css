@@ -4,9 +4,9 @@
 
 // Passive box
 .box {
-  padding: var(--space-s); // default padding
   --border-width: var(--space-px);
-  border: var(--border-width) solid;
+  padding: var(--space-s); // default padding
+  border: var(--border-width) solid var(--border-color, var(--color));
   color: var(--color, var(--color-main-5));
   position: relative;
   display: block; // just in case
