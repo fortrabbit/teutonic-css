@@ -1,13 +1,16 @@
 # TODO for Teutonic CSS
 
 * [ ] 
-* [ ] Accept border color for boxes and forms and some buttons (no border?)
-* [ ] Rewrite for Flex Gap
-  * [x] Post issue on Stackoverflow for Flex, see if there will be an answer
-        https://stackoverflow.com/questions/67607454/flexbox-percentage-based-spans-are-overusing-available-space-with-gap
-  * [ ] If not, remove the need to half Flexbox kinda fixed layouts
-* [ ] Fix the issue with too large grid parents 
 * [ ] Optional visited class
+* [ ] Accept border color for boxes and forms and some buttons (no border?)
+* [x] Rewrite for Flex Gap
+  * [x] Post issue on Stackoverflow for Flex:
+        https://stackoverflow.com/questions/67607454/flexbox-percentage-based-spans-are-overusing-available-space-with-gap
+  * [x] If not, remove the need to half Flexbox kinda fixed layouts
+* [ ] Post an issue on the nested flexbox grid issues
+      https://jsfiddle.net/franklaemmer/2kot4dhp/
+* [x] Remove the `no-wrap` & introduce the `wrap` class instead to avoid render issues
+* [ ] Fix the issue with too large grid parents 
 * [ ] Fix `.gap_s` with `.column` not to interfere with columns!
 * [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`

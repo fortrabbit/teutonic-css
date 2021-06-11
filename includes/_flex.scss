@@ -5,8 +5,7 @@
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
-  &.wrap-no { flex-wrap: nowrap;}
+  &.wrap { flex-wrap: wrap;}
 
   > div,
   > a,
