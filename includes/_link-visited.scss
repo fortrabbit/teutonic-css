@@ -1,0 +1,8 @@
+// Visited Link-style
+//
+// Addition to the .link class within text blocks or navigation
+// should remember visited pages (or sections)
+// respects: :visited status, child elements & coloring
+
+.link.visited:visited, .link.visited:visited *             { color: var(--color-bg-3, var(--color-prime-3)) }
+.link.visited:visited:hover, .link.visited:visited:hover * { color: var(--color-bg-4, var(--color-prime-4)) }

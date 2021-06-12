@@ -46,7 +46,8 @@
 
 // Typography
 @import "includes/typography";          // font, text sizes etc
-@import "includes/link";                // a link in text (visited …)
+@import "includes/link";                // a link in text
+@import "includes/link-visited";        // a link in text (visited …)
 @import "includes/text-helpers";        // standard text classes
 @import "includes/text-sizes";          // small to large text, mapping on headlines
 @import "includes/text-size-all";       // make everything bigger
