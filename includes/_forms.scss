@@ -56,7 +56,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
 
 .input, .textarea {
 
-  @include bevel();
+  //@include bevel();
 
   // Placeholder text styling
   &::placeholder           { color: var(--color-shadow-2);}
