@@ -2,11 +2,11 @@
 :root {
   --main-1: #f4f4f1;
   --main-2: #e8e9e2;
-  --main-3: #989a7e;
+  --main-3: #a3a58d;
   --main-4: #464738;
   --main-5: #2a2b22;
-  --prime-1: #f0eef6;
-  --prime-2: #dbd6f5;
+  --prime-1: #e0deed;
+  --prime-2: #d1caf2;
   --prime-3: #8067fe;
   --prime-4: #3617cf;
   --prime-5: #2e1f7a;
@@ -233,7 +233,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   font-family: var(--font-standard);
   text-align: left;
   line-height: var(--line-height);
-  border: var(--space-px) solid;
+  border: var(--space-px) solid var(--border-color, var(--color-main-5));
   outline: none;
   background-color: var(--color-bg-1, var(--color-prime-1));
   color: var(--color, var(--color-main-5));
@@ -737,7 +737,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 229939393px;
 }
 [type=range].range::-ms-thumb {
-  background-color: #dbd6f5;
+  background-color: #d1caf2;
   background-image: linear-gradient(transparent, var(--color-shadow-2));
   border: 1px solid #2a2b22;
   border-radius: 50%;
@@ -991,11 +991,11 @@ abbr {
   color: var(--color-bg-5, var(--color-prime-5));
 }
 
-.link:visited, .block-link:visited, p a:visited, td a:visited, li a:visited, .link:visited *, .block-link:visited *, p a:visited *, td a:visited *, li a:visited * {
+.link.visited:visited, .visited.block-link:visited, p a.visited:visited, td a.visited:visited, li a.visited:visited, .link.visited:visited *, .visited.block-link:visited *, p a.visited:visited *, td a.visited:visited *, li a.visited:visited * {
   color: var(--color-bg-3, var(--color-prime-3));
 }
 
-.link:visited:hover, .block-link:visited:hover, p a:visited:hover, td a:visited:hover, li a:visited:hover, .link:visited:hover *, .block-link:visited:hover *, p a:visited:hover *, td a:visited:hover *, li a:visited:hover * {
+.link.visited:visited:hover, .visited.block-link:visited:hover, p a.visited:visited:hover, td a.visited:visited:hover, li a.visited:visited:hover, .link.visited:visited:hover *, .visited.block-link:visited:hover *, p a.visited:visited:hover *, td a.visited:visited:hover *, li a.visited:visited:hover * {
   color: var(--color-bg-4, var(--color-prime-4));
 }
 
@@ -1477,9 +1477,9 @@ pre .nd, pre .hljs-params {
 }
 
 .box {
-  padding: var(--space-s);
   --border-width: var(--space-px);
-  border: var(--border-width) solid;
+  padding: var(--space-s);
+  border: var(--border-width) solid var(--border-color, var(--color));
   color: var(--color, var(--color-main-5));
   position: relative;
   display: block;
@@ -2500,10 +2500,9 @@ a.box:hover, button.box:hover, label.box:hover {
 }
 .flex {
   display: flex;
-  flex-wrap: wrap;
 }
-.flex.wrap-no {
-  flex-wrap: nowrap;
+.flex.wrap {
+  flex-wrap: wrap;
 }
 .flex > div,
 .flex > a,
@@ -2554,83 +2553,23 @@ a.box:hover, button.box:hover, label.box:hover {
 }
 
 .flex.gap_xs {
-  margin-left: calc(-1 * var(--gap-space, var(--space-xs)));
-  margin-bottom: calc(-1 * var(--gap-space, var(--space-xs)));
-}
-.flex.gap_xs > * {
-  padding-left: var(--gap-space, var(--space-xs));
-  padding-bottom: var(--gap-space, var(--space-xs));
-}
-
-.flex.gap-h_xs {
-  margin-left: calc(-1 * var(--gap-space, var(--space-xs))) !important;
-}
-.flex.gap-h_xs > * {
-  padding-left: var(--gap-space, var(--space-xs)) !important;
+  gap: var(--space-xs);
 }
 
 .flex.gap_s {
-  margin-left: calc(-1 * var(--gap-space, var(--space-s)));
-  margin-bottom: calc(-1 * var(--gap-space, var(--space-s)));
-}
-.flex.gap_s > * {
-  padding-left: var(--gap-space, var(--space-s));
-  padding-bottom: var(--gap-space, var(--space-s));
-}
-
-.flex.gap-h_s {
-  margin-left: calc(-1 * var(--gap-space, var(--space-s))) !important;
-}
-.flex.gap-h_s > * {
-  padding-left: var(--gap-space, var(--space-s)) !important;
+  gap: var(--space-s);
 }
 
 .flex.gap_m {
-  margin-left: calc(-1 * var(--gap-space, var(--space-m)));
-  margin-bottom: calc(-1 * var(--gap-space, var(--space-m)));
-}
-.flex.gap_m > * {
-  padding-left: var(--gap-space, var(--space-m));
-  padding-bottom: var(--gap-space, var(--space-m));
-}
-
-.flex.gap-h_m {
-  margin-left: calc(-1 * var(--gap-space, var(--space-m))) !important;
-}
-.flex.gap-h_m > * {
-  padding-left: var(--gap-space, var(--space-m)) !important;
+  gap: var(--space-m);
 }
 
 .flex.gap_l {
-  margin-left: calc(-1 * var(--gap-space, var(--space-l)));
-  margin-bottom: calc(-1 * var(--gap-space, var(--space-l)));
-}
-.flex.gap_l > * {
-  padding-left: var(--gap-space, var(--space-l));
-  padding-bottom: var(--gap-space, var(--space-l));
-}
-
-.flex.gap-h_l {
-  margin-left: calc(-1 * var(--gap-space, var(--space-l))) !important;
-}
-.flex.gap-h_l > * {
-  padding-left: var(--gap-space, var(--space-l)) !important;
+  gap: var(--space-l);
 }
 
 .flex.gap_xl {
-  margin-left: calc(-1 * var(--gap-space, var(--space-xl)));
-  margin-bottom: calc(-1 * var(--gap-space, var(--space-xl)));
-}
-.flex.gap_xl > * {
-  padding-left: var(--gap-space, var(--space-xl));
-  padding-bottom: var(--gap-space, var(--space-xl));
-}
-
-.flex.gap-h_xl {
-  margin-left: calc(-1 * var(--gap-space, var(--space-xl))) !important;
-}
-.flex.gap-h_xl > * {
-  padding-left: var(--gap-space, var(--space-xl)) !important;
+  gap: var(--space-xl);
 }
 
 @media (max-width:800px) {
@@ -2863,7 +2802,7 @@ a.box:hover, button.box:hover, label.box:hover {
   }
 }
 .columns {
-  column-gap: var(--gap-size, 0);
+  gap: var(--gap-size, 0);
 }
 .columns.gap-no {
   margin-left: 1px;
@@ -2873,22 +2812,22 @@ a.box:hover, button.box:hover, label.box:hover {
   margin-bottom: -1px;
 }
 .columns.gap_px, .columns.gap-h_px {
-  column-gap: var(--space-px);
+  gap: var(--space-px);
 }
 .columns.gap_xs, .columns.gap-h_xs {
-  column-gap: var(--space-xs);
+  gap: var(--space-xs);
 }
 .columns.gap_s, .columns.gap-h_s {
-  column-gap: var(--space-s);
+  gap: var(--space-s);
 }
 .columns.gap_m, .columns.gap-h_m {
-  column-gap: var(--space-m);
+  gap: var(--space-m);
 }
 .columns.gap_l, .columns.gap-h_l {
-  column-gap: var(--space-l);
+  gap: var(--space-l);
 }
 .columns.gap_xl, .columns.gap-h_xl {
-  column-gap: var(--space-xl);
+  gap: var(--space-xl);
 }
 
 .columns.gap-bo_px {
