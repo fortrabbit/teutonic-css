@@ -16,7 +16,7 @@ This repo only contains the pure SCSS files to build the CSS from, also check ou
 
 ## Feature galore
 
-* 3 grids: CSS Grid, Flexbox, Columns
+* 2 grids: CSS Grid, Columns
 * For modern browsers only
 * CSS Vars customization
 * CSS only, BYO JavaScript
@@ -123,7 +123,9 @@ Teutonic CSS is mostly "desktop first" framework. Simply because, it was develop
 
 ### SCSS built system
 
-Browse the GitHub repo and grab whatever you like. The main `teutonic.scss` file contains all the include within the include folder. 
+Browse the GitHub repo and grab whatever you like. The main `teutonic.scss` file contains all the include within the include folder.
+
+There are NPM build scripts included here. Check the `package.json` for more.
 
 * [Usage guide on the website](https://teutonic.co/usage)
 
