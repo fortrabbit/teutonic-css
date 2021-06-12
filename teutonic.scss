@@ -67,19 +67,20 @@
 @import "includes/code-highlight";     // syntax highlighting for different engines
 
 // Interface & navigation
-@import "includes/box";                // recantgles
+@import "includes/box";                // rectangles
 @import "includes/active-tab";         // tab style active
 @import "includes/media";              // media container
 @import "includes/aspect-ratio";       // 16:9, 4:3, 2:1 … sizes for media
 @import "includes/fixed-sizes";        // "fixed" sizes and min-sizes
 @import "includes/viewport-sizes";     // viewport based min sizes
 @import "includes/arrow";              // triangle, active class addition
-@import "includes/tooltip";            // :hover toolip based on data-tooltip
+@import "includes/tooltip";            // :hover tooltip based on data-tooltip
 @import "includes/striped";            // striped state
 @import "includes/loading";            // loading state
 @import "includes/position-helpers";   // relative, absolute, sticky …
 @import "includes/position-defaults";  // top right bottom left etc
 @import "includes/disabled";           // helper class for disabled stuff
+@import "includes/kbd";                // keyboard styles
 
 // CSS Grid
 @import "includes/grid";               // CSS grid base — Z style rows
