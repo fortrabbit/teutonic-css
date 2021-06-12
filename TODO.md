@@ -1,25 +1,22 @@
 # TODO for Teutonic CSS
 
-* [ ] 
-* [ ] Optional visited class
-* [ ] Accept border color for boxes and forms and some buttons (no border?)
-* [x] Rewrite for Flex Gap
-  * [x] Post issue on Stackoverflow for Flex:
-        https://stackoverflow.com/questions/67607454/flexbox-percentage-based-spans-are-overusing-available-space-with-gap
-  * [x] If not, remove the need to half Flexbox kinda fixed layouts
-* [ ] Post an issue on the nested flexbox grid issues
-      https://jsfiddle.net/franklaemmer/2kot4dhp/
-* [x] Remove the `no-wrap` & introduce the `wrap` class instead to avoid render issues
+* [ ] Have `kbd` styles
+* [ ] Accept `--border-color` on form elements
+* [ ] Accept `--border-color` for boxes and some buttons (no border?)
 * [ ] Fix the issue with too large grid parents 
 * [ ] Fix `.gap_s` with `.column` not to interfere with columns!
 * [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`
 * [ ] CSS grid justify/align classes https://alligator.io/css/align-justify/
-* [ ] Implement and try new `gap` classes (Flexbox, CSS Columns, CSS Grid)
-  * [ ] Remove Flexbox redundant flex-basis classes (can be done with grid)
+* [ ] Remove Flexbox redundant flex-basis classes (can be done with grid)
+* [x] Implement and try new `gap` classes (Flexbox, CSS Columns, CSS Grid)
+* [x] Optional .visited class
+* [x] Remove the need to half Flexbox kinda fixed layouts
+* [x] Remove the `no-wrap` & introduce the `wrap` class
 
 ## IDEAS
 
+* [ ] Post an issue on the nested flexbox grid issues (wrap)
 * [ ] Fix span width issues, with content in multi lines.
 * [ ] Triangle positioning classes?
 * [ ] Rethink Triangle VS inverted
@@ -37,7 +34,6 @@
 * [ ] Better Checkboxes for MS Edge with `::-ms-check` ?
 * [ ] **Make it slimmer**: Throw out unused classes!
 * [ ] Light border style > less strong border everywhere! (searchbox top)
-* [ ] Rethink border and text color classes > separate color and border-color?
 * [ ] Better mobile screen styles, normalize
 * [ ] `pa_xl-t` < responsive padding classes
 * [ ] Find a way to make read-widths calculated and less dependent (no magic numbers please!)
