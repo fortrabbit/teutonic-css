@@ -9,6 +9,7 @@
   padding: var(--space-s);
   position: relative;
   border-style: solid;
+  color: var(--color-bg-4, var(--color-prime-4));
   //@include emboss();
 
   &:focus  { @extend .focusstyle; }
@@ -34,11 +35,12 @@
     background-color: var(--color-bg-5, var(--color-prime-5));
   }
 }
-.ghost {
-  background-color: transparent;
-  color: var(--color-bg-4, var(--color-prime-4));
-  background-image: none !important;
-  &:hover {
-    background-color: var(--color-bg-2, var(--color-prime-2));
-  }
-}
+
+// .ghost {
+//   background-color: transparent;
+//   color: var(--color-bg-4, var(--color-prime-4));
+//   background-image: none !important;
+//   &:hover {
+//     background-color: var(--color-bg-2, var(--color-prime-2));
+//   }
+// }

@@ -1,6 +1,9 @@
 # TODO for Teutonic CSS
 
-* [ ] Have `kbd` styles
+* [ ] `.boxi.active` state quick fix
+* [ ] Rethink `.active` in general some more ( not so verbose )
+* [ ] Rethink no gap group for outline less styles
+* [ ] Select triangle, checkbox and radio in prime color (finish)
 * [ ] Accept `--border-color` on form elements
 * [ ] Accept `--border-color` for boxes and some buttons (no border?)
 * [ ] Fix the issue with too large grid parents 
@@ -9,6 +12,10 @@
 * [ ] Review `.link` in `.inverted`
 * [ ] CSS grid justify/align classes https://alligator.io/css/align-justify/
 * [ ] Remove Flexbox redundant flex-basis classes (can be done with grid)
+* [x] Rethink or remove ghost button when not borders
+* [x] passive Box = `.box`, Interactive Box = `.boxi`
+* [x] `.box` = background color (no outline by default)
+* [x] Have basic `kbd` styles
 * [x] Implement and try new `gap` classes (Flexbox, CSS Columns, CSS Grid)
 * [x] Optional .visited class
 * [x] Remove the need to half Flexbox kinda fixed layouts

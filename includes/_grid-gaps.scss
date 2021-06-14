@@ -1,7 +1,7 @@
 // Grid CSS gaps
 
 // Gutter sizes
-$gaps : "xs", "s", "m";
+$gaps : "px", "xs", "s", "m";
 
 @each $gap in $gaps {
   [class*="grid"].gap_#{$gap}   { --gap-space     : var(--space-#{$gap}) }

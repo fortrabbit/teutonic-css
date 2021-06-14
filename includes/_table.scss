@@ -8,14 +8,27 @@ th { text-align: left }
 // standard
 .table, .article table {
 
-  font-variant-numeric: lining-nums tabular-nums; // whishful thinking
+  font-variant-numeric: lining-nums tabular-nums; // wishful thinking
   width: 100%;
   border-collapse: collapse;
+
+  tr {
+    background-color: var(--color-main-2);
+  }
+  tr.tri {
+    background-color: var(--color-prime-1);
+    cursor: pointer;
+    &:hover {
+      background-color: var(--color-prime-2);
+    }
+  }
 
   td, th {
     vertical-align: middle;
     padding: var(--space-s);
     border: var(--space-px) solid;
+    //border-color: var(--border-color, var(--color-main-5));
+    border-color: var(--color-main-1);
   }
 
   &.bo-v {

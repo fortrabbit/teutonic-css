@@ -1,6 +1,6 @@
 // Active states
 
-.box.active, .button.active, label.active, .active {
+.box.active, .button.active, label.active {
   background-color:   var(--color, var(--color-main-5));
   border-color:       var(--color, var(--color-main-5));
   color:              var(--color-bg-1, var(--color-main-1));

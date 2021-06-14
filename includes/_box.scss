@@ -3,10 +3,11 @@
 // Simple box shapes are interface building blocks. 
 
 // Passive box
-.box {
+.box, .boxi {
   --border-width: var(--space-px);
   padding: var(--space-s); // default padding
   border: var(--border-width) solid var(--border-color, var(--color));
+  background-color: var(--color-bg-1, var(--color-main-2));
   color: var(--color, var(--color-main-5));
   position: relative;
   display: block; // just in case
@@ -18,8 +19,8 @@
   }
 }
 
-// Active box
-a.box, button.box, label.box {
+// Interactive box
+a.box, button.box, label.box, .boxi {
   cursor: pointer;
   background-color: var(--color-bg-1, var(--color-prime-1));
   &:hover {
@@ -27,4 +28,8 @@ a.box, button.box, label.box {
     z-index: 3;
   }
   &:focus { @extend .focusstyle; }
+}
+
+.boxi.active {
+  background-color: var(--color-bg-2, var(--color-prime-2));
 }
