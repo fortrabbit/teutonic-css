@@ -11,14 +11,14 @@
   $tri-size: 14px;
   $tri-half: $tri-size/4;
 
-  @mixin triangle($bg-color) {
-    background-image: 
-      linear-gradient( 45deg, transparent 50%, #{$bg-color} 50%), 
-      linear-gradient(-45deg, transparent 50%, #{$bg-color} 50%), 
-      linear-gradient(to top, #{$tri-color}, #{$tri-color});
-  }
+//  @mixin triangle($bg-color) {
+//    background-image: 
+//      linear-gradient( 45deg, transparent 50%, #{$bg-color} 50%), 
+//      linear-gradient(-45deg, transparent 50%, #{$bg-color} 50%), 
+//      linear-gradient(to top, #{$tri-color}, #{$tri-color});
+//  }
 
-            @include triangle('var(--color-bg-1, var(--color-prime-1))');
+//            @include triangle('var(--color-bg-1, var(--color-prime-1))');
   &:hover { @include triangle('var(--color-bg-2, var(--color-prime-2))') }
 
   
