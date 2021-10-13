@@ -13,10 +13,10 @@ th { text-align: left }
   border-collapse: collapse;
 
   tr {
-    background-color: var(--color-main-2);
+    //background-color: var(--color-main-2);
   }
   tr.tri {
-    background-color: var(--color-prime-1);
+    background-color: var(--color-main-2);
     cursor: pointer;
     &:hover {
       background-color: var(--color-prime-2);

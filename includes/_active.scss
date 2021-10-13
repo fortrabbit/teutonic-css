@@ -1,14 +1,14 @@
 // Active states
 
-.box.active, .button.active, label.active {
+.box.active, .button.active, label.active, .boxi.active {
   background-color:   var(--color, var(--color-main-5));
-  border-color:       var(--color, var(--color-main-5));
-  color:              var(--color-bg-1, var(--color-main-1));
-  * { color:          var(--color-bg-1, var(--color-main-1)) }
+  //border-color:       var(--color, var(--color-main-5));
+  //color:              var(--color-bg-1, var(--color-main-1));
+  //* { color:          var(--color-bg-1, var(--color-main-1)) }
   z-index: 3;
   &:hover, &:focus { 
     background-color: var(--color, var(--color-main-5));
     cursor: default;
-    color: var(--color-bg-1, var(--color-main-1));
+    //color: var(--color-bg-1, var(--color-main-1));
   }
 }

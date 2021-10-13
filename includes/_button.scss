@@ -8,30 +8,31 @@
 .button {
   padding: var(--space-s);
   position: relative;
-  border-style: solid;
+  border: 0;
+  //border-style: solid;
   color: var(--color-bg-4, var(--color-prime-4));
   //@include emboss();
 
   &:focus  { @extend .focusstyle; }
   &:hover, &:focus { z-index: 2 }
   &.active { 
-      &:hover {
-        cursor: default;
-        background-color: currentColor;
-        color:            currentColor;
-      }
+    &:hover {
+      cursor: default;
+      background-color: currentColor;
+      color:            currentColor;
+    }
   }
-  &:hover, &:focus { color: var(--color, var(--color-main-5)) }
+  &:hover { color: var(--color, var(--color-main-5)) }
 }
-.prime {
-  border-width: var(--space-px);
-  border-color: var(--border-color, var(--color-main-5));
-  color: var(--color-bg-1, var(--color-prime-1));
+.button.prime {
+  //border-width: var(--space-px);
+  //border-color: var(--border-color, var(--color-main-5));
+  color: var(--color-bg-5, var(--color-prime-1));
   background-color: var(--color-bg-4, var(--color-prime-4));
   cursor: pointer;  // for HTML buttons
-  &:hover, &:focus {
+  &:hover {
     z-index: 2;
-    color: var(--color-bg-1, var(--color-prime-1));
+    //color: var(--color-bg-1, var(--color-prime-1));
     background-color: var(--color-bg-5, var(--color-prime-5));
   }
 }

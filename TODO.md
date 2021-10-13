@@ -1,5 +1,8 @@
 # TODO for Teutonic CSS
 
+* [ ] Fix .select https://github.com/filamentgroup/select-css icon, maybe hand drawn chevron?
+* [ ] Use math.div instead of slash for calculations in SASS (see below)
+* [ ] Use `aspect-ratio: 4/3;` 
 * [ ] `.boxi.active` state quick fix
 * [ ] Rethink `.active` in general some more ( not so verbose )
 * [ ] Rethink no gap group for outline less styles
@@ -21,6 +24,12 @@
 * [x] Optional .visited class
 * [x] Remove the need to half Flexbox kinda fixed layouts
 * [x] Remove the `no-wrap` & introduce the `wrap` class
+
+## Slash division deprecated
+
+DEPRECATION WARNING: Using / for division is deprecated and will be removed in Dart Sass 2.0.0.
+Recommendation: math.div($thumb-size, 2)
+More info and automated migrator: https://sass-lang.com/d/slash-div
 
 ## IDEAS
 

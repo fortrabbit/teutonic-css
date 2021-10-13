@@ -1,7 +1,7 @@
 // Inverted
 // Turns everything in a faux-inverted style
 
-.inverted {
+.inverted, [data-theme="dark"] {
 
   // Manually re-setting vars (for now)
   --color-main-1: var(--main-5);
