@@ -2,7 +2,7 @@
 //
 // Textlinks within text blocks or navigation
 
-.link, .link *                          { color: var(--color-bg-4, var(--color-prime-4)) }
-.link:hover, .link:hover *              { color: var(--color-bg-5, var(--color-prime-5)) }
+.link, .link *                  { color: var(--color-bg-4, var(--color-prime-4)); cursor: pointer }
+.link:hover, .link:hover *      { color: var(--color-bg-5, var(--color-prime-5)) }
 
-.active.link, .active .link             { color: var(--color-bg-2, var(--color-prime-1)) }
+.active.link, .active .link     { color: var(--color-bg-2, var(--color-prime-1)) }

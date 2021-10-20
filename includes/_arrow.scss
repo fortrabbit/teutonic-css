@@ -1,11 +1,11 @@
 // Display a triangle
 // on the bottom of an active element
-// for tooltips and actice states!
+// for tooltips and active states!
 
 
 [class*="arrow"] { position: relative; }
 
-.arrow    { --t-size:  8px; }
+.arrow    { --t-size:  6px; }
 .arrow_l  { --t-size: 12px; }
 .arrow_xl { --t-size: 18px; }
 

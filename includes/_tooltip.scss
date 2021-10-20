@@ -7,45 +7,53 @@
 // before:  the triangle shape
 
 
-[data-tooltip]{
+[data-tooltip] {
 
   position: relative;
   z-index: 1000000;
 
-  &:before, &:after {
-    font-family: var(--font-standard); // reset
-    transition: transform .8s;
-    transform: translateX(-50%) translateY(-9px);
-    position: absolute;
-    visibility: hidden;
-  }
-
+  
   &:hover, &:focus {
-    z-index: 2;
-    &:before, &:after {
+    &:after {
       visibility: visible;
-      transform: translateX(-50%) translateY(0);
     }
-  }
-
-  // The triangle
-  @extend .arrow; // see triangle.scss
-  &:before {
-    top:  -10px;
   }
 
   // the tooltip itself
   &:after {
+    z-index: 200000;
+    left:       50%;
+    top:      -100%;
+    transform: translateX(-50%) translateY(-4px);
     content:     attr(data-tooltip);
-    top:         -30px;
-    text-align:  center;
     font-weight: normal;
-    left:        50%;
-    font-size:   11px;
-    background:  var(--color-main-5);
+    font-size:   10px;
+    background:  var(--color-main-4);
     color:       var(--color-main-1);
     padding:     4px;
     max-width:   500px;
     white-space: nowrap;
+    font-family: var(--font-standard); // reset
+    transition: transform .3s;
+    position: absolute;
+    visibility: hidden;
   }
+}
+
+[data-tooltip].tooltip-l:after {
+  left:         0;
+  top:          0;  
+  transform: translateX(calc(-100% - var(--space-xs))) translateY(1px);
+}
+
+[data-tooltip].tooltip-r:after {
+  right:        0;
+  top:          0;
+  transform: translateX(calc(100% + var(--space-xs))) translateY(1px);
+}
+
+[data-tooltip].tooltip-b:after {
+  left:       50%;
+  top:       100%;
+  transform: translateX(-50%) translateY(4px);
 }

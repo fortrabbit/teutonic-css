@@ -1,5 +1,9 @@
 # TODO for Teutonic CSS
 
+* [ ] Tooltip with different positions
+* [ ] 2nd accent color for focused and maybe active elements?
+* [ ] Consider Accent color support: https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color
+* [ ] Multiple sizes form box-box
 * [ ] Fix .select https://github.com/filamentgroup/select-css icon, maybe hand drawn chevron?
 * [ ] Use math.div instead of slash for calculations in SASS (see below)
 * [ ] Use `aspect-ratio: 4/3;` 
