@@ -1,6 +1,6 @@
 // Select elements
 
-$tri-size: .9rem;
+$tri-size: .7rem;
 //$tri-color: 'var(--color, var(--color-prime-4))';
 //$tri-color: 'var(--color-prime-3)';
 $tri-color: 'hsl(260, 99%, 60%)';
@@ -49,8 +49,17 @@ $svg-triangle:         $svg-prefix + $svg-triangle-image;
   background-repeat: no-repeat;
   background-position: right .4rem top calc(50%); // hide the arrow below firefox UI
   position: relative;
+  background-color: var(--color-main-2);
+  color: var(--color-prime-3);
 
-  option {padding: 0}
+  &:hover {
+    background-color: var(--color-prime-1);
+  }
+
+  option { 
+    padding: 0;
+    color: var(--color-prime-3);
+  }
 
   &:disabled { 
     background-size: 100% 100%;    // reset
