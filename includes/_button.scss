@@ -9,11 +9,10 @@
   padding: var(--space-s);
   position: relative;
   border: 0;
-  //border-style: solid;
+  border-radius: var(--border-radius-m);
   color: var(--color-bg-4, var(--color-prime-4));
-  //@include emboss();
 
-  &:focus  { @extend .focusstyle; }
+  &:focus  { @extend .focus; }
   &:hover, &:focus { z-index: 2 }
   &.active { 
     &:hover {
@@ -23,25 +22,23 @@
     }
   }
   &:hover { color: var(--color, var(--color-main-5)) }
-}
-.button.prime {
-  //border-width: var(--space-px);
-  //border-color: var(--border-color, var(--color-main-5));
-  color: var(--color-bg-5, var(--color-prime-1));
-  background-color: var(--color-bg-4, var(--color-prime-4));
-  cursor: pointer;  // for HTML buttons
-  &:hover {
-    z-index: 2;
-    //color: var(--color-bg-1, var(--color-prime-1));
-    background-color: var(--color-bg-5, var(--color-prime-5));
+
+  &.prime {
+    color: var(--color-bg-5, var(--color-prime-1));
+    background-color: var(--color-bg-4, var(--color-prime-4));
+    cursor: pointer;  // for HTML buttons
+    &:hover {
+      z-index: 2;
+      background-color: var(--color-bg-5, var(--color-prime-5));
+    }
+  }
+
+  &.ghost {
+    background-color: transparent;
+    &:hover {
+      background-color: var(--color-bg-2, var(--color-prime-1));
+    }
   }
 }
 
-// .ghost {
-//   background-color: transparent;
-//   color: var(--color-bg-4, var(--color-prime-4));
-//   background-image: none !important;
-//   &:hover {
-//     background-color: var(--color-bg-2, var(--color-prime-2));
-//   }
-// }
+

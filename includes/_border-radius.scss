@@ -1,0 +1,18 @@
+// Border Radius
+// Apply border radius to elements
+// Iteration 1
+
+// IDEAS: 
+// + Make use of modular scale
+// + Loop over sizes
+
+
+:root {
+  --border-radius-s: 2px;
+  --border-radius-m: 4px;
+  --border-radius-l: 6px;
+}
+
+.border-s { border-radius: var(--border-radius-s); }
+.border-m { border-radius: var(--border-radius-m); }
+.border-l { border-radius: var(--border-radius-l); }

@@ -2,20 +2,11 @@
 // Fix browser default :focus rendering
 // Can be used alone or as include, works for boxes!
 
-.focusstyle {
+.focus {
   position: relative;
   z-index: 1; // bring it to front, essential for negativ margin styles
-  //box-shadow: inset 0 0 0 3px var(--color, var(--color-prime-4));
-  //box-shadow: 0 6px 28px 0 rgba(0,0,0,.6);
-  box-shadow:  inset -4px 0 0 0 var(--color, var(--color-success-3));
-
-  transition: box-shadow .2s ease-out;
-  //&:before {
-  //  content: "⬤";
-  //  font-size: 1rem;
-  //  color: var(--color, var(--color-success-3));
-  //  position: absolute;
-  //  top:  -.5rem;
-  //  left: -.5rem;
-  //}
+  background-color: var(--color-accent-5);
+  &:hover {
+    background-color: var(--color-accent-4);
+  }
 }

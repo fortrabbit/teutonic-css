@@ -3,19 +3,13 @@
 // TEST version, needs invert
 
 .kbd {
-  //font-family: #{$font-mono};
-  //box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-  //line-height: 1;
-  aspect-ratio: 1/1;
   font-family: #{$font-mono};
-  //border: 1px solid var(--color-main-4);
   font-size: .9em;
   font-weight: bold;
   padding: 0 4px;
   vertical-align: text-top;
   background-color: var(--color-main-2);
-  border-radius: 3px;
-  //color: var(--color-main-1);
+  border-radius: var(--border-radius-s);
   display: inline-block;
   white-space: nowrap;
   margin: 0 1px;

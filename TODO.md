@@ -1,7 +1,9 @@
 # TODO for Teutonic CSS
 
+* [ ] Table rows with border-radius ???
+* [ ] Full focus style support for background-color (error, warning classes, hover etc)
+* [ ] Search input without wrapper element (background-image) to play nice with form-box
 * [ ] Tooltip with different positions
-* [ ] 2nd accent color for focused and maybe active elements?
 * [ ] Consider Accent color support: https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color
 * [ ] Multiple sizes form box-box
 * [ ] Fix .select https://github.com/filamentgroup/select-css icon, maybe hand drawn chevron?
@@ -20,6 +22,7 @@
 * [ ] Review `.link` in `.inverted`
 * [ ] CSS grid justify/align classes https://alligator.io/css/align-justify/
 * [ ] Remove Flexbox redundant flex-basis classes (can be done with grid)
+* [x] 2nd accent color for focused and maybe active elements also rename prime maybe (primary, accent)?
 * [x] Rethink or remove ghost button when not borders
 * [x] passive Box = `.box`, Interactive Box = `.boxi`
 * [x] `.box` = background color (no outline by default)

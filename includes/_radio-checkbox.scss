@@ -69,7 +69,7 @@ $radio-check-size: 12px;
 //input[type=checkbox] {
 .checkbox {
   position: relative;
-  //border-radius: 2px;
+  border-radius: var(--border-radius-s);
   &:before, &:after {
     width:  3px;
     height: 6px;

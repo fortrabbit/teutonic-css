@@ -20,8 +20,9 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
 .button,
 .textarea,
 .select {
+  border-radius: var(--border-radius-m);
   -webkit-appearance: none; // iOs fix
-  border-radius: 0; // iOs fix
+  //border-radius: 0; // iOs fix
   @include padding-fix(s);
   margin: 0; // Safari reset required
   font-family: var(--font-standard); // reset
@@ -40,7 +41,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   }
   &:focus { 
     background-color: var(--color-bg-1, var(--color-prime-1));
-    @extend .focusstyle;
+    @extend .focus;
   }
 }
 

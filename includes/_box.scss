@@ -4,11 +4,9 @@
 
 // Passive box
 .box, .boxi {
-  //--border-width: var(--space-px);
-  //padding: var(--space-s); // default padding
+  border-radius: var(--border-radius-m);
   border: var(--border-width) solid var(--border-color, var(--color));
   background-color: var(--color-bg-1, var(--color-main-2));
-  //color: var(--color, var(--color-main-5));
   position: relative;
   display: block; // just in case
   min-width: 0px; // fix size to match with clip FF
@@ -22,7 +20,6 @@
 // Interactive box
 a.box, button.box, label.box, .boxi {
   cursor: pointer;
-  //background-color: var(--color-bg-1, var(--color-prime-1));
   background-color: var(--color-bg-1, var(--color-main-2));
   &:hover {
     background-color: var(--color-bg-2, var(--color-prime-1));
@@ -31,7 +28,7 @@ a.box, button.box, label.box, .boxi {
       color: var(--color-bg-2, var(--color-prime-5))
     }
   }
-  &:focus { @extend .focusstyle; }
+  &:focus { @extend .focus; }
 }
 
 //.boxi.active {
