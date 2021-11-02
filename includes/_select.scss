@@ -22,11 +22,11 @@ $svg-triangle:         $svg-prefix + $svg-triangle-image;
   background-repeat: no-repeat;
   background-position: right .4rem top calc(50%); // hide the arrow below firefox UI
   position: relative;
-  background-color: var(--color-main-2);
-  color: var(--color-prime-3);
+  //background-color: var(--color-main-2);
+  //color: var(--color-prime-3);
 
   &:hover {
-    background-color: var(--color-prime-1);
+    //background-color: var(--color-prime-1);
   }
 
   option { 

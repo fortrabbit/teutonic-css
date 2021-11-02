@@ -9,6 +9,7 @@ $tinted-states: "warn", "success", "danger", "prime";
 @each $state in $tinted-states {
   .tinted-#{$state}, .tinted-#{$state} * {
     color: var(--color-#{$state}-4);
+    .link { color: var(--color-#{$state}-5) }
   }
 }
 

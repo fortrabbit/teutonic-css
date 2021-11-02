@@ -29,7 +29,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   text-align: left;
   line-height: var(--line-height);
   //border: var(--space-px) solid var(--border-color, var(--color-main-5));
-  border: 0;
+  // border: 0;
+  border: 1px solid var(--color-shadow-1);
   outline: none;
   background-color: var(--color-bg-1, var(--color-prime-1));
   color: var(--color, var(--color-main-5));

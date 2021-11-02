@@ -15,10 +15,6 @@ h1, h2, h3, h4, h5 {
 }
 
 
-// Text select coroporated
-*::selection      { background-color: var(--color-warn-3); }
-*::-moz-selection { background-color: var(--color-warn-3); }
-
 // Paragraph basics
 p {
   line-height: var(--text-ratio);
@@ -43,7 +39,7 @@ blockquote {
   }
 }
 
-// Kepp time object together
+// Keep time object together
 time { white-space: nowrap; }
 
 // Link reset
@@ -61,13 +57,20 @@ hr {
   border-top: var(--space-xs) solid;
 }
 
+// Text select coroporated
+*::selection
+{ 
+  background-color: var(--color-bg-2, var(--color-accent-3));
+}
+
+// marked text
 mark {
-  background-color: var(--color-bg-2, var(--color-warn-2));
-  box-shadow: 0 0 0 1px var(--color-bg-2, var(--color-warn-2));
+  background-color: var(--color-bg-2, var(--color-accent-1));
+  box-shadow: 0 0 0 1px var(--color-bg-2, var(--color-accent-1));
 }
 
 // acronym[title]    // Acronym is Obsolete
-abbr,  {
+abbr {
   text-decoration: none; // reset
   //box-shadow: inset 0 0px 0 white, inset 0 -1px 0 var(--color-main-5);
   border-bottom: 1px dotted var(--color-main-5);

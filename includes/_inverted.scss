@@ -14,6 +14,11 @@
   --color-prime-4: var(--prime-2);
   --color-prime-5: var(--prime-1);
 
+  --color-accent-1: var(--accent-5);
+  --color-accent-2: var(--accent-4);
+  --color-accent-4: var(--accent-2);
+  --color-accent-5: var(--accent-1);
+
   --color-warn-1: var(--warn-5);
   --color-warn-2: var(--warn-4);
   --color-warn-4: var(--warn-2);
@@ -28,6 +33,12 @@
   --color-success-2: var(--success-4);
   --color-success-4: var(--success-2);
   --color-success-5: var(--success-1);
+
+  --color-shadow-1: var(--highlight-1);
+  --color-shadow-2: var(--highlight-2);
+
+  --color-highlight-1: var(--shadow-1);
+  --color-highlight-2: var(--shadow-2);
 
   .progress, .meter { --bar-border-color: var(--highlight-1) }
 
