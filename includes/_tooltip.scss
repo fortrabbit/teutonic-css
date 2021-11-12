@@ -9,8 +9,6 @@
 [data-tooltip] {
 
   position: relative;
-
-  // the tooltip itself
   &:after {
     z-index: 200000;
     left:       50%;
@@ -23,6 +21,7 @@
     color:       var(--color-main-1);
     padding:     4px;
     max-width:   500px;
+    overflow: hidden;
     white-space: nowrap;
     font-family: var(--font-standard); // reset
     transition: opacity .3s;
@@ -39,6 +38,8 @@
     }
   }
 }
+
+// top is standard
 
 [data-tooltip].tooltip-l:after {
   left:         0;

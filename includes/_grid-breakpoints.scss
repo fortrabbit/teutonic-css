@@ -4,7 +4,7 @@
 @media #{$tablet} {
   [class*="grid"].collapse-t { grid-template-columns: 1fr; }
   @for $i from 3 through 12 {
-    [class*="grid"]  > .span-#{$i}-t { grid-column: span #{$i} }
+    [class*="grid"] > .span-#{$i}-t { grid-column: span #{$i} !important }
   }
 }
 

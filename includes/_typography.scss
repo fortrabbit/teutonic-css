@@ -64,9 +64,9 @@ hr {
 }
 
 // marked text
-mark {
+mark, .marked {
   background-color: var(--color-bg-2, var(--color-accent-1));
-  box-shadow: 0 0 0 1px var(--color-bg-2, var(--color-accent-1));
+  box-shadow: 0 0 0 2px var(--color-bg-2, var(--color-accent-1));
 }
 
 // acronym[title]    // Acronym is Obsolete

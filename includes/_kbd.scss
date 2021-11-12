@@ -4,11 +4,13 @@
 
 .kbd {
   font-family: #{$font-mono};
-  font-size: .9em;
-  font-weight: bold;
+  //font-size: .9em;
+  font-size: 12px;
   padding: 0 4px;
   vertical-align: text-top;
-  background-color: var(--color-main-2);
+  color: currentColor;
+  background-color: var(--highlight-1);
+  border: 1px solid var(--shadow-2);
   border-radius: var(--border-radius-s);
   display: inline-block;
   white-space: nowrap;

@@ -8,9 +8,12 @@
 
 
 :root {
-  --border-radius-s: 2px;
-  --border-radius-m: 4px;
-  --border-radius-l: 6px;
+  --border-radius-s: 1px;
+  --border-radius-m: 2px;
+  --border-radius-l: 4px;
+  // --border-radius-s: 2px;
+  // --border-radius-m: 4px;
+  // --border-radius-l: 6px;
 }
 
 .border-radius_s { border-radius: var(--border-radius-s); }

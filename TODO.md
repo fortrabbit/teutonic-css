@@ -1,6 +1,9 @@
 # TODO for Teutonic CSS
 
-* [ ] Table rows with border-radius ???
+* [ ] Refactor inprogress in loading with background image https://css-tricks.com/stripes-css/
+* [ ] Fix tooltips to the right, why?
+* [ ] ~~A grid system that will auto-distribute boxes equally (media-queries?)~~
+* [ ] Table rows with border-radius ??? will not work likely?!
 * [ ] Full focus style support for background-color (error, warning classes, hover etc)
 * [ ] Search input without wrapper element (background-image) to play nice with form-box
 * [ ] Tooltip with different positions
@@ -16,7 +19,7 @@
 * [ ] Re-design Select triangle
 * [ ] Accept `--border-color` on form elements
 * [ ] Accept `--border-color` for boxes and some buttons (no border?)
-* [ ] Fix the issue with too large grid parents 
+* [ ] Fix the issue with too l   arge grid parents 
 * [ ] Fix `.gap_s` with `.column` not to interfere with columns!
 * [ ] Make link (a) accept "--color" var, fallback to other value
 * [ ] Review `.link` in `.inverted`
