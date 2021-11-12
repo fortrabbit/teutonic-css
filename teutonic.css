@@ -1,34 +1,39 @@
 @charset "UTF-8";
 :root {
-  --main-1: #f4f4f1;
-  --main-2: #e8e9e2;
-  --main-3: #a3a58d;
-  --main-4: #464738;
-  --main-5: #2a2b22;
-  --prime-1: #e0deed;
-  --prime-2: #d1caf2;
-  --prime-3: #8067fe;
-  --prime-4: #3617cf;
-  --prime-5: #2e1f7a;
-  --warn-1: #f7f4d4;
-  --warn-2: #e6df99;
-  --warn-3: #e4d101;
-  --warn-4: #8a800f;
-  --warn-5: #524d14;
-  --danger-1: #fcf2e8;
-  --danger-2: #efd5be;
-  --danger-3: #fe9934;
-  --danger-4: #8a0f0f;
-  --danger-5: #661a1a;
-  --success-1: #eef9ec;
-  --success-2: #dbf5d6;
-  --success-3: #2bfe01;
+  --main-1: #e5e5e1;
+  --main-2: #dbdbd6;
+  --main-3: #878877;
+  --main-4: #31312b;
+  --main-5: #20211c;
+  --prime-1: #e4d6ff;
+  --prime-2: #dac7ff;
+  --prime-3: #7734fe;
+  --prime-4: #4b14b8;
+  --prime-5: #44297a;
+  --accent-1: #3dd6f5;
+  --accent-2: #0dccf2;
+  --accent-3: #0aa3c2;
+  --accent-4: #087a91;
+  --accent-5: #055261;
+  --warn-1: #e2db8d;
+  --warn-2: #d8cf64;
+  --warn-3: #ada21f;
+  --warn-4: #918608;
+  --warn-5: #615905;
+  --danger-1: #feb24d;
+  --danger-2: #fea025;
+  --danger-3: #fe9001;
+  --danger-4: #a11e12;
+  --danger-5: #7a261f;
+  --success-1: #77cc66;
+  --success-2: #3da329;
+  --success-3: #24aa09;
   --success-4: #388a0f;
-  --success-5: #335214;
+  --success-5: #263d0f;
   --shadow-1: rgba(0, 0, 0, 0.1);
-  --shadow-2: rgba(0, 0, 0, 0.25);
-  --highlight-1: rgba(244, 244, 241, 0.1);
-  --highlight-2: rgba(244, 244, 241, 0.25);
+  --shadow-2: rgba(0, 0, 0, 0.2);
+  --highlight-1: rgba(253, 253, 252, 0.1);
+  --highlight-2: rgba(253, 253, 252, 0.2);
   --color-main-1: var(--main-1);
   --color-main-2: var(--main-2);
   --color-main-3: var(--main-3);
@@ -39,6 +44,11 @@
   --color-prime-3: var(--prime-3);
   --color-prime-4: var(--prime-4);
   --color-prime-5: var(--prime-5);
+  --color-accent-1: var(--accent-1);
+  --color-accent-2: var(--accent-2);
+  --color-accent-3: var(--accent-3);
+  --color-accent-4: var(--accent-4);
+  --color-accent-5: var(--accent-5);
   --color-warn-1: var(--warn-1);
   --color-warn-2: var(--warn-2);
   --color-warn-3: var(--warn-3);
@@ -69,12 +79,12 @@
   --space-l: calc(var(--space-ratio) * var(--space-m));
   --space-xl: calc(var(--space-ratio) * var(--space-l));
   --space-xxl: calc(var(--space-ratio) * var(--space-xl));
-  --space-px: 1px;
+  --space-px: 2px;
 }
 
 :root {
   --text-base: 1em;
-  --text-ratio: 1.25;
+  --text-ratio: 1.2;
   --text-xxxl: calc(var(--text-ratio) * var(--text-xxl));
   --text-xxl: calc(var(--text-ratio) * var(--text-xl));
   --text-xl: calc(var(--text-ratio) * var(--text-l));
@@ -82,6 +92,24 @@
   --text-m: var(--text-base);
   --text-s: calc(var(--text-m) / var(--text-ratio));
   --text-xs: calc(var(--text-s) / var(--text-ratio));
+}
+
+:root {
+  --border-radius-s: 1px;
+  --border-radius-m: 2px;
+  --border-radius-l: 4px;
+}
+
+.border-radius_s {
+  border-radius: var(--border-radius-s);
+}
+
+.border-radius_m {
+  border-radius: var(--border-radius-m);
+}
+
+.border-radius_l {
+  border-radius: var(--border-radius-l);
 }
 
 :root {
@@ -223,8 +251,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 .button,
 .textarea,
 .select {
+  border-radius: var(--border-radius-m);
   -webkit-appearance: none;
-  border-radius: 0;
   padding-top: var(--space-s);
   padding-bottom: var(--space-s);
   padding-left: var(--space-s);
@@ -233,7 +261,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   font-family: var(--font-standard);
   text-align: left;
   line-height: var(--line-height);
-  border: var(--space-px) solid var(--border-color, var(--color-main-5));
+  border: 1px solid var(--color-shadow-1);
   outline: none;
   background-color: var(--color-bg-1, var(--color-prime-1));
   color: var(--color, var(--color-main-5));
@@ -264,9 +292,6 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   display: inline-block;
 }
 
-.input, .textarea {
-  box-shadow: inset 0 calc(var(--space-px)*2) 0 var(--color-shadow-1);
-}
 .input::placeholder, .textarea::placeholder {
   color: var(--color-shadow-2);
 }
@@ -303,14 +328,23 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   appearance: none;
   -moz-appearance: none;
   cursor: pointer;
-  background-image: linear-gradient(45deg, transparent 50%, var(--color-bg-1, var(--color-prime-1)) 50%), linear-gradient(-45deg, transparent 50%, var(--color-bg-1, var(--color-prime-1)) 50%), linear-gradient(to top, var(--color, var(--color-main-5)), var(--color, var(--color-main-5)));
-  background-size: 14px 14px;
+  text-overflow: ellipsis;
+  border-radius: var(--border-radius-m);
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14"><polygon points="2 2, 22 2, 12 14" fill="hsl(260, 99%, 60%)"/></svg>');
+  padding-right: 1.2rem !important;
+  background-size: 0.7rem 0.7rem;
   background-repeat: no-repeat;
-  background-position: right 0.8rem top calc(50% - 3.5px);
+  background-position: right 0.4rem top 50%;
   position: relative;
 }
-.select:hover {
-  background-image: linear-gradient(45deg, transparent 50%, var(--color-bg-2, var(--color-prime-2)) 50%), linear-gradient(-45deg, transparent 50%, var(--color-bg-2, var(--color-prime-2)) 50%), linear-gradient(to top, var(--color, var(--color-main-5)), var(--color, var(--color-main-5)));
+.select option {
+  padding: 0;
+  margin: 0;
+  color: var(--color-main-5);
+  background-color: var(--color-accent-3);
+}
+.select option[selected] {
+  color: var(--color-accent-3);
 }
 .select:disabled {
   background-size: 100% 100%;
@@ -367,6 +401,15 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   display: block;
   position: relative;
   overflow: hidden;
+  padding: 0;
+}
+.form-box .input, .form-box .select, .form-box .textarea {
+  padding: var(--space-s);
+}
+@-moz-document url-prefix() {
+  .form-box .select {
+    padding-left: 0.4rem;
+  }
 }
 .form-box:not(.no-label) .input, .form-box:not(.no-label) .button, .form-box:not(.no-label) .textarea, .form-box:not(.no-label) .select {
   padding-top: calc(1 * var(--space-m)) !important;
@@ -392,15 +435,33 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   padding-left: var(--space-m);
   padding-right: var(--space-m);
   padding-top: calc(1.3 * var(--space-m)) !important;
-  padding-bottom: calc(.7 * var(--space-m)) !important;
+  padding-bottom: calc(0.7 * var(--space-m)) !important;
 }
 .form-box.pa_m .mini-label {
   left: var(--space-m);
   top: calc(1.6 * var(--space-s));
 }
+.form-box.pa_xs {
+  padding: 0;
+}
+.form-box.pa_xs .input, .form-box.pa_xs .button, .form-box.pa_xs .textarea, .form-box.pa_xs .select {
+  padding: var(--space-xs);
+  padding: var(--space-xs);
+  padding-top: 1.1rem !important;
+}
+.form-box.pa_xs .mini-label {
+  left: var(--space-xs);
+  top: var(--space-xs);
+}
+@-moz-document url-prefix() {
+  .form-box.pa_xs .select {
+    padding-left: 0;
+  }
+}
 
 .mini-label {
   background-color: transparent;
+  color: var(--color-prime-5);
   font-size: var(--text-s);
   position: absolute;
   white-space: nowrap;
@@ -441,9 +502,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   margin: 0;
   font-size: 100%;
   outline: none;
-  background-image: linear-gradient(transparent, var(--color-shadow-2));
-  background-color: transparent;
-  border: var(--space-px) solid var(--color, var(--color-main-5));
+  border: 1px solid var(--color, var(--color-shadow-2));
+  background-color: var(--color, var(--color-prime-1));
   outline: none;
   width: 12px;
   height: 12px;
@@ -455,7 +515,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   align-self: center;
 }
 .radio:focus, .checkbox:focus {
-  box-shadow: 0 0 0 var(--space-px) var(--color, var(--color-main-5));
+  background-color: var(--color, var(--color-accent-2));
 }
 .radio:disabled, .checkbox:disabled {
   opacity: 0.3;
@@ -486,6 +546,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 
 .checkbox {
   position: relative;
+  border-radius: var(--border-radius-s);
 }
 .checkbox:before, .checkbox:after {
   width: 3px;
@@ -727,24 +788,24 @@ input[type=number]::-webkit-outer-spin-button {
   border-width: 1px;
 }
 [type=range].range::-ms-fill-lower {
-  background-color: #3617cf;
-  border: 1px solid #2a2b22;
+  background-color: #4b14b8;
+  border: 1px solid #20211c;
   border-radius: 229939393px;
 }
 [type=range].range::-ms-fill-upper {
-  background-color: #464738;
-  border: 1px solid #2a2b22;
+  background-color: #31312b;
+  border: 1px solid #20211c;
   border-radius: 229939393px;
 }
 [type=range].range::-ms-thumb {
-  background-color: #d1caf2;
+  background-color: #dac7ff;
   background-image: linear-gradient(transparent, var(--color-shadow-2));
-  border: 1px solid #2a2b22;
+  border: 1px solid #20211c;
   border-radius: 50%;
   height: 14px;
   width: 14px;
   cursor: pointer;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   margin-top: 2px;
 }
 [type=range].range:focus, [type=range].range:hover {
@@ -757,7 +818,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: var(--colored-3, var(--color-prime-3));
 }
 [type=range].range:focus::-ms-thumb, [type=range].range:hover::-ms-thumb {
-  background-color: #8067fe;
+  background-color: #7734fe;
 }
 [type=range].range:focus::-moz-range-thumb, [type=range].range:active::-moz-range-thumb {
   box-shadow: 0 0 0 2px var(--color-main-5);
@@ -766,7 +827,7 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 0 0 2px var(--color-main-5);
 }
 [type=range].range:focus::-ms-thumb, [type=range].range:active::-ms-thumb {
-  box-shadow: 0 0 0 2px #2a2b22;
+  box-shadow: 0 0 0 2px #20211c;
 }
 
 .range-box {
@@ -859,8 +920,9 @@ input[type=number]::-webkit-outer-spin-button {
 .button {
   padding: var(--space-s);
   position: relative;
-  border-style: solid;
-  background-image: linear-gradient(transparent, var(--color-shadow-1));
+  border: 1px solid var(--color-shadow-1);
+  border-radius: var(--border-radius-m);
+  color: var(--color-bg-4, var(--color-prime-4));
 }
 .button:hover, .button:focus {
   z-index: 2;
@@ -870,55 +932,55 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: currentColor;
   color: currentColor;
 }
-.button:hover, .button:focus {
+.button:hover {
   color: var(--color, var(--color-main-5));
 }
-
-.prime {
-  border-width: var(--space-px);
-  border-color: var(--color, var(--color-main-5));
-  color: var(--color-bg-1, var(--color-prime-1));
+.button.prime {
+  color: var(--color-bg-5, var(--color-prime-1));
   background-color: var(--color-bg-4, var(--color-prime-4));
   cursor: pointer;
 }
-.prime:hover, .prime:focus {
+.button.prime:hover {
   z-index: 2;
-  color: var(--color-bg-1, var(--color-prime-1));
   background-color: var(--color-bg-5, var(--color-prime-5));
 }
-
-.ghost {
+.button.prime:focus {
+  background-color: var(--color-accent-4);
+}
+.button.prime:focus:hover {
+  background-color: var(--color-accent-5);
+}
+.button.ghost {
   background-color: transparent;
-  color: var(--color-bg-4, var(--color-prime-4));
-  background-image: none !important;
+  border-color: transparent;
 }
-.ghost:hover {
-  background-color: var(--color-bg-2, var(--color-prime-2));
+.button.ghost:hover {
+  background-color: var(--color-bg-2, var(--color-prime-1));
 }
 
-.focusstyle, a.box:focus, button.box:focus, label.box:focus, .input:focus,
+.focus, a.box:focus, button.box:focus, label.box:focus, .boxi:focus, .input:focus,
 .button:focus,
 .textarea:focus,
 .select:focus {
   position: relative;
   z-index: 1;
-  box-shadow: inset 0 0 0 3px var(--color, var(--color-main-5));
-  transition: box-shadow 0.4s ease-out;
+  background-color: var(--color-accent-2);
+  border-color: var(--color-shadow-2);
+}
+.focus:hover, a.box:hover:focus, button.box:hover:focus, label.box:hover:focus, .boxi:hover:focus, .input:hover:focus,
+.button:hover:focus,
+.textarea:hover:focus,
+.select:hover:focus {
+  background-color: var(--color-accent-3);
 }
 
-.box.active, .button.active, label.active, .active {
+.box.active, .button.active, label.active, .boxi.active {
   background-color: var(--color, var(--color-main-5));
-  border-color: var(--color, var(--color-main-5));
-  color: var(--color-bg-1, var(--color-main-1));
   z-index: 3;
 }
-.box.active *, .button.active *, label.active *, .active * {
-  color: var(--color-bg-1, var(--color-main-1));
-}
-.box.active:hover, .box.active:focus, .button.active:hover, .button.active:focus, label.active:hover, label.active:focus, .active:hover, .active:focus {
+.box.active:hover, .box.active:focus, .button.active:hover, .button.active:focus, label.active:hover, label.active:focus, .boxi.active:hover, .boxi.active:focus {
   background-color: var(--color, var(--color-main-5));
   cursor: default;
-  color: var(--color-bg-1, var(--color-main-1));
 }
 
 * {
@@ -929,14 +991,6 @@ h1, h2, h3, h4, h5 {
   font-family: var(--font-headline);
   margin: 0;
   word-wrap: break-word;
-}
-
-*::selection {
-  background-color: var(--color-warn-3);
-}
-
-*::-moz-selection {
-  background-color: var(--color-warn-3);
 }
 
 p {
@@ -973,9 +1027,13 @@ hr {
   border-top: var(--space-xs) solid;
 }
 
-mark {
-  background-color: var(--color-bg-2, var(--color-warn-2));
-  box-shadow: 0 0 0 1px var(--color-bg-2, var(--color-warn-2));
+*::selection {
+  background-color: var(--color-bg-2, var(--color-accent-3));
+}
+
+mark, .marked {
+  background-color: var(--color-bg-2, var(--color-accent-1));
+  box-shadow: 0 0 0 2px var(--color-bg-2, var(--color-accent-1));
 }
 
 abbr {
@@ -985,10 +1043,15 @@ abbr {
 
 .link, .block-link, p a, td a, li a, .link *, .block-link *, p a *, td a *, li a * {
   color: var(--color-bg-4, var(--color-prime-4));
+  cursor: pointer;
 }
 
 .link:hover, .block-link:hover, p a:hover, td a:hover, li a:hover, .link:hover *, .block-link:hover *, p a:hover *, td a:hover *, li a:hover * {
   color: var(--color-bg-5, var(--color-prime-5));
+}
+
+.active.link, .active.block-link, p a.active, td a.active, li a.active, .active .link, .active .block-link, .active p a, p .active a, .active td a, td .active a, .active li a, li .active a {
+  color: var(--color-bg-2, var(--color-prime-1));
 }
 
 .link.visited:visited, .visited.block-link:visited, p a.visited:visited, td a.visited:visited, li a.visited:visited, .link.visited:visited *, .visited.block-link:visited *, p a.visited:visited *, td a.visited:visited *, li a.visited:visited * {
@@ -1182,8 +1245,8 @@ h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover
 }
 
 *:target {
-  background-color: var(--color-warn-2);
-  box-shadow: 0 0 0 var(--space-xs) var(--color-warn-2);
+  background-color: var(--color-accent-1);
+  box-shadow: 0 0 0 var(--space-xs) var(--color-accent-1);
 }
 
 .article img {
@@ -1223,7 +1286,7 @@ h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover
 .article blockquote {
   font-size: 120%;
   border-left: var(--space-xs) solid var(--color-main-5);
-  margin-left: calc(-1 * var(--space-m) );
+  margin-left: calc(-1 * var(--space-m));
   padding-left: calc(var(--space-m) - var(--space-xs));
 }
 .article p, .article li, .article dt, .article dd {
@@ -1264,10 +1327,18 @@ th {
   width: 100%;
   border-collapse: collapse;
 }
+.table tr.tri, .article table tr.tri {
+  background-color: var(--color-bg-1, var(--color-main-2));
+  cursor: pointer;
+}
+.table tr.tri:hover, .article table tr.tri:hover {
+  background-color: var(--color-prime-1);
+}
 .table td, .table th, .article table td, .article table th {
   vertical-align: middle;
   padding: var(--space-s);
   border: var(--space-px) solid;
+  border-color: var(--color-main-1);
 }
 .table.bo-v th, .table.bo-v td, .article table.bo-v th, .article table.bo-v td {
   border-top: none;
@@ -1335,7 +1406,7 @@ th {
   background: var(--color-main-3);
 }
 
-.inverted {
+.inverted, [data-theme=dark] {
   --color-main-1: var(--main-5);
   --color-main-2: var(--main-4);
   --color-main-4: var(--main-2);
@@ -1344,6 +1415,10 @@ th {
   --color-prime-2: var(--prime-4);
   --color-prime-4: var(--prime-2);
   --color-prime-5: var(--prime-1);
+  --color-accent-1: var(--accent-5);
+  --color-accent-2: var(--accent-4);
+  --color-accent-4: var(--accent-2);
+  --color-accent-5: var(--accent-1);
   --color-warn-1: var(--warn-5);
   --color-warn-2: var(--warn-4);
   --color-warn-4: var(--warn-2);
@@ -1356,24 +1431,28 @@ th {
   --color-success-2: var(--success-4);
   --color-success-4: var(--success-2);
   --color-success-5: var(--success-1);
+  --color-shadow-1: var(--highlight-1);
+  --color-shadow-2: var(--highlight-2);
+  --color-highlight-1: var(--shadow-1);
+  --color-highlight-2: var(--shadow-2);
   background-color: var(--color-main-1);
 }
-.inverted .progress, .inverted .meter {
+.inverted .progress, .inverted .meter, [data-theme=dark] .progress, [data-theme=dark] .meter {
   --bar-border-color: var(--highlight-1) ;
 }
-.inverted .disabled *, .inverted :disabled * {
+.inverted .disabled *, .inverted :disabled *, [data-theme=dark] .disabled *, [data-theme=dark] :disabled * {
   color: var(--color-shadow-2);
 }
-.inverted .disabled:not(.loading):not(.range), .inverted :disabled:not(.loading):not(.range) {
+.inverted .disabled:not(.loading):not(.range), .inverted :disabled:not(.loading):not(.range), [data-theme=dark] .disabled:not(.loading):not(.range), [data-theme=dark] :disabled:not(.loading):not(.range) {
   color: var(--color-highlight-3);
 }
-.inverted .disabled:not(.loading):not(.range):hover, .inverted :disabled:not(.loading):not(.range):hover {
+.inverted .disabled:not(.loading):not(.range):hover, .inverted :disabled:not(.loading):not(.range):hover, [data-theme=dark] .disabled:not(.loading):not(.range):hover, [data-theme=dark] :disabled:not(.loading):not(.range):hover {
   color: var(--color-highlight-2);
 }
-.inverted .input::placeholder, .inverted .textarea::placeholder {
+.inverted .input::placeholder, .inverted .textarea::placeholder, [data-theme=dark] .input::placeholder, [data-theme=dark] .textarea::placeholder {
   color: var(--color-highlight-2);
 }
-.inverted .input:-ms-input-placeholder, .inverted .textarea:-ms-input-placeholder {
+.inverted .input:-ms-input-placeholder, .inverted .textarea:-ms-input-placeholder, [data-theme=dark] .input:-ms-input-placeholder, [data-theme=dark] .textarea:-ms-input-placeholder {
   color: var(--color-highlight-2);
 }
 
@@ -1476,27 +1555,29 @@ pre .nd, pre .hljs-params {
   color: #4d4d4d;
 }
 
-.box {
-  --border-width: var(--space-px);
-  padding: var(--space-s);
-  border: var(--border-width) solid var(--border-color, var(--color));
-  color: var(--color, var(--color-main-5));
+.box, .boxi {
+  border-radius: var(--border-radius-m);
+  border: 1px solid var(--color-shadow-1);
+  background-color: var(--color-bg-1, var(--color-main-2));
   position: relative;
   display: block;
   min-width: 0px;
 }
-.box:target {
+.box:target, .boxi:target {
   border-color: currentColor;
   z-index: 1;
 }
 
-a.box, button.box, label.box {
+a.box, button.box, label.box, .boxi {
   cursor: pointer;
-  background-color: var(--color-bg-1, var(--color-prime-1));
+  background-color: var(--color-bg-1, var(--color-main-2));
 }
-a.box:hover, button.box:hover, label.box:hover {
-  background-color: var(--color-bg-2, var(--color-prime-2));
+a.box:hover, button.box:hover, label.box:hover, .boxi:hover {
+  background-color: var(--color-bg-2, var(--color-prime-1));
   z-index: 3;
+}
+a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.box:hover td a, td a.box:hover a, a.box:hover li a, li a.box:hover a, button.box:hover .link, button.box:hover .block-link, button.box:hover p a, p button.box:hover a, button.box:hover td a, td button.box:hover a, button.box:hover li a, li button.box:hover a, label.box:hover .link, label.box:hover .block-link, label.box:hover p a, p label.box:hover a, label.box:hover td a, td label.box:hover a, label.box:hover li a, li label.box:hover a, .boxi:hover .link, .boxi:hover .block-link, .boxi:hover p a, p .boxi:hover a, .boxi:hover td a, td .boxi:hover a, .boxi:hover li a, li .boxi:hover a {
+  color: var(--color-prime-5);
 }
 .box.active-tab, a.active-tab, button.active-tab, label.active-tab {
   background-color: var(--color-main-1);
@@ -1586,7 +1667,7 @@ a.box:hover, button.box:hover, label.box:hover {
   margin-left: -1px;
   float: left;
   height: 0;
-  padding-top: calc( var(--ar-y, 1) / var(--ar-x, 1) * 100% );
+  padding-top: calc(var(--ar-y, 1) / var(--ar-x, 1) * 100%);
 }
 [class*=ar-]:after {
   content: "";
@@ -1757,8 +1838,8 @@ a.box:hover, button.box:hover, label.box:hover {
   position: relative;
 }
 
-.arrow, [data-tooltip] {
-  --t-size: 8px;
+.arrow {
+  --t-size: 6px;
 }
 
 .arrow_l {
@@ -1769,7 +1850,7 @@ a.box:hover, button.box:hover, label.box:hover {
   --t-size: 18px;
 }
 
-.arrow:before, [data-tooltip]:before,
+.arrow:before,
 .arrow_l:before,
 .arrow_xl:before {
   content: "";
@@ -1786,68 +1867,72 @@ a.box:hover, button.box:hover, label.box:hover {
 
 [data-tooltip] {
   position: relative;
-  z-index: 1000000;
-}
-[data-tooltip]:before, [data-tooltip]:after {
-  font-family: var(--font-standard);
-  transition: transform 0.8s;
-  transform: translateX(-50%) translateY(-9px);
-  position: absolute;
-  visibility: hidden;
-}
-[data-tooltip]:hover, [data-tooltip]:focus {
-  z-index: 2;
-}
-[data-tooltip]:hover:before, [data-tooltip]:hover:after, [data-tooltip]:focus:before, [data-tooltip]:focus:after {
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
-[data-tooltip]:before {
-  top: -10px;
 }
 [data-tooltip]:after {
-  content: attr(data-tooltip);
-  top: -30px;
-  text-align: center;
-  font-weight: normal;
+  z-index: 200000;
   left: 50%;
-  font-size: 11px;
-  background: var(--color-main-5);
+  top: -100%;
+  transform: translateX(-50%) translateY(-4px);
+  content: attr(data-tooltip);
+  font-weight: normal;
+  font-size: 10px;
+  background: var(--color-main-4);
   color: var(--color-main-1);
   padding: 4px;
   max-width: 500px;
+  overflow: hidden;
   white-space: nowrap;
+  font-family: var(--font-standard);
+  transition: opacity 0.3s;
+  transition-delay: 250ms;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
+[data-tooltip]:hover:after, [data-tooltip]:focus:after {
+  visibility: visible;
+  opacity: 1;
 }
 
-.striped, .loading:after {
-  background-image: repeating-linear-gradient(45deg, var(--color-shadow-1), var(--color-shadow-1) 12px, var(--color-highlight-1) 12px, var(--color-highlight-1) 24px);
+[data-tooltip].tooltip-l:after {
+  left: 0;
+  top: 0;
+  transform: translateX(calc(-100% - var(--space-xs))) translateY(1px);
+}
+
+[data-tooltip].tooltip-r:after {
+  right: 0;
+  top: 0;
+  transform: translateX(calc(100% + var(--space-xs))) translateY(1px);
+}
+
+[data-tooltip].tooltip-b:after {
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) translateY(4px);
+}
+
+.striped, .inprogress, .loading {
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 12px, var(--color-highlight-2) 12px, var(--color-highlight-2) 24px);
 }
 
 .loading {
   cursor: wait;
-  position: relative;
-  overflow: hidden;
 }
-.loading:after {
-  content: "";
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  pointer-events: none;
-  position: absolute;
-  animation-name: move;
+
+.inprogress, .loading {
+  animation-name: movebg;
   animation-iteration-count: infinite;
   animation-duration: 0.7s;
   animation-timing-function: linear;
 }
 
-@keyframes move {
-  0% {
-    transform: translateX(-33.6px);
+@keyframes movebg {
+  from {
+    background-position: -13px 0;
   }
-  100% {
-    transform: translateX(0);
+  to {
+    background-position: 22px 0;
   }
 }
 .pos-abs {
@@ -1954,7 +2039,7 @@ a.box:hover, button.box:hover, label.box:hover {
   border-color: var(--color, var(--color-main-5));
   color: var(--color-main-3);
   background-color: var(--color-bg-1, var(--color-prime-1));
-  background-image: repeating-linear-gradient(45deg, var(--color-shadow-1), var(--color-shadow-1) 12px, var(--color-highlight-1) 12px, var(--color-highlight-1) 24px);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 12px, var(--color-highlight-2) 12px, var(--color-highlight-2) 24px);
 }
 .disabled:not(.loading):not(.range):hover,
 :disabled:not(.loading):not(.range):hover {
@@ -1978,6 +2063,20 @@ a.box:hover, button.box:hover, label.box:hover {
 :disabled.button.prime:hover {
   background-color: var(--color-bg-3, var(--color-prime-3));
   color: var(--color-prime-2);
+}
+
+.kbd {
+  font-family: 'DejaVu sans mono', 'Anonymous Pro', 'Ubuntu Mono', 'Droid Sans Mono Consolas', 'Andale Mono', Consolas, Monaco, 'Courier New', monospace;
+  font-size: 12px;
+  padding: 0 4px;
+  vertical-align: text-top;
+  color: currentColor;
+  background-color: var(--highlight-1);
+  border: 1px solid var(--shadow-2);
+  border-radius: var(--border-radius-s);
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 1px;
 }
 
 .grid {
@@ -2377,6 +2476,14 @@ a.box:hover, button.box:hover, label.box:hover {
   grid-row-end: 16;
 }
 
+[class*=grid].gap_px {
+  --gap-space: var(--space-px) ;
+}
+
+[class*=grid].gap-h_px {
+  grid-row-gap: var(--space-px);
+}
+
 [class*=grid].gap_xs {
   --gap-space: var(--space-xs) ;
 }
@@ -2408,8 +2515,12 @@ a.box:hover, button.box:hover, label.box:hover {
   grid-auto-flow: dense;
 }
 
+.grid-auto.min_s {
+  --grid-auto-min: 6rem;
+}
+
 .grid-auto.min_m {
-  --grid-auto-min: 12rem;
+  --grid-auto-min: 8rem;
 }
 
 .grid-auto.min_l {
@@ -2426,43 +2537,43 @@ a.box:hover, button.box:hover, label.box:hover {
   }
 
   [class*=grid] > .span-3-t {
-    grid-column: span 3;
+    grid-column: span 3 !important;
   }
 
   [class*=grid] > .span-4-t {
-    grid-column: span 4;
+    grid-column: span 4 !important;
   }
 
   [class*=grid] > .span-5-t {
-    grid-column: span 5;
+    grid-column: span 5 !important;
   }
 
   [class*=grid] > .span-6-t {
-    grid-column: span 6;
+    grid-column: span 6 !important;
   }
 
   [class*=grid] > .span-7-t {
-    grid-column: span 7;
+    grid-column: span 7 !important;
   }
 
   [class*=grid] > .span-8-t {
-    grid-column: span 8;
+    grid-column: span 8 !important;
   }
 
   [class*=grid] > .span-9-t {
-    grid-column: span 9;
+    grid-column: span 9 !important;
   }
 
   [class*=grid] > .span-10-t {
-    grid-column: span 10;
+    grid-column: span 10 !important;
   }
 
   [class*=grid] > .span-11-t {
-    grid-column: span 11;
+    grid-column: span 11 !important;
   }
 
   [class*=grid] > .span-12-t {
-    grid-column: span 12;
+    grid-column: span 12 !important;
   }
 }
 @media (max-width:400px) {
@@ -2550,6 +2661,10 @@ a.box:hover, button.box:hover, label.box:hover {
 }
 .flex > .span-auto {
   flex: 0 0 auto;
+}
+
+.flex.gap_px {
+  gap: var(--space-px);
 }
 
 .flex.gap_xs {
@@ -3819,6 +3934,26 @@ a.box:hover, button.box:hover, label.box:hover {
   background-color: var(--color-prime-5);
 }
 
+[class*=bg-accent-1] {
+  background-color: var(--color-accent-1);
+}
+
+[class*=bg-accent-2] {
+  background-color: var(--color-accent-2);
+}
+
+[class*=bg-accent-3] {
+  background-color: var(--color-accent-3);
+}
+
+[class*=bg-accent-4] {
+  background-color: var(--color-accent-4);
+}
+
+[class*=bg-accent-5] {
+  background-color: var(--color-accent-5);
+}
+
 [class*=bg-warn-1] {
   background-color: var(--color-warn-1);
 }
@@ -4145,19 +4280,31 @@ a.box:hover, button.box:hover, label.box:hover {
 }
 
 .tinted-warn, .tinted-warn * {
-  --color: var(--color-warn-4);
+  color: var(--color-warn-4);
+}
+.tinted-warn .link, .tinted-warn p a, p .tinted-warn a, .tinted-warn td a, td .tinted-warn a, .tinted-warn li a, li .tinted-warn a, .tinted-warn .block-link, .tinted-warn * .link {
+  color: var(--color-warn-5);
 }
 
 .tinted-success, .tinted-success * {
-  --color: var(--color-success-4);
+  color: var(--color-success-4);
+}
+.tinted-success .link, .tinted-success p a, p .tinted-success a, .tinted-success td a, td .tinted-success a, .tinted-success li a, li .tinted-success a, .tinted-success .block-link, .tinted-success * .link {
+  color: var(--color-success-5);
 }
 
 .tinted-danger, .tinted-danger * {
-  --color: var(--color-danger-4);
+  color: var(--color-danger-4);
+}
+.tinted-danger .link, .tinted-danger p a, p .tinted-danger a, .tinted-danger td a, td .tinted-danger a, .tinted-danger li a, li .tinted-danger a, .tinted-danger .block-link, .tinted-danger * .link {
+  color: var(--color-danger-5);
 }
 
 .tinted-prime, .tinted-prime * {
-  --color: var(--color-prime-4);
+  color: var(--color-prime-4);
+}
+.tinted-prime .link, .tinted-prime p a, p .tinted-prime a, .tinted-prime td a, td .tinted-prime a, .tinted-prime li a, li .tinted-prime a, .tinted-prime .block-link, .tinted-prime * .link {
+  color: var(--color-prime-5);
 }
 
 .tinted-bg-warn, .tinted-bg-warn * {
