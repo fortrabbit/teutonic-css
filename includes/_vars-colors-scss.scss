@@ -5,8 +5,9 @@
 // in SCSS
 
 // Why?
-// MS Esdge sometimes does not understand CSS Vars
+// MS Edge sometimes does not understand CSS Vars
 // for example with input type range
+// To use with SVG background images (select)
 
 // Usage (will use the 4th color from the main line):
 //.test { color: color(main, 4) }

@@ -9,6 +9,7 @@
 
 .inprogress, .loading {
   @extend .striped;
+  border: 2px solid red;
   animation-name: movebg;
   animation-iteration-count: infinite;
   animation-duration: .7s;

@@ -17,7 +17,7 @@
     }
   }
 
-  // 2. assign the color var (needed for inverted style)
+  // 2. assign the color var (for inverted style)
   @each $name, $color in $colors {
     @each $index, $value in $color {
       --color-#{$name}-#{$index}: var(--#{$name}-#{$index});

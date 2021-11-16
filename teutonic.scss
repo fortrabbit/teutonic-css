@@ -14,6 +14,7 @@
 @import "includes/vars-space-scale";     // layout spacing
 @import "includes/vars-type-scale";      // layout spacing
 @import "includes/border-radius";        // border radius
+@import "includes/svg-helpers";          // load SVGs as background images
 
 @import "includes/typeface-vars";       // font stacks
 @import "includes/skeuo-style";         // subtile skeuomorphic effects
@@ -24,6 +25,7 @@
 @import "includes/basics";              // Opinionated standards
 @import "includes/media-queries";       // mobile styles break points
 @import "includes/min-height";          // min-height hack
+
 
 // Forms
 @import "includes/stop-border-mixin";   // Helper to give charts some more contrast
@@ -82,7 +84,9 @@
 @import "includes/position-helpers";   // relative, absolute, sticky …
 @import "includes/position-defaults";  // top right bottom left etc
 @import "includes/disabled";           // helper class for disabled stuff
-@import "includes/kbd";                // keyboard styles
+@import "includes/kbd";                // keyboard keys styles
+@import "includes/details-summary";    // details summary element
+
 
 // CSS Grid
 @import "includes/grid";               // CSS grid base — Z style rows

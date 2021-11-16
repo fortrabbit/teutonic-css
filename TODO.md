@@ -1,6 +1,11 @@
 # TODO for Teutonic CSS
 
-* [ ] Refactor inprogress in loading with background image https://css-tricks.com/stripes-css/
+* [x] Make colors available as SCSS vars as well (for SVG backgrounds and such) - already done, not possible for SVG still
+* [ ] Use https://github.com/davidkpiano/sass-svg to inline SVGs from file?
+* [ ] Refactor inprogress in loading with background image 
+  * https://css-tricks.com/stripes-css/
+  * https://codepen.io/benarson/pen/gMpOyX
+  * https://stackoverflow.com/questions/30000322/moving-stripes-working-with-background-image-but-not-with-background-gradients
 * [ ] Fix tooltips to the right, why?
 * [ ] ~~A grid system that will auto-distribute boxes equally (media-queries?)~~
 * [ ] Table rows with border-radius ??? will not work likely?!
