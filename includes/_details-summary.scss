@@ -1,0 +1,34 @@
+// Details summary element styling
+
+// <details class="details">
+//   <summary>Hello</summary>
+//   <p>Hello back</p>
+// </details>
+
+// Status: hacky
+// details summary not supposed to have block elements
+
+.details summary {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding-left: var(--space-m);
+  &::before {
+    $svg-size: .8rem;
+    content: "";
+    top: .8rem;
+    position: absolute;
+    width:  $svg-size;
+    height: $svg-size;
+    background-image: url('#{$svg-triangle}'); // See SVG helpers
+    background-size: $svg-size $svg-size;  
+    left: var(--space-s);
+    color: var(--color-prime-3);
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease-out
+  }
+}
+
+details[open] summary::before {
+  transform: rotate(0deg);
+}

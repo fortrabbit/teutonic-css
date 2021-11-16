@@ -1,0 +1,16 @@
+// SVG background image helpers
+// Since we can not load SVG as background images directly
+
+
+//$svg-color: 'var(--color-prime-1)'; // This doesn't work for background images
+//$svg-color: color(prime, 1); // See vars-colors-scss (doesn't work)
+$svg-color: 'hsl(260, 99%, 60%)';
+$svg-prefix: 'data:image/svg+xml;charset=utf-8,';
+
+// Triangle
+$svg-triangle-image: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14"><polygon points="2 2, 22 2, 12 14" fill="#{$svg-color}"/></svg>';
+$svg-triangle: $svg-prefix + $svg-triangle-image;
+
+// Carret
+$svg-carret-image: '<svg  viewBox="0 0 24 14" style="fill: none; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; stroke:#{$svg-color}" xmlns="http://www.w3.org/2000/svg"><polyline points="2 2, 12 12 ,22 2" /></svg>';
+$svg-carret: $svg-prefix + $svg-carret-image;
