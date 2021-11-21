@@ -9,21 +9,22 @@
 
 .inprogress, .loading {
   @extend .striped;
-  border: 2px solid red;
   animation-name: movebg;
   animation-iteration-count: infinite;
-  animation-duration: .7s;
+  animation-duration: .8s;
   animation-timing-function: linear;
 }
 // animation progress with background position
 @keyframes movebg {
   from {
-    background-position: -13px 0
+    background-position: 0px 0
   }
   to { 
-    background-position: 22px 0
+    background-position: $stripe-size 0
   }
 }
+
+
 
 
 // OLD

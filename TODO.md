@@ -1,5 +1,6 @@
 # TODO for Teutonic CSS
 
+* [ ] Idea Button/Nav-Group with border radius first last-child
 * [x] Make colors available as SCSS vars as well (for SVG backgrounds and such) - already done, not possible for SVG still
 * [ ] Use https://github.com/davidkpiano/sass-svg to inline SVGs from file?
 * [ ] Refactor inprogress in loading with background image 

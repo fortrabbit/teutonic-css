@@ -38,7 +38,7 @@
 
   &.ghost {
     background-color: transparent;
-    border-color: transparent;
+    //border-color: transparent;
     &:hover {
       background-color: var(--color-bg-2, var(--color-prime-1));
     }
