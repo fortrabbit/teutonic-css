@@ -8,7 +8,6 @@
 .button {
   padding: var(--space-s);
   position: relative;
-  // border: 0;
   border: 1px solid var(--color-shadow-1);
   border-radius: var(--border-radius-m);
   color: var(--color-bg-4, var(--color-prime-4));
@@ -26,11 +25,11 @@
 
   &.prime {
     color: var(--color-bg-5, var(--color-prime-1));
-    background-color: var(--color-bg-4, var(--color-prime-4));
+    background-color: var(--color-bg-3, var(--color-prime-3));
     cursor: pointer;  // for HTML buttons
     &:hover {
       z-index: 2;
-      background-color: var(--color-bg-5, var(--color-prime-5));
+      background-color: var(--color-bg-4, var(--color-prime-4));
     }
     &:focus        { background-color: var(--color-accent-4); }
     &:focus:hover  { background-color: var(--color-accent-5); }
@@ -38,7 +37,6 @@
 
   &.ghost {
     background-color: transparent;
-    //border-color: transparent;
     &:hover {
       background-color: var(--color-bg-2, var(--color-prime-1));
     }

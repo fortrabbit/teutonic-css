@@ -6,7 +6,7 @@
 $stripe-size: 28px;
 
 @mixin striped {
-  background: 
+  background-image: 
     repeating-linear-gradient(
       45deg, 
       var(--color-shadow-1), 

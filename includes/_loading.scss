@@ -3,9 +3,7 @@
 // element in progress
 // was just click and now shows that something is happening
 
-.loading {
-  cursor: wait;
-}
+.loading { cursor: wait; }
 
 .inprogress, .loading {
   @extend .striped;
@@ -14,43 +12,9 @@
   animation-duration: .8s;
   animation-timing-function: linear;
 }
+
 // animation progress with background position
 @keyframes movebg {
-  from {
-    background-position: 0px 0
-  }
-  to { 
-    background-position: $stripe-size 0
-  }
+  from { background-position: 0px 0 }
+  to   { background-position: $stripe-size 0 }
 }
-
-
-
-
-// OLD
-
-// .loading {
-//   cursor: wait;
-//   overflow: hidden;
-//   position: relative;
-//   &:after {
-//     content: '';
-//     top: 0;
-//     left: 0;
-//     width: 200%;
-//     height: 100%;
-//     pointer-events: none;
-//     position: absolute;
-//     @extend .striped;
-//     animation-name: move;
-//     animation-iteration-count: infinite;
-//     animation-duration: .7s;
-//     animation-timing-function: linear;
-//   }
-// }
-// 
-// // animation loading with after image translate
-// @keyframes move {
-//   0%   { transform: translateX($stripe-size*-2.8); }
-//   100% { transform: translateX(0); }
-// }
