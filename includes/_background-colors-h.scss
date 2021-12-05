@@ -1,15 +1,15 @@
 // Hover states background colors
 
-// TODO: use the colors maps instead of redefining here!
+// TODO: Maybe use the colors maps instead of redefining here!
 
 $colors: "main", "prime", "warn", "danger", "success";
 
 @each $color in $colors {
-  @for $i from 1 through 5 {
+  @for $i from 1 through 7 {
     .bg-#{$color}-#{$i}-h:hover, .bg-#{$color}-#{$i}-h:focus {
       $h: $i + 1;
-      background-color: var(--color-#{$color}-#{$h});
-      @if $i == 5 { background-color: black }
+      background-color: var(--color-#{$color}-#{$h}) !important;
+      @if $i == 7 { background-color: black }
     }
   }
 }

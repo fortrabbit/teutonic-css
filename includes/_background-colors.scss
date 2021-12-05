@@ -5,7 +5,7 @@
 @each $item, $color in $colors {
   @each $index, $value in $color {
     [class*="bg-#{$item}-#{$index}"] {
-      background-color: var(--color-#{$item}-#{$index});
+      background-color: var(--color-#{$item}-#{$index}) !important;
     }
   }
 }

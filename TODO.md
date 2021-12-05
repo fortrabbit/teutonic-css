@@ -1,5 +1,12 @@
 # TODO for Teutonic CSS
 
+
+* [ ] Border radius sizes for nested objects
+* [ ] Linear Scale based on one size to multiply
+* [x] Bring back laptop breakpoint
+* [ ] Reconsider `.color-bg-2` classes they are kinda confusing (warn classes not predictable)
+* [ ] Loop over colormap revering for _inverted
+* [ ] Add two more colors to each color scale for less hustle juggling the colors.
 * [ ] Idea Button/Nav-Group with border radius first last-child
 * [x] Make colors available as SCSS vars as well (for SVG backgrounds and such) - already done, not possible for SVG still
 * [ ] Use https://github.com/davidkpiano/sass-svg to inline SVGs from file?

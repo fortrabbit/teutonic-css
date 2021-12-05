@@ -2,9 +2,28 @@
 // Breakpoint helpers
 
 
+@media #{$laptop} {
+  .flex.collapse-l {
+    display: block;
+    &.gap-no {
+    .input { width: 100%; }
+    > * { margin-left: 0; }
+    }
+  }
+  .flex .collapse-l {
+    flex-basis: 100% !important
+  }
+  .flex > .span-half-l  { 
+    flex-basis: 50% !important
+  }
+  .flex > .span-full-l  { 
+    flex-basis: 100% !important
+  }
+}
+
 @media #{$tablet} {
   .flex.collapse-t {
-    display: block;                // parent container
+    display: block;
     &.gap-no {
     .input { width: 100%; }
     > * { margin-left: 0; }
@@ -23,7 +42,7 @@
 
 @media #{$phone} {
   .flex.collapse-p {
-    display: block;                // parent container
+    display: block;
   }
   .flex .collapse-p {
     flex-basis: 100% !important

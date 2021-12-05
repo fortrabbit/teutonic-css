@@ -9,10 +9,10 @@
   padding: 0 4px;
   vertical-align: text-top;
   color: currentColor;
-  background-color: var(--highlight-1);
-  border: 1px solid var(--shadow-2);
-  border-radius: var(--border-radius-s);
+  background-color: var(--color-shadow-2);
+  //border: 1px solid var(--color-shadow-2);
+  border-radius: var(--space-xs);
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1px;
- }
+  margin: 1px 1px 0 1px;
+}

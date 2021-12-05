@@ -4,26 +4,34 @@
 // globally used media queries are here
 // there might be some local ones around
 
+// TODO: Create a map one can loop over...
+
 
 // Breakpoints
-// for mediaqueries (max-width)
+// for media-queries (max-width)
 // Please mind that CSS vars don't work in media queries
 
 $breakpoint-desktop:   1600px !default;
-//$breakpoint-laptop:    1300px;
-$breakpoint-tablet:    1200px !default;
+$breakpoint-laptop:    1300px !default;
+$breakpoint-tablet:    900px !default;
 $breakpoint-phone:     400px !default;
 
-$desktop:              "(min-width:#{$breakpoint-desktop})";
-//$laptop:               #{"(max-width:#{$breakpoint-laptop)}"};
-$tablet:               "(max-width:#{$breakpoint-tablet})";
-$phone:                "(max-width:#{$breakpoint-phone})";
+$desktop:  "(min-width:#{$breakpoint-desktop})";
+$laptop:   "(max-width:#{$breakpoint-laptop})";
+$tablet:   "(max-width:#{$breakpoint-tablet})";
+$phone:    "(max-width:#{$breakpoint-phone})";
 
 // Make everything smaller
 // on smaller devices
-$tablet-font-size:  90% !default;
-$phone-font-size:   80% !default;
+$tablet-font-size:  95% !default;
+$phone-font-size:   85% !default;
 
+
+@media #{$laptop} {
+  .hide-l { display: none !important }
+  // CSS Columns
+  .columns.collapse-l { column-count: 1 !important }
+}
 
 @media #{$tablet} {
   .hide-t { display: none !important }
@@ -40,7 +48,7 @@ $phone-font-size:   80% !default;
 // Make everything smaller on mobile devices
 // Most sizing is made with REM, 
 // this single value everything
-// See SCSS vars & fuild_scale for more
+// See SCSS vars & fluid_scale for more
 
 @media #{$tablet} { html { font-size: #{$tablet-font-size}; } }
 @media #{$phone}  { html { font-size: #{$phone-font-size};  } }

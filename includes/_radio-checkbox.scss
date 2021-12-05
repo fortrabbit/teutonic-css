@@ -41,7 +41,7 @@ $radio-check-size: 12px;
   &:after, &:before {
     content: '';
     position: absolute;
-    background-color: var(--color, var(--color-main-5));
+    background-color: var(--color, var(--color-main-7));
   }
 }
 
@@ -49,7 +49,7 @@ $radio-check-size: 12px;
 .radio {
   border-radius: 50%;
   &:after {
-    border: 1px solid var(--color, var(--color-main-5));
+    border: 1px solid var(--color, var(--color-main-7));
     border-radius: 50%;
     width:  4px;
     height: 4px;
@@ -67,7 +67,7 @@ $radio-check-size: 12px;
 //input[type=checkbox] {
 .checkbox {
   position: relative;
-  border-radius: var(--border-radius-s);
+  border-radius: var(--space-px);
   &:before, &:after {
     width:  3px;
     height: 6px;

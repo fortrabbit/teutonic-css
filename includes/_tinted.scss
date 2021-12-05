@@ -1,22 +1,22 @@
 // Colors everything within a container
 
-// TODO: Sepratate these files here
+// TODO: Separate these files here
 // TODO: Loop over color map
 
 $tinted-states: "warn", "success", "danger", "prime";
 
-// Border + text color (and some magif)
+// Border + text color (and some magic)
 @each $state in $tinted-states {
   .tinted-#{$state}, .tinted-#{$state} * {
     color: var(--color-#{$state}-4);
-    .link { color: var(--color-#{$state}-5) }
+    //.link { color: var(--color-#{$state}-5) }
   }
 }
 
 // Background color
 @each $state in $tinted-states {
   .tinted-bg-#{$state}, .tinted-bg-#{$state} * {
-    @for $i from 1 through 5 {
+    @for $i from 1 through 7 {
       $transposed-index: $i;
       --color-bg-#{$i}: var(--color-#{$state}-#{$transposed-index});
     }

@@ -1,6 +1,15 @@
 // CSS grid media queries
 // Breakpoint helpers
 
+// TODO: Loop over a map of these
+
+@media #{$laptop} {
+  [class*="grid"].collapse-l { grid-template-columns: 1fr; }
+  @for $i from 3 through 12 {
+    [class*="grid"] > .span-#{$i}-l { grid-column: span #{$i} !important }
+  }
+}
+
 @media #{$tablet} {
   [class*="grid"].collapse-t { grid-template-columns: 1fr; }
   @for $i from 3 through 12 {

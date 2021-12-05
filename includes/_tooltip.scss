@@ -11,15 +11,16 @@
   position: relative;
   &:after {
     z-index: 200000;
-    left:       50%;
-    top:      -100%;
-    transform: translateX(-50%) translateY(-4px);
+    border-radius: var(--space-px);
+    left:         50%;
+    top:        -100%;
+    transform:   translateX(-50%) translateY(-4px);
     content:     attr(data-tooltip);
     font-weight: normal;
     font-size:   10px;
-    background:  var(--color-main-4);
+    background:  var(--color-main-7);
     color:       var(--color-main-1);
-    padding:     4px;
+    padding:     var(--space-xs);
     max-width:   500px;
     overflow: hidden;
     white-space: nowrap;

@@ -4,10 +4,11 @@
 // with auto-widths and minmax
 
 $grid-auto-min-sizes: (
-  s:  6rem,
-  m:  8rem,
-  l:  16rem,
-  xl: 22rem
+  s:   6rem,
+  m:   8rem,
+  l:   16rem,
+  xl:  22rem,
+  xxl: 28rem
 );
 
 .grid-auto {

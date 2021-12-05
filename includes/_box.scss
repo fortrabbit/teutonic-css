@@ -4,9 +4,12 @@
 
 // Passive box
 .box, .boxi {
-  border-radius: var(--border-radius-m);
+  //border-top: 1px solid var(--color-shadow-1);
+  //border-radius: var(--space-xs);
   //border: var(--border-width) solid var(--border-color, var(--color));
-  border: 1px solid var(--color-shadow-1);
+  //outline: 1px solid var(--color-highlight-3);
+  //border: 1px solid var(--color-shadow-1);
+  //box-shadow: 0 0 0 1px var(--color-shadow-3);
   background-color: var(--color-bg-1, var(--color-main-2));
   position: relative;
   display: block; // just in case
@@ -21,12 +24,12 @@
 // Interactive box
 a.box, button.box, label.box, .boxi {
   cursor: pointer;
-  background-color: var(--color-bg-1, var(--color-main-2));
+  //background-color: var(--color-bg-1, var(--color-main-2));
   &:hover {
     background-color: var(--color-bg-2, var(--color-prime-1));
     z-index: 3;
-    // .link { color: var(--color-bg-2, var(--color-prime-5)) }
-    .link { color: var(--color-prime-5)}
+     .link { color: var(--color-bg-7, var(--color-prime-7)) }
+    //.link { color: var(--color-prime-5)}
   }
   &:focus { @extend .focus; }
 }

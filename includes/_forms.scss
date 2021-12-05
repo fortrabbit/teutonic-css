@@ -20,7 +20,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
 .button,
 .textarea,
 .select {
-  border-radius: var(--border-radius-m);
+  border-radius: var(--space-xs);
   -webkit-appearance: none; // iOs fix
   //border-radius: 0; // iOs fix
   @include padding-fix(s);
@@ -33,7 +33,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   border: 1px solid var(--color-shadow-1);
   outline: none;
   background-color: var(--color-bg-1, var(--color-prime-1));
-  color: var(--color, var(--color-main-5));
+  color: var(--color, var(--color-main-7));
   cursor: pointer;
 
   &:hover {
@@ -41,7 +41,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
     z-index: 2;
   }
   &:focus { 
-    background-color: var(--color-bg-1, var(--color-prime-1));
+    //background-color: var(--color-bg-1, var(--color-accent-1));
     @extend .focus;
   }
 }

@@ -4,35 +4,53 @@
 .inverted, [data-theme="dark"] {
 
   // Manually re-setting vars (for now)
-  --color-main-1: var(--main-5);
-  --color-main-2: var(--main-4);
-  --color-main-4: var(--main-2);
-  --color-main-5: var(--main-1);
 
-  --color-prime-1: var(--prime-5);
-  --color-prime-2: var(--prime-4);
-  --color-prime-4: var(--prime-2);
-  --color-prime-5: var(--prime-1);
+  --color-main-1: var(--main-7);
+  --color-main-2: var(--main-6);
+  --color-main-3: var(--main-5);
+  --color-main-4: var(--main-4);
+  --color-main-5: var(--main-3);
+  --color-main-6: var(--main-2);
+  --color-main-7: var(--main-1);
 
-  --color-accent-1: var(--accent-5);
-  --color-accent-2: var(--accent-4);
-  --color-accent-4: var(--accent-2);
-  --color-accent-5: var(--accent-1);
+  --color-prime-1: var(--prime-7);
+  --color-prime-2: var(--prime-6);
+  --color-prime-3: var(--prime-5);
+  --color-prime-4: var(--prime-4);
+  --color-prime-5: var(--prime-3);
+  --color-prime-6: var(--prime-2);
+  --color-prime-7: var(--prime-1);
 
-  --color-warn-1: var(--warn-5);
-  --color-warn-2: var(--warn-4);
-  --color-warn-4: var(--warn-2);
+  --color-accent-1: var(--accent-7);
+  --color-accent-2: var(--accent-6);
+  --color-accent-3: var(--accent-5);
+  --color-accent-4: var(--accent-4);
+  --color-accent-5: var(--accent-3);
+  --color-accent-6: var(--accent-2);
+  --color-accent-7: var(--accent-1);
+
+  --color-warn-1: var(--warn-7);
+  --color-warn-2: var(--warn-6);
+  --color-warn-3: var(--warn-5);
+  --color-warn-4: var(--warn-4);
+  --color-warn-5: var(--warn-3);
   --color-warn-5: var(--warn-1);
 
-  --color-danger-1: var(--danger-5);
-  --color-danger-2: var(--danger-4);
-  --color-danger-4: var(--danger-2);
-  --color-danger-5: var(--danger-1);
+  --color-danger-1: var(--danger-7);
+  --color-danger-2: var(--danger-6);
+  --color-danger-3: var(--danger-5);
+  --color-danger-4: var(--danger-4);
+  --color-danger-5: var(--danger-3);
+  --color-danger-6: var(--danger-2);
+  --color-danger-7: var(--danger-1);
 
-  --color-success-1: var(--success-5);
-  --color-success-2: var(--success-4);
-  --color-success-4: var(--success-2);
-  --color-success-5: var(--success-1);
+  --color-success-1: var(--success-7);
+  --color-success-2: var(--success-6);
+  --color-success-3: var(--success-5);
+  --color-success-4: var(--success-4);
+  --color-success-5: var(--success-3);
+  --color-success-6: var(--success-2);
+  --color-success-7: var(--success-1);
 
   --color-shadow-1: var(--highlight-1);
   --color-shadow-2: var(--highlight-2);
