@@ -14,7 +14,7 @@
 $breakpoint-desktop:   1600px !default;
 $breakpoint-laptop:    1300px !default;
 $breakpoint-tablet:    900px !default;
-$breakpoint-phone:     400px !default;
+$breakpoint-phone:     600px !default;
 
 $desktop:  "(min-width:#{$breakpoint-desktop})";
 $laptop:   "(max-width:#{$breakpoint-laptop})";

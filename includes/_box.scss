@@ -19,7 +19,12 @@
     border-color: currentColor;
     z-index: 1;
   }
+  &.ghost {
+    background-color: transparent;
+  }
 }
+
+
 
 // Interactive box
 a.box, button.box, label.box, .boxi {
