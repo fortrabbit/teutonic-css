@@ -17,10 +17,10 @@ form { display: block; width: 100%; }
 input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
 
 .input,
-.button,
+//.button,
 .textarea,
 .select {
-  border-radius: var(--space-xs);
+  //border-radius: var(--space-xs);
   -webkit-appearance: none; // iOs fix
   //border-radius: 0; // iOs fix
   @include padding-fix(s);

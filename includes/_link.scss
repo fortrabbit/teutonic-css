@@ -2,8 +2,21 @@
 //
 // Textlinks within text blocks or navigation
 
-.link, .link *                  { color: var(--color-bg-6, var(--color-prime-6)); cursor: pointer }
-.link:hover, .link:hover *      { color: var(--color-bg-7, var(--color-prime-7)) }
+.link, .link * {
+  color: var(--color-bg-6, var(--color-prime-6)); 
+  cursor: pointer
+}
+
+.link:hover, .link:hover * {
+  color: var(--color-bg-7, var(--color-prime-7))
+}
+
+.link.extra, .link.extra * {
+  color: var(--color-accent-5)
+}
+.link.extra:hover, .link.extra:hover * { 
+  color: var(--color-accent-7) 
+}
 
 // TODO: under consideration
 //.active.link, .active .link     { color: var(--color-bg-2, var(--color-prime-1)) }

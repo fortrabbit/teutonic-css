@@ -8,13 +8,17 @@
 .button {
   padding: var(--space-s);
   position: relative;
-  border: 1px solid var(--color-shadow-1);
-  //box-shadow: 0 0 0 1px var(--color-highlight-2);
   border-radius: var(--space-xs);
   color: var(--color-bg-6, var(--color-prime-6));
-
+  -webkit-appearance: none; // iOs fix
+  outline: none;
+  background-color: var(--color-bg-1, var(--color-prime-1));
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-bg-2, var(--color-prime-2));
+    z-index: 2;
+  }
   &:focus  { @extend .focus; }
-  &:hover, &:focus { z-index: 2 }
   &.active { 
     &:hover {
       cursor: default;

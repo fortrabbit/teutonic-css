@@ -14,15 +14,22 @@
   position: relative;
   padding-left: var(--space-m);
   &::before {
-    $svg-size: .8rem;
+    $size: 1.2rem;
+    $svg-size: .7rem;
     content: "";
-    top: .8rem;
     position: absolute;
-    width:  $svg-size;
-    height: $svg-size;
+    width:  $size;
+    height: $size;
+    // background-color: var(--color-main-1);
+    // border-radius: 50%;
     background-image: url('#{$svg-triangle}'); // See SVG helpers
     background-size: $svg-size $svg-size;  
-    left: var(--space-s);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    // left: var(--space-s);
+    top: calc(50% - $size/2);
+    //left: calc(var(--space-s));
+    left: .3rem;
     color: var(--color-prime-3);
     transform: rotate(-90deg);
     transition: transform 0.2s ease-out
