@@ -1,0 +1,11 @@
+// UI colors as CSS classes
+
+// as text colors, colors are defined in color-map.scss
+
+@each $item, $color in $colors {
+  @each $index, $value in $color {
+    [class*="text-#{$item}-#{$index}"] {
+      color: var(--color-#{$item}-#{$index});
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// Hover states text colors
+
+@each $item, $color in $colors {
+  @each $index, $value in $color {
+    .text-#{$item}-#{$index}-h:hover, .text-#{$item}-#{$index}-h:focus {
+      color: var(--color-#{$item}-#{$index}) !important;
+    }
+  }
+}

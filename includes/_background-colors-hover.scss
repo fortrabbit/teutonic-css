@@ -1,0 +1,9 @@
+// Hover states background colors
+
+@each $item, $color in $colors {
+  @each $index, $value in $color {
+    .bg-#{$item}-#{$index}-h:hover, .bg-#{$item}-#{$index}-h:focus {
+      background-color: var(--color-#{$item}-#{$index}) !important;
+    }
+  }
+}

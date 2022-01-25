@@ -10,7 +10,7 @@
 
   position: relative;
   &:after {
-    z-index: 200000;
+    z-index: 20000;
     border-radius: var(--space-px);
     left:         50%;
     top:        -100%;
@@ -20,7 +20,7 @@
     font-size:   10px;
     background:  var(--color-main-7);
     color:       var(--color-main-1);
-    padding:     var(--space-xs);
+    padding:     0 var(--space-xs);
     max-width:   500px;
     overflow: hidden;
     white-space: nowrap;

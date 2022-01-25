@@ -6,8 +6,8 @@
 // TODO: Reconsider this. It's too close to tinted styles!
 // TODO: Use colors-map?! it should already be loaded
 
-$colors: "main", "prime", "warn", "danger", "success";
-$shades: "shadow", "highlight";
+// $colors: "main", "prime", "warn", "danger", "success";
+// $shades: "shadow", "highlight";
 
 @each $color in $colors {
   @for $i from 1 through 5 {

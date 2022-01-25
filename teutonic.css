@@ -1,85 +1,113 @@
 @charset "UTF-8";
 :root {
-  --main-1: #e5e5e1;
-  --main-2: #dbdbd6;
-  --main-3: #878877;
-  --main-4: #31312b;
-  --main-5: #20211c;
-  --prime-1: #e4d6ff;
-  --prime-2: #dac7ff;
-  --prime-3: #7734fe;
-  --prime-4: #4b14b8;
-  --prime-5: #44297a;
-  --accent-1: #3dd6f5;
-  --accent-2: #0dccf2;
-  --accent-3: #0aa3c2;
-  --accent-4: #087a91;
-  --accent-5: #055261;
-  --warn-1: #e2db8d;
-  --warn-2: #d8cf64;
-  --warn-3: #ada21f;
-  --warn-4: #918608;
-  --warn-5: #615905;
-  --danger-1: #feb24d;
-  --danger-2: #fea025;
+  --main-1: #ddded9;
+  --main-2: #cdcdc6;
+  --main-3: #adaea2;
+  --main-4: #878877;
+  --main-5: #46473e;
+  --main-6: #2b2c26;
+  --main-7: #20211c;
+  --prime-1: #bb9afe;
+  --prime-2: #b18afe;
+  --prime-3: #a071fe;
+  --prime-4: #7e47eb;
+  --prime-5: #7953c6;
+  --prime-6: #6039ac;
+  --prime-7: #4a2d86;
+  --accent-1: #6ee0f7;
+  --accent-2: #55dbf6;
+  --accent-3: #0dccf2;
+  --accent-4: #0aa3c2;
+  --accent-5: #08839b;
+  --accent-6: #066274;
+  --accent-7: #054957;
+  --warn-1: #d1c647;
+  --warn-2: #c8bb32;
+  --warn-3: #bfb222;
+  --warn-4: #c2b30a;
+  --warn-5: #918608;
+  --warn-6: #655e0b;
+  --warn-7: #494512;
+  --danger-1: #febd67;
+  --danger-2: #fea634;
   --danger-3: #fe9001;
-  --danger-4: #a11e12;
+  --danger-4: #b82214;
   --danger-5: #7a261f;
+  --danger-6: #66201a;
+  --danger-7: #521a14;
   --success-1: #77cc66;
-  --success-2: #3da329;
-  --success-3: #24aa09;
-  --success-4: #388a0f;
-  --success-5: #263d0f;
-  --shadow-1: rgba(0, 0, 0, 0.1);
-  --shadow-2: rgba(0, 0, 0, 0.2);
-  --highlight-1: rgba(253, 253, 252, 0.1);
-  --highlight-2: rgba(253, 253, 252, 0.2);
+  --success-2: #4dcc33;
+  --success-3: #29c20a;
+  --success-4: #3c9310;
+  --success-5: #456e1c;
+  --success-6: #2e4912;
+  --success-7: #1f310c;
+  --shadow-1: rgba(0, 0, 0, 0.05);
+  --shadow-2: rgba(0, 0, 0, 0.1);
+  --shadow-3: rgba(0, 0, 0, 0.5);
+  --highlight-1: rgba(253, 253, 252, 0.05);
+  --highlight-2: rgba(253, 253, 252, 0.1);
+  --highlight-3: rgba(253, 253, 252, 0.5);
   --color-main-1: var(--main-1);
   --color-main-2: var(--main-2);
   --color-main-3: var(--main-3);
   --color-main-4: var(--main-4);
   --color-main-5: var(--main-5);
+  --color-main-6: var(--main-6);
+  --color-main-7: var(--main-7);
   --color-prime-1: var(--prime-1);
   --color-prime-2: var(--prime-2);
   --color-prime-3: var(--prime-3);
   --color-prime-4: var(--prime-4);
   --color-prime-5: var(--prime-5);
+  --color-prime-6: var(--prime-6);
+  --color-prime-7: var(--prime-7);
   --color-accent-1: var(--accent-1);
   --color-accent-2: var(--accent-2);
   --color-accent-3: var(--accent-3);
   --color-accent-4: var(--accent-4);
   --color-accent-5: var(--accent-5);
+  --color-accent-6: var(--accent-6);
+  --color-accent-7: var(--accent-7);
   --color-warn-1: var(--warn-1);
   --color-warn-2: var(--warn-2);
   --color-warn-3: var(--warn-3);
   --color-warn-4: var(--warn-4);
   --color-warn-5: var(--warn-5);
+  --color-warn-6: var(--warn-6);
+  --color-warn-7: var(--warn-7);
   --color-danger-1: var(--danger-1);
   --color-danger-2: var(--danger-2);
   --color-danger-3: var(--danger-3);
   --color-danger-4: var(--danger-4);
   --color-danger-5: var(--danger-5);
+  --color-danger-6: var(--danger-6);
+  --color-danger-7: var(--danger-7);
   --color-success-1: var(--success-1);
   --color-success-2: var(--success-2);
   --color-success-3: var(--success-3);
   --color-success-4: var(--success-4);
   --color-success-5: var(--success-5);
+  --color-success-6: var(--success-6);
+  --color-success-7: var(--success-7);
   --color-shadow-1: var(--shadow-1);
   --color-shadow-2: var(--shadow-2);
+  --color-shadow-3: var(--shadow-3);
   --color-highlight-1: var(--highlight-1);
   --color-highlight-2: var(--highlight-2);
+  --color-highlight-3: var(--highlight-3);
 }
 
 :root {
-  --space-base: 0.25rem;
+  --space-base: 0.26rem;
   --space-ratio: 2.5;
+  --space-px: 3px;
   --space-xs: var(--space-base);
   --space-s: calc(var(--space-ratio) * var(--space-xs));
   --space-m: calc(var(--space-ratio) * var(--space-s));
   --space-l: calc(var(--space-ratio) * var(--space-m));
   --space-xl: calc(var(--space-ratio) * var(--space-l));
   --space-xxl: calc(var(--space-ratio) * var(--space-xl));
-  --space-px: 2px;
 }
 
 :root {
@@ -92,24 +120,6 @@
   --text-m: var(--text-base);
   --text-s: calc(var(--text-m) / var(--text-ratio));
   --text-xs: calc(var(--text-s) / var(--text-ratio));
-}
-
-:root {
-  --border-radius-s: 1px;
-  --border-radius-m: 2px;
-  --border-radius-l: 4px;
-}
-
-.border-radius_s {
-  border-radius: var(--border-radius-s);
-}
-
-.border-radius_m {
-  border-radius: var(--border-radius-m);
-}
-
-.border-radius_l {
-  border-radius: var(--border-radius-l);
 }
 
 :root {
@@ -152,7 +162,7 @@ audio:not([controls]) {
 
 * {
   box-sizing: border-box;
-  color: var(--color, var(--color-main-5));
+  color: var(--color, var(--color-main-7));
   -webkit-overflow-scrolling: touch;
 }
 
@@ -169,7 +179,16 @@ ul {
   list-style: none;
 }
 
-@media (max-width:800px) {
+@media (max-width:1300px) {
+  .hide-l {
+    display: none !important;
+  }
+
+  .columns.collapse-l {
+    column-count: 1 !important;
+  }
+}
+@media (max-width:900px) {
   .hide-t {
     display: none !important;
   }
@@ -178,7 +197,7 @@ ul {
     column-count: 1 !important;
   }
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
   .hide-p {
     display: none !important;
   }
@@ -187,14 +206,14 @@ ul {
     column-count: 1 !important;
   }
 }
-@media (max-width:800px) {
+@media (max-width:900px) {
   html {
-    font-size: 90%;
+    font-size: 95%;
   }
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
   html {
-    font-size: 80%;
+    font-size: 85%;
   }
 }
 [class*=zi-] {
@@ -248,10 +267,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 
 .input,
-.button,
 .textarea,
 .select {
-  border-radius: var(--border-radius-m);
   -webkit-appearance: none;
   padding-top: var(--space-s);
   padding-bottom: var(--space-s);
@@ -264,23 +281,15 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   border: 1px solid var(--color-shadow-1);
   outline: none;
   background-color: var(--color-bg-1, var(--color-prime-1));
-  color: var(--color, var(--color-main-5));
+  color: var(--color, var(--color-main-7));
   cursor: pointer;
 }
 .input:hover,
-.button:hover,
 .textarea:hover,
 .select:hover {
   background-color: var(--color-bg-2, var(--color-prime-2));
   z-index: 2;
 }
-.input:focus,
-.button:focus,
-.textarea:focus,
-.select:focus {
-  background-color: var(--color-bg-1, var(--color-prime-1));
-}
-
 .input,
 .textarea,
 .select {
@@ -330,8 +339,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   cursor: pointer;
   text-overflow: ellipsis;
   border-radius: var(--border-radius-m);
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14"><polygon points="2 2, 22 2, 12 14" fill="hsl(260, 99%, 60%)"/></svg>');
   padding-right: 1.2rem !important;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg  viewBox="0 0 24 14" style="fill: none; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; stroke:hsl(260, 99%, 60%)" xmlns="http://www.w3.org/2000/svg"><polyline points="2 2, 12 12 ,22 2" /></svg>');
   background-size: 0.7rem 0.7rem;
   background-repeat: no-repeat;
   background-position: right 0.4rem top 50%;
@@ -524,14 +533,14 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 .radio:after, .radio:before, .checkbox:after, .checkbox:before {
   content: "";
   position: absolute;
-  background-color: var(--color, var(--color-main-5));
+  background-color: var(--color, var(--color-main-7));
 }
 
 .radio {
   border-radius: 50%;
 }
 .radio:after {
-  border: 1px solid var(--color, var(--color-main-5));
+  border: 1px solid var(--color, var(--color-main-7));
   border-radius: 50%;
   width: 4px;
   height: 4px;
@@ -546,7 +555,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 
 .checkbox {
   position: relative;
-  border-radius: var(--border-radius-s);
+  border-radius: var(--space-px);
 }
 .checkbox:before, .checkbox:after {
   width: 3px;
@@ -788,24 +797,24 @@ input[type=number]::-webkit-outer-spin-button {
   border-width: 1px;
 }
 [type=range].range::-ms-fill-lower {
-  background-color: #4b14b8;
-  border: 1px solid #20211c;
+  background-color: #7e47eb;
+  border: 1px solid #46473e;
   border-radius: 229939393px;
 }
 [type=range].range::-ms-fill-upper {
-  background-color: #31312b;
-  border: 1px solid #20211c;
+  background-color: #878877;
+  border: 1px solid #46473e;
   border-radius: 229939393px;
 }
 [type=range].range::-ms-thumb {
-  background-color: #dac7ff;
+  background-color: #b18afe;
   background-image: linear-gradient(transparent, var(--color-shadow-2));
-  border: 1px solid #20211c;
+  border: 1px solid #46473e;
   border-radius: 50%;
   height: 14px;
   width: 14px;
   cursor: pointer;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   margin-top: 2px;
 }
 [type=range].range:focus, [type=range].range:hover {
@@ -818,7 +827,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: var(--colored-3, var(--color-prime-3));
 }
 [type=range].range:focus::-ms-thumb, [type=range].range:hover::-ms-thumb {
-  background-color: #7734fe;
+  background-color: #a071fe;
 }
 [type=range].range:focus::-moz-range-thumb, [type=range].range:active::-moz-range-thumb {
   box-shadow: 0 0 0 2px var(--color-main-5);
@@ -827,7 +836,7 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 0 0 2px var(--color-main-5);
 }
 [type=range].range:focus::-ms-thumb, [type=range].range:active::-ms-thumb {
-  box-shadow: 0 0 0 2px #20211c;
+  box-shadow: 0 0 0 2px #46473e;
 }
 
 .range-box {
@@ -920,11 +929,15 @@ input[type=number]::-webkit-outer-spin-button {
 .button {
   padding: var(--space-s);
   position: relative;
-  border: 1px solid var(--color-shadow-1);
-  border-radius: var(--border-radius-m);
-  color: var(--color-bg-4, var(--color-prime-4));
+  border-radius: var(--space-xs);
+  color: var(--color-bg-6, var(--color-prime-6));
+  -webkit-appearance: none;
+  outline: none;
+  background-color: var(--color-bg-1, var(--color-prime-1));
+  cursor: pointer;
 }
-.button:hover, .button:focus {
+.button:hover {
+  background-color: var(--color-bg-2, var(--color-prime-2));
   z-index: 2;
 }
 .button.active:hover {
@@ -933,53 +946,50 @@ input[type=number]::-webkit-outer-spin-button {
   color: currentColor;
 }
 .button:hover {
-  color: var(--color, var(--color-main-5));
+  color: var(--color, var(--color-prime-6));
 }
 .button.prime {
   color: var(--color-bg-5, var(--color-prime-1));
-  background-color: var(--color-bg-4, var(--color-prime-4));
+  background-color: var(--color-bg-6, var(--color-prime-6));
   cursor: pointer;
 }
 .button.prime:hover {
   z-index: 2;
-  background-color: var(--color-bg-5, var(--color-prime-5));
+  background-color: var(--color-bg-7, var(--color-prime-7));
 }
 .button.prime:focus {
-  background-color: var(--color-accent-4);
+  background-color: var(--color-accent-5);
 }
 .button.prime:focus:hover {
-  background-color: var(--color-accent-5);
+  background-color: var(--color-accent-6);
 }
 .button.ghost {
   background-color: transparent;
-  border-color: transparent;
+  border: 0;
 }
 .button.ghost:hover {
   background-color: var(--color-bg-2, var(--color-prime-1));
 }
 
 .focus, a.box:focus, button.box:focus, label.box:focus, .boxi:focus, .input:focus,
-.button:focus,
 .textarea:focus,
-.select:focus {
-  position: relative;
+.select:focus, .button:focus {
   z-index: 1;
-  background-color: var(--color-accent-2);
+  background-color: var(--color-accent-1);
   border-color: var(--color-shadow-2);
 }
 .focus:hover, a.box:hover:focus, button.box:hover:focus, label.box:hover:focus, .boxi:hover:focus, .input:hover:focus,
-.button:hover:focus,
 .textarea:hover:focus,
-.select:hover:focus {
-  background-color: var(--color-accent-3);
+.select:hover:focus, .button:hover:focus {
+  background-color: var(--color-accent-2);
 }
 
 .box.active, .button.active, label.active, .boxi.active {
-  background-color: var(--color, var(--color-main-5));
+  background-color: var(--color, var(--color-main-7));
   z-index: 3;
 }
 .box.active:hover, .box.active:focus, .button.active:hover, .button.active:focus, label.active:hover, label.active:focus, .boxi.active:hover, .boxi.active:focus {
-  background-color: var(--color, var(--color-main-5));
+  background-color: var(--color, var(--color-main-7));
   cursor: default;
 }
 
@@ -1042,16 +1052,20 @@ abbr {
 }
 
 .link, .block-link, p a, td a, li a, .link *, .block-link *, p a *, td a *, li a * {
-  color: var(--color-bg-4, var(--color-prime-4));
+  color: var(--color-bg-6, var(--color-prime-6));
   cursor: pointer;
 }
 
 .link:hover, .block-link:hover, p a:hover, td a:hover, li a:hover, .link:hover *, .block-link:hover *, p a:hover *, td a:hover *, li a:hover * {
-  color: var(--color-bg-5, var(--color-prime-5));
+  color: var(--color-bg-7, var(--color-prime-7));
 }
 
-.active.link, .active.block-link, p a.active, td a.active, li a.active, .active .link, .active .block-link, .active p a, p .active a, .active td a, td .active a, .active li a, li .active a {
-  color: var(--color-bg-2, var(--color-prime-1));
+.link.extra, .extra.block-link, p a.extra, td a.extra, li a.extra, .link.extra *, .extra.block-link *, p a.extra *, td a.extra *, li a.extra * {
+  color: var(--color-accent-5);
+}
+
+.link.extra:hover, .extra.block-link:hover, p a.extra:hover, td a.extra:hover, li a.extra:hover, .link.extra:hover *, .extra.block-link:hover *, p a.extra:hover *, td a.extra:hover *, li a.extra:hover * {
+  color: var(--color-accent-7);
 }
 
 .link.visited:visited, .visited.block-link:visited, p a.visited:visited, td a.visited:visited, li a.visited:visited, .link.visited:visited *, .visited.block-link:visited *, p a.visited:visited *, td a.visited:visited *, li a.visited:visited * {
@@ -1407,30 +1421,47 @@ th {
 }
 
 .inverted, [data-theme=dark] {
-  --color-main-1: var(--main-5);
-  --color-main-2: var(--main-4);
-  --color-main-4: var(--main-2);
-  --color-main-5: var(--main-1);
-  --color-prime-1: var(--prime-5);
-  --color-prime-2: var(--prime-4);
-  --color-prime-4: var(--prime-2);
-  --color-prime-5: var(--prime-1);
-  --color-accent-1: var(--accent-5);
-  --color-accent-2: var(--accent-4);
-  --color-accent-4: var(--accent-2);
-  --color-accent-5: var(--accent-1);
-  --color-warn-1: var(--warn-5);
-  --color-warn-2: var(--warn-4);
-  --color-warn-4: var(--warn-2);
+  --color-main-1: var(--main-7);
+  --color-main-2: var(--main-6);
+  --color-main-3: var(--main-5);
+  --color-main-4: var(--main-4);
+  --color-main-5: var(--main-3);
+  --color-main-6: var(--main-2);
+  --color-main-7: var(--main-1);
+  --color-prime-1: var(--prime-7);
+  --color-prime-2: var(--prime-6);
+  --color-prime-3: var(--prime-5);
+  --color-prime-4: var(--prime-4);
+  --color-prime-5: var(--prime-3);
+  --color-prime-6: var(--prime-2);
+  --color-prime-7: var(--prime-1);
+  --color-accent-1: var(--accent-7);
+  --color-accent-2: var(--accent-6);
+  --color-accent-3: var(--accent-5);
+  --color-accent-4: var(--accent-4);
+  --color-accent-5: var(--accent-3);
+  --color-accent-6: var(--accent-2);
+  --color-accent-7: var(--accent-1);
+  --color-warn-1: var(--warn-7);
+  --color-warn-2: var(--warn-6);
+  --color-warn-3: var(--warn-5);
+  --color-warn-4: var(--warn-4);
+  --color-warn-5: var(--warn-3);
   --color-warn-5: var(--warn-1);
-  --color-danger-1: var(--danger-5);
-  --color-danger-2: var(--danger-4);
-  --color-danger-4: var(--danger-2);
-  --color-danger-5: var(--danger-1);
-  --color-success-1: var(--success-5);
-  --color-success-2: var(--success-4);
-  --color-success-4: var(--success-2);
-  --color-success-5: var(--success-1);
+  --color-danger-1: var(--danger-7);
+  --color-danger-2: var(--danger-6);
+  --color-danger-3: var(--danger-5);
+  --color-danger-4: var(--danger-4);
+  --color-danger-5: var(--danger-3);
+  --color-danger-6: var(--danger-2);
+  --color-danger-7: var(--danger-1);
+  --color-success-1: var(--success-7);
+  --color-success-2: var(--success-6);
+  --color-success-3: var(--success-5);
+  --color-success-4: var(--success-4);
+  --color-success-5: var(--success-3);
+  --color-success-6: var(--success-2);
+  --color-success-7: var(--success-1);
   --color-shadow-1: var(--highlight-1);
   --color-shadow-2: var(--highlight-2);
   --color-highlight-1: var(--shadow-1);
@@ -1556,8 +1587,6 @@ pre .nd, pre .hljs-params {
 }
 
 .box, .boxi {
-  border-radius: var(--border-radius-m);
-  border: 1px solid var(--color-shadow-1);
   background-color: var(--color-bg-1, var(--color-main-2));
   position: relative;
   display: block;
@@ -1567,17 +1596,19 @@ pre .nd, pre .hljs-params {
   border-color: currentColor;
   z-index: 1;
 }
+.box.ghost, .boxi.ghost {
+  background-color: transparent;
+}
 
 a.box, button.box, label.box, .boxi {
   cursor: pointer;
-  background-color: var(--color-bg-1, var(--color-main-2));
 }
 a.box:hover, button.box:hover, label.box:hover, .boxi:hover {
   background-color: var(--color-bg-2, var(--color-prime-1));
   z-index: 3;
 }
 a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.box:hover td a, td a.box:hover a, a.box:hover li a, li a.box:hover a, button.box:hover .link, button.box:hover .block-link, button.box:hover p a, p button.box:hover a, button.box:hover td a, td button.box:hover a, button.box:hover li a, li button.box:hover a, label.box:hover .link, label.box:hover .block-link, label.box:hover p a, p label.box:hover a, label.box:hover td a, td label.box:hover a, label.box:hover li a, li label.box:hover a, .boxi:hover .link, .boxi:hover .block-link, .boxi:hover p a, p .boxi:hover a, .boxi:hover td a, td .boxi:hover a, .boxi:hover li a, li .boxi:hover a {
-  color: var(--color-prime-5);
+  color: var(--color-bg-7, var(--color-prime-7));
 }
 .box.active-tab, a.active-tab, button.active-tab, label.active-tab {
   background-color: var(--color-main-1);
@@ -1869,16 +1900,17 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   position: relative;
 }
 [data-tooltip]:after {
-  z-index: 200000;
+  z-index: 20000;
+  border-radius: var(--space-px);
   left: 50%;
   top: -100%;
   transform: translateX(-50%) translateY(-4px);
   content: attr(data-tooltip);
   font-weight: normal;
   font-size: 10px;
-  background: var(--color-main-4);
+  background: var(--color-main-7);
   color: var(--color-main-1);
-  padding: 4px;
+  padding: 0 var(--space-xs);
   max-width: 500px;
   overflow: hidden;
   white-space: nowrap;
@@ -1913,7 +1945,9 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
 }
 
 .striped, .inprogress, .loading {
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 12px, var(--color-highlight-2) 12px, var(--color-highlight-2) 24px);
+  background-image: repeating-linear-gradient(45deg, var(--color-shadow-1), var(--color-shadow-1) 10px, var(--color-highlight-1) 10px, var(--color-highlight-1) 20px);
+  background-position: 0 0;
+  background-size: 28px 100%;
 }
 
 .loading {
@@ -1923,16 +1957,16 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
 .inprogress, .loading {
   animation-name: movebg;
   animation-iteration-count: infinite;
-  animation-duration: 0.7s;
+  animation-duration: 1.4s;
   animation-timing-function: linear;
 }
 
 @keyframes movebg {
   from {
-    background-position: -13px 0;
+    background-position: 0px 0;
   }
   to {
-    background-position: 22px 0;
+    background-position: 28px 0;
   }
 }
 .pos-abs {
@@ -2039,7 +2073,9 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   border-color: var(--color, var(--color-main-5));
   color: var(--color-main-3);
   background-color: var(--color-bg-1, var(--color-prime-1));
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 12px, var(--color-highlight-2) 12px, var(--color-highlight-2) 24px);
+  background-image: repeating-linear-gradient(45deg, var(--color-shadow-1), var(--color-shadow-1) 10px, var(--color-highlight-1) 10px, var(--color-highlight-1) 20px);
+  background-position: 0 0;
+  background-size: 28px 100%;
 }
 .disabled:not(.loading):not(.range):hover,
 :disabled:not(.loading):not(.range):hover {
@@ -2071,12 +2107,37 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   padding: 0 4px;
   vertical-align: text-top;
   color: currentColor;
-  background-color: var(--highlight-1);
-  border: 1px solid var(--shadow-2);
-  border-radius: var(--border-radius-s);
+  background-color: var(--color-shadow-2);
+  border-radius: var(--space-xs);
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1px;
+  margin: 1px 1px 0 1px;
+}
+
+.details summary {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding-left: var(--space-m);
+}
+.details summary::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14"><polygon points="2 2, 22 2, 12 14" fill="hsl(260, 99%, 60%)"/></svg>');
+  background-size: 0.7rem 0.7rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  top: calc(50% - 0.6rem);
+  left: 0.3rem;
+  color: var(--color-prime-3);
+  transform: rotate(-90deg);
+  transition: transform 0.2s ease-out;
+}
+
+details[open] summary::before {
+  transform: rotate(0deg);
 }
 
 .grid {
@@ -2531,7 +2592,56 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   --grid-auto-min: 22rem;
 }
 
-@media (max-width:800px) {
+.grid-auto.min_xxl {
+  --grid-auto-min: 28rem;
+}
+
+@media (max-width:1300px) {
+  [class*=grid].collapse-l {
+    grid-template-columns: 1fr;
+  }
+
+  [class*=grid] > .span-3-l {
+    grid-column: span 3 !important;
+  }
+
+  [class*=grid] > .span-4-l {
+    grid-column: span 4 !important;
+  }
+
+  [class*=grid] > .span-5-l {
+    grid-column: span 5 !important;
+  }
+
+  [class*=grid] > .span-6-l {
+    grid-column: span 6 !important;
+  }
+
+  [class*=grid] > .span-7-l {
+    grid-column: span 7 !important;
+  }
+
+  [class*=grid] > .span-8-l {
+    grid-column: span 8 !important;
+  }
+
+  [class*=grid] > .span-9-l {
+    grid-column: span 9 !important;
+  }
+
+  [class*=grid] > .span-10-l {
+    grid-column: span 10 !important;
+  }
+
+  [class*=grid] > .span-11-l {
+    grid-column: span 11 !important;
+  }
+
+  [class*=grid] > .span-12-l {
+    grid-column: span 12 !important;
+  }
+}
+@media (max-width:900px) {
   [class*=grid].collapse-t {
     grid-template-columns: 1fr;
   }
@@ -2576,7 +2686,7 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
     grid-column: span 12 !important;
   }
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
   [class*=grid].collapse-p {
     grid-template-columns: 1fr;
   }
@@ -2687,7 +2797,30 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   gap: var(--space-xl);
 }
 
-@media (max-width:800px) {
+@media (max-width:1300px) {
+  .flex.collapse-l {
+    display: block;
+  }
+  .flex.collapse-l.gap-no .input {
+    width: 100%;
+  }
+  .flex.collapse-l.gap-no > * {
+    margin-left: 0;
+  }
+
+  .flex .collapse-l {
+    flex-basis: 100% !important;
+  }
+
+  .flex > .span-half-l {
+    flex-basis: 50% !important;
+  }
+
+  .flex > .span-full-l {
+    flex-basis: 100% !important;
+  }
+}
+@media (max-width:900px) {
   .flex.collapse-t {
     display: block;
   }
@@ -2710,7 +2843,7 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
     flex-basis: 100% !important;
   }
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
   .flex.collapse-p {
     display: block;
   }
@@ -2865,7 +2998,33 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   column-count: 10;
 }
 
-@media (max-width:800px) {
+@media (max-width:1300px) {
+  .columns.cols-2-l {
+    column-count: 2;
+  }
+
+  .columns.cols-3-l {
+    column-count: 3;
+  }
+
+  .columns.cols-4-l {
+    column-count: 4;
+  }
+
+  .columns.cols-5-l {
+    column-count: 5;
+  }
+
+  .columns.cols-6-l {
+    column-count: 6;
+  }
+
+  /* Hello. You there? */
+  .columns.collapse-l {
+    column-count: 1 !important;
+  }
+}
+@media (max-width:900px) {
   .columns.cols-2-t {
     column-count: 2;
   }
@@ -2891,7 +3050,7 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
     column-count: 1 !important;
   }
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
   .columns.cols-2-p {
     column-count: 2;
   }
@@ -3497,6 +3656,46 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   margin: 0;
 }
 
+.ra_px {
+  border-radius: var(--space-px);
+}
+
+.ra-t_px {
+  border-top-right-radius: var(--space-px);
+  border-top-left-radius: var(--space-px);
+}
+
+.ra-r_px {
+  border-top-right-radius: var(--space-px);
+  border-bottom-right-radius: var(--space-px);
+}
+
+.ra-b_px {
+  border-bottom-left-radius: var(--space-px);
+  border-bottom-right-radius: var(--space-px);
+}
+
+.ra-l_px {
+  border-bottom-left-radius: var(--space-px);
+  border-top-left-radius: var(--space-px);
+}
+
+.ra-tr_px {
+  border-top-right-radius: var(--space-px);
+}
+
+.ra-br_px {
+  border-bottom-right-radius: var(--space-px);
+}
+
+.ra-bl_px {
+  border-bottom-left-radius: var(--space-px);
+}
+
+.ra-tl_px {
+  border-top-left-radius: var(--space-px);
+}
+
 .ra_xs {
   border-radius: var(--space-xs);
 }
@@ -3639,12 +3838,12 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   border-radius: 0 !important;
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
   .ra-no-t {
     border-radius: 0 !important;
   }
 }
-@media (max-width:400px) {
+@media (max-width:600px) {
   .r-no-p {
     border-radius: 0 !important;
   }
@@ -3894,229 +4093,508 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   padding: 0 !important;
 }
 
-[class*=bg-main-1] {
-  background-color: var(--color-main-1);
+[class*=text-main-1] {
+  color: var(--color-main-1) !important;
 }
 
-[class*=bg-main-2] {
-  background-color: var(--color-main-2);
+[class*=text-main-2] {
+  color: var(--color-main-2) !important;
 }
 
-[class*=bg-main-3] {
-  background-color: var(--color-main-3);
+[class*=text-main-3] {
+  color: var(--color-main-3) !important;
 }
 
-[class*=bg-main-4] {
-  background-color: var(--color-main-4);
+[class*=text-main-4] {
+  color: var(--color-main-4) !important;
 }
 
-[class*=bg-main-5] {
-  background-color: var(--color-main-5);
+[class*=text-main-5] {
+  color: var(--color-main-5) !important;
 }
 
-[class*=bg-prime-1] {
-  background-color: var(--color-prime-1);
+[class*=text-main-6] {
+  color: var(--color-main-6) !important;
 }
 
-[class*=bg-prime-2] {
-  background-color: var(--color-prime-2);
+[class*=text-main-7] {
+  color: var(--color-main-7) !important;
 }
 
-[class*=bg-prime-3] {
-  background-color: var(--color-prime-3);
+[class*=text-prime-1] {
+  color: var(--color-prime-1) !important;
 }
 
-[class*=bg-prime-4] {
-  background-color: var(--color-prime-4);
+[class*=text-prime-2] {
+  color: var(--color-prime-2) !important;
 }
 
-[class*=bg-prime-5] {
-  background-color: var(--color-prime-5);
+[class*=text-prime-3] {
+  color: var(--color-prime-3) !important;
 }
 
-[class*=bg-accent-1] {
-  background-color: var(--color-accent-1);
+[class*=text-prime-4] {
+  color: var(--color-prime-4) !important;
 }
 
-[class*=bg-accent-2] {
-  background-color: var(--color-accent-2);
+[class*=text-prime-5] {
+  color: var(--color-prime-5) !important;
 }
 
-[class*=bg-accent-3] {
-  background-color: var(--color-accent-3);
+[class*=text-prime-6] {
+  color: var(--color-prime-6) !important;
 }
 
-[class*=bg-accent-4] {
-  background-color: var(--color-accent-4);
+[class*=text-prime-7] {
+  color: var(--color-prime-7) !important;
 }
 
-[class*=bg-accent-5] {
-  background-color: var(--color-accent-5);
+[class*=text-accent-1] {
+  color: var(--color-accent-1) !important;
 }
 
-[class*=bg-warn-1] {
-  background-color: var(--color-warn-1);
+[class*=text-accent-2] {
+  color: var(--color-accent-2) !important;
 }
 
-[class*=bg-warn-2] {
-  background-color: var(--color-warn-2);
+[class*=text-accent-3] {
+  color: var(--color-accent-3) !important;
 }
 
-[class*=bg-warn-3] {
-  background-color: var(--color-warn-3);
+[class*=text-accent-4] {
+  color: var(--color-accent-4) !important;
 }
 
-[class*=bg-warn-4] {
-  background-color: var(--color-warn-4);
+[class*=text-accent-5] {
+  color: var(--color-accent-5) !important;
 }
 
-[class*=bg-warn-5] {
-  background-color: var(--color-warn-5);
+[class*=text-accent-6] {
+  color: var(--color-accent-6) !important;
 }
 
-[class*=bg-danger-1] {
-  background-color: var(--color-danger-1);
+[class*=text-accent-7] {
+  color: var(--color-accent-7) !important;
 }
 
-[class*=bg-danger-2] {
-  background-color: var(--color-danger-2);
+[class*=text-warn-1] {
+  color: var(--color-warn-1) !important;
 }
 
-[class*=bg-danger-3] {
-  background-color: var(--color-danger-3);
+[class*=text-warn-2] {
+  color: var(--color-warn-2) !important;
 }
 
-[class*=bg-danger-4] {
-  background-color: var(--color-danger-4);
+[class*=text-warn-3] {
+  color: var(--color-warn-3) !important;
 }
 
-[class*=bg-danger-5] {
-  background-color: var(--color-danger-5);
+[class*=text-warn-4] {
+  color: var(--color-warn-4) !important;
 }
 
-[class*=bg-success-1] {
-  background-color: var(--color-success-1);
+[class*=text-warn-5] {
+  color: var(--color-warn-5) !important;
 }
 
-[class*=bg-success-2] {
-  background-color: var(--color-success-2);
+[class*=text-warn-6] {
+  color: var(--color-warn-6) !important;
 }
 
-[class*=bg-success-3] {
-  background-color: var(--color-success-3);
+[class*=text-warn-7] {
+  color: var(--color-warn-7) !important;
 }
 
-[class*=bg-success-4] {
-  background-color: var(--color-success-4);
+[class*=text-danger-1] {
+  color: var(--color-danger-1) !important;
 }
 
-[class*=bg-success-5] {
-  background-color: var(--color-success-5);
+[class*=text-danger-2] {
+  color: var(--color-danger-2) !important;
+}
+
+[class*=text-danger-3] {
+  color: var(--color-danger-3) !important;
+}
+
+[class*=text-danger-4] {
+  color: var(--color-danger-4) !important;
+}
+
+[class*=text-danger-5] {
+  color: var(--color-danger-5) !important;
+}
+
+[class*=text-danger-6] {
+  color: var(--color-danger-6) !important;
+}
+
+[class*=text-danger-7] {
+  color: var(--color-danger-7) !important;
+}
+
+[class*=text-success-1] {
+  color: var(--color-success-1) !important;
+}
+
+[class*=text-success-2] {
+  color: var(--color-success-2) !important;
+}
+
+[class*=text-success-3] {
+  color: var(--color-success-3) !important;
+}
+
+[class*=text-success-4] {
+  color: var(--color-success-4) !important;
+}
+
+[class*=text-success-5] {
+  color: var(--color-success-5) !important;
+}
+
+[class*=text-success-6] {
+  color: var(--color-success-6) !important;
+}
+
+[class*=text-success-7] {
+  color: var(--color-success-7) !important;
+}
+
+.bg-main-1 {
+  background-color: var(--color-main-1) !important;
+}
+
+.bg-main-2 {
+  background-color: var(--color-main-2) !important;
+}
+
+.bg-main-3 {
+  background-color: var(--color-main-3) !important;
+}
+
+.bg-main-4 {
+  background-color: var(--color-main-4) !important;
+}
+
+.bg-main-5 {
+  background-color: var(--color-main-5) !important;
+}
+
+.bg-main-6 {
+  background-color: var(--color-main-6) !important;
+}
+
+.bg-main-7 {
+  background-color: var(--color-main-7) !important;
+}
+
+.bg-prime-1 {
+  background-color: var(--color-prime-1) !important;
+}
+
+.bg-prime-2 {
+  background-color: var(--color-prime-2) !important;
+}
+
+.bg-prime-3 {
+  background-color: var(--color-prime-3) !important;
+}
+
+.bg-prime-4 {
+  background-color: var(--color-prime-4) !important;
+}
+
+.bg-prime-5 {
+  background-color: var(--color-prime-5) !important;
+}
+
+.bg-prime-6 {
+  background-color: var(--color-prime-6) !important;
+}
+
+.bg-prime-7 {
+  background-color: var(--color-prime-7) !important;
+}
+
+.bg-accent-1 {
+  background-color: var(--color-accent-1) !important;
+}
+
+.bg-accent-2 {
+  background-color: var(--color-accent-2) !important;
+}
+
+.bg-accent-3 {
+  background-color: var(--color-accent-3) !important;
+}
+
+.bg-accent-4 {
+  background-color: var(--color-accent-4) !important;
+}
+
+.bg-accent-5 {
+  background-color: var(--color-accent-5) !important;
+}
+
+.bg-accent-6 {
+  background-color: var(--color-accent-6) !important;
+}
+
+.bg-accent-7 {
+  background-color: var(--color-accent-7) !important;
+}
+
+.bg-warn-1 {
+  background-color: var(--color-warn-1) !important;
+}
+
+.bg-warn-2 {
+  background-color: var(--color-warn-2) !important;
+}
+
+.bg-warn-3 {
+  background-color: var(--color-warn-3) !important;
+}
+
+.bg-warn-4 {
+  background-color: var(--color-warn-4) !important;
+}
+
+.bg-warn-5 {
+  background-color: var(--color-warn-5) !important;
+}
+
+.bg-warn-6 {
+  background-color: var(--color-warn-6) !important;
+}
+
+.bg-warn-7 {
+  background-color: var(--color-warn-7) !important;
+}
+
+.bg-danger-1 {
+  background-color: var(--color-danger-1) !important;
+}
+
+.bg-danger-2 {
+  background-color: var(--color-danger-2) !important;
+}
+
+.bg-danger-3 {
+  background-color: var(--color-danger-3) !important;
+}
+
+.bg-danger-4 {
+  background-color: var(--color-danger-4) !important;
+}
+
+.bg-danger-5 {
+  background-color: var(--color-danger-5) !important;
+}
+
+.bg-danger-6 {
+  background-color: var(--color-danger-6) !important;
+}
+
+.bg-danger-7 {
+  background-color: var(--color-danger-7) !important;
+}
+
+.bg-success-1 {
+  background-color: var(--color-success-1) !important;
+}
+
+.bg-success-2 {
+  background-color: var(--color-success-2) !important;
+}
+
+.bg-success-3 {
+  background-color: var(--color-success-3) !important;
+}
+
+.bg-success-4 {
+  background-color: var(--color-success-4) !important;
+}
+
+.bg-success-5 {
+  background-color: var(--color-success-5) !important;
+}
+
+.bg-success-6 {
+  background-color: var(--color-success-6) !important;
+}
+
+.bg-success-7 {
+  background-color: var(--color-success-7) !important;
 }
 
 .bg-main-1-h:hover, .bg-main-1-h:focus {
-  background-color: var(--color-main-2);
+  background-color: var(--color-main-1) !important;
 }
 
 .bg-main-2-h:hover, .bg-main-2-h:focus {
-  background-color: var(--color-main-3);
+  background-color: var(--color-main-2) !important;
 }
 
 .bg-main-3-h:hover, .bg-main-3-h:focus {
-  background-color: var(--color-main-4);
+  background-color: var(--color-main-3) !important;
 }
 
 .bg-main-4-h:hover, .bg-main-4-h:focus {
-  background-color: var(--color-main-5);
+  background-color: var(--color-main-4) !important;
 }
 
 .bg-main-5-h:hover, .bg-main-5-h:focus {
-  background-color: var(--color-main-6);
-  background-color: black;
+  background-color: var(--color-main-5) !important;
+}
+
+.bg-main-6-h:hover, .bg-main-6-h:focus {
+  background-color: var(--color-main-6) !important;
+}
+
+.bg-main-7-h:hover, .bg-main-7-h:focus {
+  background-color: var(--color-main-7) !important;
 }
 
 .bg-prime-1-h:hover, .bg-prime-1-h:focus {
-  background-color: var(--color-prime-2);
+  background-color: var(--color-prime-1) !important;
 }
 
 .bg-prime-2-h:hover, .bg-prime-2-h:focus {
-  background-color: var(--color-prime-3);
+  background-color: var(--color-prime-2) !important;
 }
 
 .bg-prime-3-h:hover, .bg-prime-3-h:focus {
-  background-color: var(--color-prime-4);
+  background-color: var(--color-prime-3) !important;
 }
 
 .bg-prime-4-h:hover, .bg-prime-4-h:focus {
-  background-color: var(--color-prime-5);
+  background-color: var(--color-prime-4) !important;
 }
 
 .bg-prime-5-h:hover, .bg-prime-5-h:focus {
-  background-color: var(--color-prime-6);
-  background-color: black;
+  background-color: var(--color-prime-5) !important;
+}
+
+.bg-prime-6-h:hover, .bg-prime-6-h:focus {
+  background-color: var(--color-prime-6) !important;
+}
+
+.bg-prime-7-h:hover, .bg-prime-7-h:focus {
+  background-color: var(--color-prime-7) !important;
+}
+
+.bg-accent-1-h:hover, .bg-accent-1-h:focus {
+  background-color: var(--color-accent-1) !important;
+}
+
+.bg-accent-2-h:hover, .bg-accent-2-h:focus {
+  background-color: var(--color-accent-2) !important;
+}
+
+.bg-accent-3-h:hover, .bg-accent-3-h:focus {
+  background-color: var(--color-accent-3) !important;
+}
+
+.bg-accent-4-h:hover, .bg-accent-4-h:focus {
+  background-color: var(--color-accent-4) !important;
+}
+
+.bg-accent-5-h:hover, .bg-accent-5-h:focus {
+  background-color: var(--color-accent-5) !important;
+}
+
+.bg-accent-6-h:hover, .bg-accent-6-h:focus {
+  background-color: var(--color-accent-6) !important;
+}
+
+.bg-accent-7-h:hover, .bg-accent-7-h:focus {
+  background-color: var(--color-accent-7) !important;
 }
 
 .bg-warn-1-h:hover, .bg-warn-1-h:focus {
-  background-color: var(--color-warn-2);
+  background-color: var(--color-warn-1) !important;
 }
 
 .bg-warn-2-h:hover, .bg-warn-2-h:focus {
-  background-color: var(--color-warn-3);
+  background-color: var(--color-warn-2) !important;
 }
 
 .bg-warn-3-h:hover, .bg-warn-3-h:focus {
-  background-color: var(--color-warn-4);
+  background-color: var(--color-warn-3) !important;
 }
 
 .bg-warn-4-h:hover, .bg-warn-4-h:focus {
-  background-color: var(--color-warn-5);
+  background-color: var(--color-warn-4) !important;
 }
 
 .bg-warn-5-h:hover, .bg-warn-5-h:focus {
-  background-color: var(--color-warn-6);
-  background-color: black;
+  background-color: var(--color-warn-5) !important;
+}
+
+.bg-warn-6-h:hover, .bg-warn-6-h:focus {
+  background-color: var(--color-warn-6) !important;
+}
+
+.bg-warn-7-h:hover, .bg-warn-7-h:focus {
+  background-color: var(--color-warn-7) !important;
 }
 
 .bg-danger-1-h:hover, .bg-danger-1-h:focus {
-  background-color: var(--color-danger-2);
+  background-color: var(--color-danger-1) !important;
 }
 
 .bg-danger-2-h:hover, .bg-danger-2-h:focus {
-  background-color: var(--color-danger-3);
+  background-color: var(--color-danger-2) !important;
 }
 
 .bg-danger-3-h:hover, .bg-danger-3-h:focus {
-  background-color: var(--color-danger-4);
+  background-color: var(--color-danger-3) !important;
 }
 
 .bg-danger-4-h:hover, .bg-danger-4-h:focus {
-  background-color: var(--color-danger-5);
+  background-color: var(--color-danger-4) !important;
 }
 
 .bg-danger-5-h:hover, .bg-danger-5-h:focus {
-  background-color: var(--color-danger-6);
-  background-color: black;
+  background-color: var(--color-danger-5) !important;
+}
+
+.bg-danger-6-h:hover, .bg-danger-6-h:focus {
+  background-color: var(--color-danger-6) !important;
+}
+
+.bg-danger-7-h:hover, .bg-danger-7-h:focus {
+  background-color: var(--color-danger-7) !important;
 }
 
 .bg-success-1-h:hover, .bg-success-1-h:focus {
-  background-color: var(--color-success-2);
+  background-color: var(--color-success-1) !important;
 }
 
 .bg-success-2-h:hover, .bg-success-2-h:focus {
-  background-color: var(--color-success-3);
+  background-color: var(--color-success-2) !important;
 }
 
 .bg-success-3-h:hover, .bg-success-3-h:focus {
-  background-color: var(--color-success-4);
+  background-color: var(--color-success-3) !important;
 }
 
 .bg-success-4-h:hover, .bg-success-4-h:focus {
-  background-color: var(--color-success-5);
+  background-color: var(--color-success-4) !important;
 }
 
 .bg-success-5-h:hover, .bg-success-5-h:focus {
-  background-color: var(--color-success-6);
-  background-color: black;
+  background-color: var(--color-success-5) !important;
+}
+
+.bg-success-6-h:hover, .bg-success-6-h:focus {
+  background-color: var(--color-success-6) !important;
+}
+
+.bg-success-7-h:hover, .bg-success-7-h:focus {
+  background-color: var(--color-success-7) !important;
 }
 
 .bg-shadow-1 {
@@ -4127,12 +4605,20 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   background-color: var(--color-shadow-2);
 }
 
+.bg-shadow-3 {
+  background-color: var(--color-shadow-3);
+}
+
 .bg-highlight-1 {
   background-color: var(--color-highlight-1);
 }
 
 .bg-highlight-2 {
   background-color: var(--color-highlight-2);
+}
+
+.bg-highlight-3 {
+  background-color: var(--color-highlight-3);
 }
 
 .bg-a {
@@ -4282,29 +4768,17 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
 .tinted-warn, .tinted-warn * {
   color: var(--color-warn-4);
 }
-.tinted-warn .link, .tinted-warn p a, p .tinted-warn a, .tinted-warn td a, td .tinted-warn a, .tinted-warn li a, li .tinted-warn a, .tinted-warn .block-link, .tinted-warn * .link {
-  color: var(--color-warn-5);
-}
 
 .tinted-success, .tinted-success * {
   color: var(--color-success-4);
-}
-.tinted-success .link, .tinted-success p a, p .tinted-success a, .tinted-success td a, td .tinted-success a, .tinted-success li a, li .tinted-success a, .tinted-success .block-link, .tinted-success * .link {
-  color: var(--color-success-5);
 }
 
 .tinted-danger, .tinted-danger * {
   color: var(--color-danger-4);
 }
-.tinted-danger .link, .tinted-danger p a, p .tinted-danger a, .tinted-danger td a, td .tinted-danger a, .tinted-danger li a, li .tinted-danger a, .tinted-danger .block-link, .tinted-danger * .link {
-  color: var(--color-danger-5);
-}
 
 .tinted-prime, .tinted-prime * {
   color: var(--color-prime-4);
-}
-.tinted-prime .link, .tinted-prime p a, p .tinted-prime a, .tinted-prime td a, td .tinted-prime a, .tinted-prime li a, li .tinted-prime a, .tinted-prime .block-link, .tinted-prime * .link {
-  color: var(--color-prime-5);
 }
 
 .tinted-bg-warn, .tinted-bg-warn * {
@@ -4313,6 +4787,8 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   --color-bg-3: var(--color-warn-3);
   --color-bg-4: var(--color-warn-4);
   --color-bg-5: var(--color-warn-5);
+  --color-bg-6: var(--color-warn-6);
+  --color-bg-7: var(--color-warn-7);
 }
 
 .tinted-bg-success, .tinted-bg-success * {
@@ -4321,6 +4797,8 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   --color-bg-3: var(--color-success-3);
   --color-bg-4: var(--color-success-4);
   --color-bg-5: var(--color-success-5);
+  --color-bg-6: var(--color-success-6);
+  --color-bg-7: var(--color-success-7);
 }
 
 .tinted-bg-danger, .tinted-bg-danger * {
@@ -4329,6 +4807,8 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   --color-bg-3: var(--color-danger-3);
   --color-bg-4: var(--color-danger-4);
   --color-bg-5: var(--color-danger-5);
+  --color-bg-6: var(--color-danger-6);
+  --color-bg-7: var(--color-danger-7);
 }
 
 .tinted-bg-prime, .tinted-bg-prime * {
@@ -4337,6 +4817,8 @@ a.box:hover .link, a.box:hover .block-link, a.box:hover p a, p a.box:hover a, a.
   --color-bg-3: var(--color-prime-3);
   --color-bg-4: var(--color-prime-4);
   --color-bg-5: var(--color-prime-5);
+  --color-bg-6: var(--color-prime-6);
+  --color-bg-7: var(--color-prime-7);
 }
 
 [class*=tinted-bg-].media img, [class*=tinted-bg-].media .img, [class*=tinted-bg-] .media img, [class*=tinted-bg-] .media .img {

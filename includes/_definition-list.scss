@@ -1,8 +1,9 @@
-// Simple dfinition list styling
+// Simple definition list styling
+// TODO: Probably this is not required?
 
 .dl {
   dt, dd {
-    display: block;
+    display: inline-block;
     margin: 0;
   }
 }

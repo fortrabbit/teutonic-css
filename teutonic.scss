@@ -2,7 +2,7 @@
 // this is the root file, that imports the actual includes
 
 // Debug position stuff:
-// * { outline: 1px solid red }
+//* { outline: 1px solid red }
 
 
 // Variables & helpers
@@ -85,6 +85,7 @@
 @import "includes/disabled";           // helper class for disabled stuff
 @import "includes/kbd";                // keyboard keys styles
 @import "includes/details-summary";    // details summary element
+//@import "includes/definition-list";    // definition list element
 
 
 // CSS Grid
@@ -126,9 +127,11 @@
 @import "includes/padding";            // padding for boxes
 
 // Color theming
-@import "includes/background-colors";  // The UI colors as CSS classes for background color
-@import "includes/background-colors-h";// Hoverable UI background containers
-@import "includes/background-shades";  // The shading colors
-@import "includes/colors-alphabet";    // Hue Spectrum of nice colors!
-@import "includes/tinted";             // colored states (success, warn, error)
+@import "includes/text-colors";              // The UI colors as CSS classes for text color
+@import "includes/background-colors";        // The UI colors as CSS classes for background color
+@import "includes/text-colors-hover";        // Hoverable UI text colors
+@import "includes/background-colors-hover";  // Hoverable UI background containers
+@import "includes/background-shades";        // The shading colors
+@import "includes/colors-alphabet";          // Hue Spectrum of nice colors!
+@import "includes/tinted";                   // colored states (success, warn, error)
 

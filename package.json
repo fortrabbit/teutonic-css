@@ -34,8 +34,8 @@
   },
   "homepage": "https://teutonic.co",
   "devDependencies": {
-    "clean-css-cli": "^5.4.2",
-    "sass": "^1.43.4",
+    "clean-css-cli": "^5.5.0",
+    "sass": "^1.45.2",
     "watch": "^1.0.2"
   }
 }
