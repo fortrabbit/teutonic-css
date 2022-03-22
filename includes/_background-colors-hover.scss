@@ -2,7 +2,7 @@
 
 @each $item, $color in $colors {
   @each $index, $value in $color {
-    .bg-#{$item}-#{$index}-h:hover, .bg-#{$item}-#{$index}-h:focus {
+    .bg-#{$item}-#{$index}-h:hover {
       background-color: var(--color-#{$item}-#{$index}) !important;
     }
   }
