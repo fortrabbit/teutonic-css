@@ -16,7 +16,9 @@
     font-size:   $size;
     line-height: $size;
     height:      $size;
-    margin-top:  $size/-1.9;
+    //margin-top: math.div($size, -1.9);
+    //margin-top:  $size/-1.9;
+    margin-top:  calc($size/-1.9);
     z-index: 12;
     user-select: none;
     pointer-events: none;
