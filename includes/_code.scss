@@ -22,11 +22,7 @@ pre {
     color: var(--color, var(--color-main-5));
     overflow-y: auto;
     display: block;
-    //padding: var(--padding, var(--space-m)); // < MS Edge >
-    padding-top:    var(--padding, var(--space-m)); 
-    padding-bottom: var(--padding, var(--space-m)); 
-    padding-left:   var(--padding, var(--space-m)); 
-    padding-right:  var(--padding, var(--space-m));
+    padding:   var(--padding, 0); 
     font-size: var(--text-s);
   }
   -webkit-text-size-adjust: none;

@@ -19,7 +19,7 @@ $article-line-height: $fifth;
   }
 
   // code examples
-  pre { margin: var(--space-xs) calc(-1 * var(--space-m)) ; }
+  pre { margin: var(--space-xs); }
 
   // Accronym
   accr { border-bottom: 1px dotted var(--color-main-5); }
@@ -58,13 +58,13 @@ $article-line-height: $fifth;
   table { font-family: var(--font-body); }
 
   // Spacing on top for headlines!
-  h1:not(:first-child)   { margin-top: var(--space-xxl); }
-  h2:not(:first-child)   { margin-top: var(--space-xl); }
-  h3:not(:first-child)   { margin-top: var(--space-l); }
-  h4:not(:first-child)   { margin-top: var(--space-m); }
-  h5:not(:first-child)   { margin-top: var(--space-s); }
+  h1:not(:first-child)   { margin-top: var(--space-l); }
+  h2:not(:first-child)   { margin-top: var(--space-m); }
+  h3:not(:first-child)   { margin-top: var(--space-s); }
+  h4:not(:first-child)   { margin-top: var(--space-xs); }
+  h5:not(:first-child)   { margin-top: var(--space-px); }
 
   // nested lists
-  li > ul, li > ol { margin-left: var(--space-m); }
+  li > ul, li > ol { margin-left: var(--space-s); }
 
 }
