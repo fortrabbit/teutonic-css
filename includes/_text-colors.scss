@@ -4,7 +4,7 @@
 
 @each $item, $color in $colors {
   @each $index, $value in $color {
-    [class*="text-#{$item}-#{$index}"] {
+    .text-#{$item}-#{$index} {
       color: var(--color-#{$item}-#{$index});
     }
   }

@@ -10,19 +10,19 @@
 
   position: relative;
   &:after {
+    content:     attr(data-tooltip);
     z-index: 20000;
     border-radius: var(--space-px);
-    left:         50%;
-    top:        -100%;
+    //left:         50%;
+    //top:        -100%;
     transform:   translateX(-50%) translateY(-4px);
-    content:     attr(data-tooltip);
     font-weight: normal;
-    font-size:   10px;
+    font-size:   11px;
     background:  var(--color-main-7);
     color:       var(--color-main-1);
-    padding:     0 var(--space-xs);
-    max-width:   500px;
-    overflow: hidden;
+    padding:     2px var(--space-xs);
+    // max-width:   500px;
+    // overflow: hidden;
     white-space: nowrap;
     font-family: var(--font-standard); // reset
     transition: opacity .3s;
