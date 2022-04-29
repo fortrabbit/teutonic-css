@@ -29,15 +29,16 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   text-align: left;
   line-height: var(--line-height);
   //border: var(--space-px) solid var(--border-color, var(--color-main-5));
-  // border: 0;
-  border: 1px solid var(--color-shadow-1);
+  border: 0;
+  //border: 1px solid var(--color-shadow-1);
   outline: none;
-  background-color: var(--color-bg-1, var(--color-prime-1));
+  //background-color: var(--color-bg-1, var(--color-prime-1));
+  background-color: var(--color-bg-1, var(--color-main-2));
   color: var(--color, var(--color-main-7));
   cursor: pointer;
 
   &:hover {
-    background-color: var(--color-bg-2, var(--color-prime-2));
+    background-color: var(--color-bg-2, var(--color-prime-1));
     z-index: 2;
   }
   &:focus { 
