@@ -15,7 +15,7 @@
   background-image: url('#{$svg-carret}'); // See SVG helpers
   background-size: $svg-size $svg-size;
   background-repeat: no-repeat;
-  background-position: right .4rem top calc(50%); // hide the arrow below firefox UI
+  background-position: right .9rem top calc(50%);
   position: relative;
   //background-color: var(--color-main-2);
   //color: var(--color-prime-3);
