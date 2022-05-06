@@ -1,7 +1,7 @@
 {
   "search.exclude": {
+    "*.css": true,
     "**/.git": true,
-    "**/node_modules": true,
-    "*.css": true
+    "**/node_modules": true
   },
 }
