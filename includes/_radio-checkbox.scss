@@ -35,12 +35,16 @@ $radio-check-size: 12px;
     background-color: var(--color, var(--color-accent-2));
   }
   &:disabled {
-    border: 1px solid var(--color, var(--color-shadow-3));
+    border: 1px solid var(--color, var(--color-main-4));
     background-color: var(--color, var(--color-main-1));
     cursor: not-allowed;
   }
-  &:disabled::after {
+  &:disabled:hover {
+    background-color: var(--color, var(--color-main-1)) !important;
+  }
+  &:disabled::after, &:disabled::before {
     background-color: var(--color, var(--color-main-4));
+    border-color: var(--color, var(--color-main-4));
   }
   &:after, &:before {
     content: '';
