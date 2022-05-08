@@ -527,7 +527,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   background-color: var(--color, var(--color-accent-2));
 }
 .radio:disabled, .checkbox:disabled {
-  opacity: 0.3;
+  /* opacity: 0.3; */
   cursor: not-allowed;
 }
 .radio:after, .radio:before, .checkbox:after, .checkbox:before {

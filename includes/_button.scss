@@ -6,6 +6,7 @@
 // They can also be combined with different paddings classes.
 
 .button {
+  border: 0;
   padding: var(--space-s);
   position: relative;
   border-radius: var(--space-xs);

@@ -2,7 +2,14 @@
 //
 // A container for generared HTML content - think Markdown, CMS …
 
-$article-line-height: $fifth;
+
+@mixin reading-line-height {
+  line-height: $fifth;
+}
+
+.lh_l {
+  @include reading-line-height;
+}
 
 .article {
 
@@ -46,7 +53,7 @@ $article-line-height: $fifth;
     padding-left: calc(var(--space-m)  - var(--space-xs));
   }
 
-  p, li, dt, dd          { line-height: $article-line-height; }
+  p, li, dt, dd            { @include reading-line-height; }
   //h1, h2, h3, h4, h5     { line-height: $article-line-height; }
 
   li {

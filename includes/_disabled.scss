@@ -13,11 +13,11 @@
 
   .mini-label { color: var(--color-main-3)  }
   &:not(.loading):not(.range) {
-                   border-color: var(--color, var(--color-main-5));
-                          color: var(--color-main-3);
-               background-color: var(--color-bg-1, var(--color-prime-1));
+                   //border-color: var(--color, var(--color-main-5));
+                          //color: var(--color-main-3);
+               //background-color: var(--color-bg-1, var(--color-prime-1));
     &:hover  { background-color: var(--color-bg-1, var(--color-prime-1)) } // reset
-    @include striped;
+    //@include striped;
   }
 
   // That's an ugly overwrite
