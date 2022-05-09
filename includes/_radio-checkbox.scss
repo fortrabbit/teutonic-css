@@ -17,7 +17,7 @@ $radio-check-size: 12px;
   font-size: 100%;
   outline: none;
   //background-image: linear-gradient(transparent, var(--color-shadow-2));
-  border: 1px solid var(--color, var(--color-shadow-3));
+  border: 1px solid var(--color, var(--color-prime-3));
   //box-shadow: 0 0 0 var(--space-px) var(--color, var(--color-prime-2));
   //background-color: transparent; // iOS reset
   background-color: var(--color, var(--color-prime-1));
@@ -33,6 +33,7 @@ $radio-check-size: 12px;
   align-self: center; // opinionated smart default for checkboxed within flex rows
   &:focus {
     background-color: var(--color, var(--color-accent-2));
+    border-color: var(--color, var(--color-accent-4));
   }
   &:disabled {
     border: 1px solid var(--color, var(--color-main-4));
@@ -57,10 +58,10 @@ $radio-check-size: 12px;
 .radio {
   border-radius: 50%;
   &:after {
-    border: 1px solid var(--color, var(--color-main-7));
+    //border: 1px solid var(--color, var(--color-main-7));
     border-radius: 50%;
-    width:  4px;
-    height: 4px;
+    width:  6px;
+    height: 6px;
     top:  50%;
     left: 50%;
     transform: scale(0) translateX(-50%) translateY(-50%);
