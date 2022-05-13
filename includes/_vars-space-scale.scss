@@ -25,7 +25,7 @@ $space-ratio   : $major-tenth !default;    // 2.5 (see modular scale presets)
   --space-ratio : #{$space-ratio};
 
   // EXTRA: Hairline borders
-  --space-px    : 1px;
+  --space-px    : 2px;
 
   // Do the calc in the browser, calc of calc encapsulated in CSS Vars
   @if $space-calc == "css" {
