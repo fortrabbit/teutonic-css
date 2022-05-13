@@ -1,7 +1,7 @@
 // Border helper classes
 // Use case: anywhere you want to have a custom border
 
-// border directtion + general
+// border direction + general
 [class*="bo-"] {
   --border-color: var(--color);
   border-style: var(--border-style, solid); 

@@ -1,0 +1,19 @@
+// UI colors as CSS classes
+
+// as border colors, colors are defined in color-map.scss
+
+@each $item, $color in $colors {
+  @each $index, $value in $color {
+    .bo-#{$item}-#{$index}:hover {
+      border-color: var(--color-#{$item}-#{$index});
+    }
+  }
+}
+
+@each $item, $color in $shades {
+  @each $index, $value in $color {
+    .bo-#{$item}-#{$index}:hover {
+      border-color: var(--color-#{$item}-#{$index});
+    }
+  }
+}

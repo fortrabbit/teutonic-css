@@ -4,10 +4,8 @@
 
 @each $item, $color in $colors {
   @each $index, $value in $color {
-    // also including hover classes
-    // [class*="bg-#{$item}-#{$index}"] {
     .bg-#{$item}-#{$index} {
-      background-color: var(--color-#{$item}-#{$index}) !important;
+      background-color: var(--color-#{$item}-#{$index});
     }
   }
 }
