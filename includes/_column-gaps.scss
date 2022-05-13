@@ -5,10 +5,10 @@
   gap: var(--gap-size, 0);
   &.gap-no { margin-left: 1px; > * { margin-left: -1px; margin-bottom: -1px  } }
 
-  &.gap_px , &.gap-h_px  { gap: var(--space-px) }
-  &.gap_xs , &.gap-h_xs  { gap: var(--space-xs) }
-  &.gap_s  , &.gap-h_s   { gap: var(--space-s)  }
-  &.gap_m  , &.gap-h_m   { gap: var(--space-m)  }
-  &.gap_l  , &.gap-h_l   { gap: var(--space-l)  }
-  &.gap_xl , &.gap-h_xl  { gap: var(--space-xl) }
+  &.gap-px , &.gap-h-px  { gap: var(--space-px) }
+  &.gap-xs , &.gap-h-xs  { gap: var(--space-xs) }
+  &.gap-s  , &.gap-h-s   { gap: var(--space-s)  }
+  &.gap-m  , &.gap-h-m   { gap: var(--space-m)  }
+  &.gap-l  , &.gap-h-l   { gap: var(--space-l)  }
+  &.gap-xl , &.gap-h-xl  { gap: var(--space-xl) }
 }

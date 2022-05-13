@@ -1,8 +1,8 @@
 // Column borders
 
 .columns {
-  &.gap-bo_px { column-rule: var(--space-px) solid }
-  &.gap-bo_xs { column-rule: var(--space-xs) solid }
-  &.gap-bo_s  { column-rule:  var(--space-s) solid }
-  //&.gap-bo_m  { column-rule:  var(--space-m) solid }
+  &.gap-bo-px { column-rule: var(--space-px) solid }
+  &.gap-bo-xs { column-rule: var(--space-xs) solid }
+  &.gap-bo-s  { column-rule:  var(--space-s) solid }
+  //&.gap-bo-m  { column-rule:  var(--space-m) solid }
 }

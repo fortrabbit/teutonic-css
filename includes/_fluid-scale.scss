@@ -41,12 +41,12 @@ $fluid-scale: false !default;
     }
   }
 
-  $min_width: 340px;
-  $max_width: 1600px;
-  $min_font:  12px;
-  $max_font:  16px;
+  $min-width: 340px;
+  $max-width: 1600px;
+  $min-font:  12px;
+  $max-font:  16px;
 
   html {
-    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    @include fluid-type($min-width, $max-width, $min-font, $max-font);
   }
 }

@@ -25,5 +25,5 @@ $grid-auto-min-sizes: (
 
 // Some default min sizes
 @each $min-key, $min-value in $grid-auto-min-sizes {
-  .grid-auto.min_#{$min-key} { --grid-auto-min: #{$min-value}; }
+  .grid-auto.min-#{$min-key} { --grid-auto-min: #{$min-value}; }
 }

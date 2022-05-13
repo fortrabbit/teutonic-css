@@ -6,12 +6,12 @@
 [class*="arrow"] { position: relative; }
 
 .arrow    { --t-size:  6px; }
-.arrow_l  { --t-size: 12px; }
-.arrow_xl { --t-size: 18px; }
+.arrow-l  { --t-size: 12px; }
+.arrow-xl { --t-size: 18px; }
 
 .arrow:before, 
-.arrow_l:before, 
-.arrow_xl:before {
+.arrow-l:before, 
+.arrow-xl:before {
   content:      '';
   position:     absolute;
   left:         50%;

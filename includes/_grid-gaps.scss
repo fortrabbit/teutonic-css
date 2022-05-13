@@ -4,8 +4,8 @@
 $gaps : "px", "xs", "s", "m";
 
 @each $gap in $gaps {
-  [class*="grid"].gap_#{$gap}   { --gap-space     : var(--space-#{$gap}) }
+  [class*="grid"].gap-#{$gap}   { --gap-space     : var(--space-#{$gap}) }
   // Individual Horizontal gutters
-  [class*="grid"].gap-h_#{$gap} { grid-row-gap    : var(--space-#{$gap}) }
+  [class*="grid"].gap-h-#{$gap} { grid-row-gap    : var(--space-#{$gap}) }
   //[class*="grid"].gap-v_#{$gap} { grid-column-gap : var(--space-#{$gap}); grid-gap: 0; }
 }

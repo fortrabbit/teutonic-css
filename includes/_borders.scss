@@ -2,7 +2,7 @@
 // Use case: anywhere you want to have a custom border
 
 // border directtion + general
-[class*="bo-"], [class*="bo_"] {
+[class*="bo-"] {
   --border-color: var(--color);
   border-style: var(--border-style, solid); 
   border-color: var(--border-color, var(--color-main-5));
@@ -13,12 +13,12 @@ $border-sizes: "px", "xs", "s";
 $border-directions: ( top : t, right : r, bottom : b, left : l ); 
 
 @each $size in $border-sizes {
-  .bo_#{$size} {
+  .bo-#{$size} {
     --border-width: var(--space-#{$size});
     border-width: var(--border-width)
   }
   @each $direction, $letter in $border-directions {
-    .bo-#{$letter}_#{$size} {
+    .bo-#{$letter}-#{$size} {
       --border-#{$direction}-width: var(--space-#{$size});
       border-#{$direction}-width: var(--border-#{$direction}-width) }
   }

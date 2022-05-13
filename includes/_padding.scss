@@ -13,19 +13,19 @@ $padding-directions: (
 $padding-sizes: "px", "xs", "s", "m", "l",  "xl";
 
 @each $size in $padding-sizes {
-  .pa_#{$size} { 
+  .pa-#{$size} { 
     @include padding-fix($size);
   }
-  .pa-v_#{$size} { 
+  .pa-v-#{$size} { 
     padding-top:    var(--space-#{$size}); 
     padding-bottom: var(--space-#{$size}); 
   }
-  .pa-h_#{$size} { 
+  .pa-h-#{$size} { 
     padding-left:   var(--space-#{$size}); 
     padding-right:  var(--space-#{$size}); 
   }
   @each $direction, $letter in $padding-directions {
-    .pa-#{$letter}_#{$size} { padding-#{$direction}:  var(--space-#{$size}) }
+    .pa-#{$letter}-#{$size} { padding-#{$direction}:  var(--space-#{$size}) }
   }
 }
 

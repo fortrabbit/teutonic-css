@@ -16,17 +16,17 @@ $diagonal-directions: (
 
 @each $size in $radius-sizes {
   // all 4 sides
-  .ra_#{$size} { border-radius: var(--space-#{$size}); }
+  .ra-#{$size} { border-radius: var(--space-#{$size}); }
 
   // 2 sides combined (top, right, bottom, left)
-  .ra-t_#{$size} { border-top-right-radius:   var(--space-#{$size}); border-top-left-radius:     var(--space-#{$size}); }
-  .ra-r_#{$size} { border-top-right-radius:   var(--space-#{$size}); border-bottom-right-radius: var(--space-#{$size}); }
-  .ra-b_#{$size} { border-bottom-left-radius: var(--space-#{$size}); border-bottom-right-radius: var(--space-#{$size}); }
-  .ra-l_#{$size} { border-bottom-left-radius: var(--space-#{$size}); border-top-left-radius:     var(--space-#{$size}); }
+  .ra-t-#{$size} { border-top-right-radius:   var(--space-#{$size}); border-top-left-radius:     var(--space-#{$size}); }
+  .ra-r-#{$size} { border-top-right-radius:   var(--space-#{$size}); border-bottom-right-radius: var(--space-#{$size}); }
+  .ra-b-#{$size} { border-bottom-left-radius: var(--space-#{$size}); border-bottom-right-radius: var(--space-#{$size}); }
+  .ra-l-#{$size} { border-bottom-left-radius: var(--space-#{$size}); border-top-left-radius:     var(--space-#{$size}); }
 
   // Single corner radi
   @each $long-dir, $short-dir in $diagonal-directions {
-    .ra-#{$short-dir}_#{$size} { border-#{$long-dir}-radius: var(--space-#{$size}) }
+    .ra-#{$short-dir}-#{$size} { border-#{$long-dir}-radius: var(--space-#{$size}) }
   }
 }
 

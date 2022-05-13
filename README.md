@@ -80,7 +80,7 @@ Teutonic only loosely makes use of [Atomic design](http://atomicdesign.bradfrost
 
 ### CSS classes for humans
 
-I like to understand HTML templates when I look at them. The Teutonic CSS class names are not following any strict naming convention, like BEM or OCSS. Most classes have speaking names, like `flex` to initiate Flexbox and `grid` for CSS Grid. Often used utility classes have very short abbreviations, like `pa-t_xl` for extra large padding top. More obscure class names often have longer abbreviations. Sometimes the class name is mix between property and value, sometimes it's just the value. Memorability over convention. 
+I like to understand HTML templates when I look at them. The Teutonic CSS class names are not following any strict naming convention, like BEM or OCSS. Most classes have speaking names, like `flex` to initiate Flexbox and `grid` for CSS Grid. Often used utility classes have very short abbreviations, like `pa-t-xl` for extra large padding top. More obscure class names often have longer abbreviations. Sometimes the class name is mix between property and value, sometimes it's just the value. Memorability over convention. 
 
 This is subject to change in future versions for more strict naming conventions.
 

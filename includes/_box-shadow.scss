@@ -3,7 +3,7 @@
 
 
 // Basic box shadow
-[class*="bs_"] {
+[class*="bs-"] {
   --shadow-left: 0;
   --shadow-top:  0;
   --shadow-size: 0;
@@ -11,19 +11,19 @@
 }
 
 // Sizes
-.bs_xs {
+.bs-xs {
   --shadow-top:  var(--space-px);
   --shadow-size: var(--space-xs)
 }
-.bs_s {
+.bs-s {
   --shadow-top:  var(--space-xs);
   --shadow-size: var(--space-s)
 }
-.bs_m {
+.bs-m {
   --shadow-top:  var(--space-s);
   --shadow-size: var(--space-m)
 }
-.bs_l {
+.bs-l {
   --shadow-top:  var(--space-m);
   --shadow-size: var(--space-l)
 }

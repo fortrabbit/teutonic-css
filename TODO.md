@@ -71,7 +71,7 @@ More info and automated migrator: https://sass-lang.com/d/slash-div
 + [ ] Predefined Cool Gradients (Manuel) > https://webgradients.com/, https://gradients.cssgears.com/
 + [ ] Redo and rethink Modular Scale for spacing / Manuel…
 + [ ] Check if the min css is really min
-+ [ ] Naming vars: `dash` instead of `lodash` for sizes? `.gap_xl` > `.gap-xl`
++ [x] Naming vars: `dash` instead of `lodash` for sizes? `.gap_xl` > `.gap-xl`
 + [ ] All SCSS vars in one file?
 + [ ] Separate invert color generation to make that a bit more clear
 + [ ] fine tune `.range` alignment across browser (in .range-box)
@@ -79,7 +79,7 @@ More info and automated migrator: https://sass-lang.com/d/slash-div
 + [ ] **Make it slimmer**: Throw out unused classes!
 + [ ] Light border style > less strong border everywhere! (searchbox top)
 + [ ] Better mobile screen styles, normalize
-+ [ ] `pa_xl-t` < responsive padding classes
++ [ ] `pa-xl-t` < responsive padding classes
 + [ ] Find a way to make read-widths calculated and less dependent (no magic numbers please!)
 + [ ] Use Flex justify-self when supported with browsers
 + [ ] ?? unify customization methods > like: `.bo-px.bo-custom`

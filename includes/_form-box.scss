@@ -3,7 +3,7 @@
 // The `form-box` wrapper combines an input element with a label 
 // and an optional tooltip (called the mini-info).
 
-// Default size is s .pa_m and .pa_xs should also work
+// Default size is s .pa-m and .pa-xs should also work
 
 .form-box {
 
@@ -44,7 +44,7 @@
 
   // Add a padding size to 
   // adjust the inner paddings of the inputs
-  &.pa_m {
+  &.pa-m {
     padding: 0;
     .input, .button, .textarea, .select { 
       padding-left: var(--space-m);
@@ -57,7 +57,7 @@
       top: calc(1.6 * var(--space-s));
     }
   }
-  &.pa_xs {
+  &.pa-xs {
     padding: 0;
     .input, .button, .textarea, .select { 
       padding: var(--space-xs);

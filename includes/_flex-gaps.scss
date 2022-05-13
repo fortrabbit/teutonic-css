@@ -8,7 +8,7 @@ $gap-calc: "gap";
 
 @if $gap-calc == "margin" {
   @each $gap-size in $f-gap-sizes {
-    .flex.gap_#{$gap-size} {
+    .flex.gap-#{$gap-size} {
       margin-left:   calc(-1 * var(--gap-space, var(--space-#{$gap-size})));
       margin-bottom: calc(-1 * var(--gap-space, var(--space-#{$gap-size})));
       > * {
@@ -16,7 +16,7 @@ $gap-calc: "gap";
         padding-bottom: var(--gap-space, var(--space-#{$gap-size}));
       }
     }
-    .flex.gap-h_#{$gap-size} {
+    .flex.gap-h-#{$gap-size} {
       margin-left: calc(-1 * var(--gap-space, var(--space-#{$gap-size}))) !important;
       > * {
         padding-left: var(--gap-space, var(--space-#{$gap-size})) !important
@@ -27,7 +27,7 @@ $gap-calc: "gap";
   // (wishful thinking for now)
   } @else {
   @each $gap-size in $f-gap-sizes {
-    .flex.gap_#{$gap-size} {
+    .flex.gap-#{$gap-size} {
       gap: var(--space-#{$gap-size}); // supposed standard
     }
   }
