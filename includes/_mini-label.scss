@@ -4,7 +4,7 @@
 .mini-label {
   background-color: transparent; // textarea overflow
   //color: var(--color-prime-5);
-  font-size: var(--text-s);
+  --font-size: var(--text-s);
   position: absolute;
   white-space: nowrap;
   pointer-events: none;
