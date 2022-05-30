@@ -42,7 +42,6 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
     z-index: 2;
   }
   &:focus { 
-    //background-color: var(--color-bg-1, var(--color-accent-1));
     @extend .focus;
   }
 }

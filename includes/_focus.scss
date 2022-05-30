@@ -5,9 +5,12 @@
 .focus {
   //position: relative;
   z-index: 1; // bring it to front, essential for negativ margin styles
-  background-color: var(--color-accent-1);
-  border-color: var(--color-shadow-2);
-  &:hover {
-    background-color: var(--color-accent-2);
-  }
+  //background-color: var(--color-accent-1);
+  //border-color: var(--color-shadow-2);
+  box-shadow: 
+    0 0 0 var(--space-px) var(--color-accent-3),
+    0 0 0 var(--space-xs) var(--color-accent-2);
+  // &:hover {
+  //   background-color: var(--color-accent-1);
+  // }
 }

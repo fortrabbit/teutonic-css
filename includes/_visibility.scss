@@ -1,5 +1,5 @@
-// Visibilty helper classes
+// Visibility helper classes
 
 .visible      { visibility: visible }
-.invisible    { visibility: hidden }
+.invisible    { visibility: collapse; display: none !important; }
 .removed      { display: none; }
