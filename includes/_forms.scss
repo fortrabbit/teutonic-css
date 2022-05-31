@@ -87,17 +87,17 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   min-height: var(--textarea-height, 3.6rem);
 }
 
-
 // Some standards for labels
 .label {
   user-select: none;
   cursor: pointer;
+}
 
-  // Special required class for labels
-  // Show an asterix as a hint
-  &.required:after {
-    content: '*';
-    color: var(--color-main-5);
-    padding-left: var(--space-xs);
-  }
+// Special required class
+// Show an asterix as a hint
+.required:after {
+  content: '*';
+  font-weight: bold;
+  color: var(--color-danger-4);
+  padding-left: var(--space-xs);
 }

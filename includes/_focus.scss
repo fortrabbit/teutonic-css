@@ -7,9 +7,9 @@
   z-index: 1; // bring it to front, essential for negativ margin styles
   //background-color: var(--color-accent-1);
   //border-color: var(--color-shadow-2);
+  transition: box-shadow .2s;
   box-shadow: 
-    0 0 0 var(--space-px) var(--color-accent-3),
-    0 0 0 var(--space-xs) var(--color-accent-2);
+    0 0 0 2px var(--color-accent-3);
   // &:hover {
   //   background-color: var(--color-accent-1);
   // }

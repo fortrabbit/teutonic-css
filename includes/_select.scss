@@ -13,8 +13,7 @@
   -moz-appearance: none; // reset firefox
   cursor: pointer;
   //text-overflow: ellipsis;
-
-  border-radius: var(--border-radius-m);
+  //border-radius: var(--border-radius-m);
 
   padding-right: 1.2rem !important; // Space to make room for icon
   background-image: url('#{$svg-carret}'); // See SVG helpers
@@ -26,17 +25,11 @@
   option { 
     padding: 0;
     margin: 0;
-    color: var(--color-main-5);
-    background-color: var(--color-accent-3);
   }
-  option[selected] {
-    color: var(--color-accent-3);
-  }
-
-  &:disabled { 
-    background-size: 100% 100%;    // reset
-    background-position: left top; // reset
-  }
+  //&:disabled { 
+  //  background-size: 100% 100%;    // reset
+  //  background-position: left top; // reset
+  //}
 
   optgroup        { color: var(--colored-5, var(--color-main-5)); font-style: normal; }
   option:disabled { color: var(--color-main-4) }

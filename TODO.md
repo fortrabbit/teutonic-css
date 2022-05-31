@@ -195,7 +195,7 @@ More info and automated migrator: https://sass-lang.com/d/slash-div
 + [x] .untouchable > typography generalized
 + [x] media containers refactor to make more flexible
 + [x] make buttons accept a parental text class? http://localhost:4000/examples/utilities#background-states
-+ [x] Use @extends or mixin for row-list and other parts to make utilities work!
++ [x] Use @extend or mixin for row-list and other parts to make utilities work!
 + [x] search.search ??? some defaults? magnifier! with parental
 + [x] Where else to expose settings as (local) CSS Vars?
 + [x] Use currentColor (inherit, initial) when possible
