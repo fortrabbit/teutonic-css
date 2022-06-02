@@ -63,8 +63,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
 
   // Placeholder text styling
   &::placeholder           { color: var(--color-shadow-2);}
-  &:-ms-input-placeholder  { color: var(--color-shadow-2);}
-    
+
   // readonly
   &[readonly] {
     user-select: all; // select all, when clicked

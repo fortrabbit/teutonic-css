@@ -6,15 +6,8 @@
   position: absolute;
   bottom:  0;
   right:   0;
-  background-color: var(--color, var(--color-main-5));
-  color:            var(--color-bg-1, var(--color-main-1));
-  padding:   var(--space-xs);
-  font-size: var(--text-xs);
-  border: 0;
   white-space: nowrap;
   pointer-events: none;
   z-index: 3;
-  font-weight: normal;
-  font-family: var(--font-standard);
   &.shown { visibility: visible !important }
 }
