@@ -33,13 +33,22 @@
   }
   // 1. place mini-info after form elem in HTML
   // 2. when form elem is focus/hover mini-info will be shown
-  .input ~ .mini-info, 
-  .select ~ .mini-info, 
-  .textarea ~ .mini-info { visibility: hidden }
-  .input, .select, .input, .textarea {
+  
+  // OLD syntax
+  // .input ~ .mini-info, 
+  // .select ~ .mini-info, 
+  // .textarea ~ .mini-info { visibility: hidden }
+  // .input, .select, .input, .textarea {
+  //   &:hover ~ .mini-info,
+  //   &:focus ~ .mini-info { visibility: visible }
+  // }
+
+  * ~ .mini-info { visibility: hidden }
+  * {
     &:hover ~ .mini-info,
     &:focus ~ .mini-info { visibility: visible }
   }
+
 
 
   // Add a padding size to 

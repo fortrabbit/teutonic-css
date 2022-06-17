@@ -12,21 +12,20 @@
   &:after {
     content:     attr(data-tooltip);
     z-index: 20000;
-    border-radius: var(--space-px);
-    //left:         50%;
-    //top:        -100%;
+    border-radius: var(--space-xs);
     transform:   translateX(-50%) translateY(-4px);
     font-weight: normal;
-    font-size:   11px;
+    font-size:   12px;
+    line-height: 14px;
     background:  var(--color-main-7);
     color:       var(--color-main-1);
-    padding:     2px var(--space-xs);
-    // max-width:   500px;
-    // overflow: hidden;
+    padding:     var(--space-xs) var(--space-s);
     white-space: nowrap;
     font-family: var(--font-standard); // reset
-    transition: opacity .3s;
-    transition-delay: 250ms;
+    //transition: opacity .3s;
+    //transition-delay: 250ms;
+    //box-shadow: 0 var(--space-xs) var(--space-m) var(--space-xs) var(--shadow-2);
+    box-shadow: 0 0 0 var(--space-px)  var(--color-main-1);
     opacity: 0;
     position: absolute;
     visibility: hidden;
@@ -44,14 +43,14 @@
 
 [data-tooltip].tooltip-l:after {
   left:         0;
-  top:          0;  
-  transform: translateX(calc(-100% - var(--space-xs))) translateY(1px);
+  top:          50%;  
+  transform: translateX(calc(-100% - var(--space-s))) translateY(-50%);
 }
 
 [data-tooltip].tooltip-r:after {
   right:        0;
-  top:          0;
-  transform: translateX(calc(100% + var(--space-xs))) translateY(1px);
+  top:          50%;
+  transform: translateX(calc(100% + var(--space-xs))) translateY(-50%);
 }
 
 [data-tooltip].tooltip-b:after {
