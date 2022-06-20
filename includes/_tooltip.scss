@@ -22,13 +22,14 @@
     padding:     var(--space-xs) var(--space-s);
     white-space: nowrap;
     font-family: var(--font-standard); // reset
-    //transition: opacity .3s;
-    //transition-delay: 250ms;
+    transition: opacity .1s;
+    transition-delay: 300ms;
     //box-shadow: 0 var(--space-xs) var(--space-m) var(--space-xs) var(--shadow-2);
     box-shadow: 0 0 0 var(--space-px)  var(--color-main-1);
     opacity: 0;
     position: absolute;
     visibility: hidden;
+    pointer-events: none;
   }
 
   &:hover, &:focus {

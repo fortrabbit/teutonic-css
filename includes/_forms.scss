@@ -28,21 +28,23 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   font-family: var(--font-standard); // reset
   text-align: left;
   line-height: var(--line-height);
-  //border: var(--space-px) solid var(--border-color, var(--color-main-5));
-  border: 0;
+  border: var(--space-px) solid var(--border-color, var(--color-main-3));
+  //border: 0;
   //border: 1px solid var(--color-shadow-1);
   outline: none;
-  //background-color: var(--color-bg-1, var(--color-prime-1));
-  background-color: var(--color-bg-1, var(--color-main-2));
+  background-color: transparent;
+  //background-color: var(--color-bg-1, var(--color-main-2));
   color: var(--color, var(--color-main-7));
   cursor: pointer;
 
   &:hover {
-    background-color: var(--color-bg-2, var(--color-prime-1));
+    //background-color: var(--color-bg-2, var(--color-prime-1));
+    border-color: var(--color-main-4);
     z-index: 2;
   }
   &:focus { 
-    @extend .focus;
+    //@extend .focus;
+    border-color: var(--color-accent-3);
   }
 }
 
@@ -75,7 +77,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
 
 // Moderate styling for not (yet) valid inputs
 .input:invalid { 
-  border-color: var(--color, var(--color-main-5)) ;
+  //border-color: var(--color, var(--color-main-5)) ;
   color: var(--color-danger-4);
 }
 
