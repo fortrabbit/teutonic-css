@@ -16,14 +16,14 @@
     transform:   translateX(-50%) translateY(-4px);
     font-weight: normal;
     font-size:   12px;
-    line-height: 14px;
-    background:  var(--color-main-7);
+    line-height: 12px;
+    background:  var(--color-main-5);
     color:       var(--color-main-1);
-    padding:     var(--space-xs) var(--space-s);
+    padding:     var(--space-xs) var(--space-xs);
     white-space: nowrap;
     font-family: var(--font-standard); // reset
     transition: opacity .1s;
-    transition-delay: 300ms;
+    transition-delay: 400ms;
     //box-shadow: 0 var(--space-xs) var(--space-m) var(--space-xs) var(--shadow-2);
     box-shadow: 0 0 0 var(--space-px)  var(--color-main-1);
     opacity: 0;
