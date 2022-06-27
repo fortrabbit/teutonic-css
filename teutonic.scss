@@ -13,7 +13,7 @@
 @import "includes/modular-scale-presets"; // Optional SCSS helper to translate ratios in words
 
 @import "includes/vars-colors";          // makes color map available as CSS vars
-@import "includes/vars-colors-scss";     // makes color map available as SCSS vars
+//@import "includes/vars-colors-scss";     // makes color map available as SCSS vars
 @import "includes/vars-space-scale";     // layout spacing
 @import "includes/vars-type-scale";      // layout spacing
 @import "includes/svg-helpers";          // load SVGs as background images
@@ -136,7 +136,7 @@
 @import "includes/background-colors";        // The UI colors as CSS classes for background color
 @import "includes/text-colors-hover";        // Hoverable UI text colors
 @import "includes/background-colors-hover";  // Hoverable UI background containers
-@import "includes/background-shades";        // The shading colors
+// @import "includes/background-shades";        // The shading colors
 @import "includes/colors-alphabet";          // Hue Spectrum of nice colors!
-@import "includes/tinted";                   // colored states (success, warn, error)
+//@import "includes/tinted";                   // colored states (success, warn, error)
 

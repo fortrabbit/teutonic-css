@@ -15,8 +15,8 @@
   &:not(.loading):not(.range) {
                    //border-color: var(--color, var(--color-main-5));
                           //color: var(--color-main-3);
-               //background-color: var(--color-bg-1, var(--color-prime-1));
-    &:hover  { background-color: var(--color-bg-1, var(--color-prime-1)) } // reset
+               //background-color: var(--color-bg-1, var(--color-link-1));
+    &:hover  { background-color: var(--color-bg-1, var(--color-link-1)) } // reset
     //@include striped;
   }
 
@@ -24,7 +24,7 @@
   &.button {
     //color: var(--colored-3, var(--color-main-3));
     border-color: var(--color-5, var(--color-main-5));
-    &:hover { background-color: var(--color--bg-1, var(--color-prime-1)) }
+    &:hover { background-color: var(--color--bg-1, var(--color-link-1)) }
   }
 
   // disabled prime button
@@ -32,8 +32,8 @@
     cursor: not-allowed;
     
     @mixin prime-disabled {
-             background-color: var(--color-bg-3, var(--color-prime-3));
-                        color: var(--color-prime-2);
+             background-color: var(--color-bg-3, var(--color-link-3));
+                        color: var(--color-link-2);
     }
 
     @include prime-disabled;

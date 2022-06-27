@@ -2,11 +2,9 @@
 
 // as colors, for text and border
 
-
 // TODO: Reconsider this. It's too close to tinted styles!
 // TODO: Use colors-map?! it should already be loaded
 
-// $colors: "main", "prime", "warn", "danger", "success";
 // $shades: "shadow", "highlight";
 
 @each $color in $colors {
@@ -15,8 +13,8 @@
    }
 }
 
-@each $shade in $shades {
-  @for $i from 0 through 2 {
-    .bo-#{$shade}-#{$i} { border-color: var(--color-#{$shade}-#{$i}) }
-   }
-}
+// @each $shade in $shades {
+//   @for $i from 0 through 2 {
+//     .bo-#{$shade}-#{$i} { border-color: var(--color-#{$shade}-#{$i}) }
+//    }
+// }

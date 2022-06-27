@@ -32,7 +32,7 @@
 + [ ] `.boxi.active` state quick fix
 + [ ] Rethink `.active` in general some more ( not so verbose )
 + [ ] Rethink no gap group for outline less styles
-+ [ ] Select triangle, checkbox and radio in prime color (finish)
++ [x] Select triangle, checkbox and radio in prime color (finish)
 + [ ] Re-design Select triangle
 + [ ] Accept `--border-color` on form elements
 + [ ] Accept `--border-color` for boxes and some buttons (no border?)

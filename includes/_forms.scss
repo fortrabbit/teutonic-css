@@ -38,7 +38,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   cursor: pointer;
 
   &:hover {
-    //background-color: var(--color-bg-2, var(--color-prime-1));
+    //background-color: var(--color-bg-2, var(--color-link-1));
     border-color: var(--color-main-4);
     z-index: 2;
   }
@@ -71,7 +71,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
     user-select: all; // select all, when clicked
     -moz-user-select: text; // FF BUG!
     // background-color: var(--color-main-1);
-    // &:hover, &:focus { background-color: var(--color-prime-1); }
+    // &:hover, &:focus { background-color: var(--color-link-1); }
   }
 }
 

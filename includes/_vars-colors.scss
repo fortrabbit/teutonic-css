@@ -11,11 +11,11 @@
       --#{$name}-#{$index}: #{$value};
     }
   }
-  @each $name, $shade in $shades {
-    @each $index, $value in $shade {
-      --#{$name}-#{$index}: #{$value};
-    }
-  }
+  //@each $name, $shade in $shades {
+  //  @each $index, $value in $shade {
+  //    --#{$name}-#{$index}: #{$value};
+  //  }
+  //}
 
   // 2. assign the color var (for inverted style)
   @each $name, $color in $colors {
@@ -23,9 +23,9 @@
       --color-#{$name}-#{$index}: var(--#{$name}-#{$index});
     }
   }
-  @each $name, $shade in $shades {
-    @each $index, $value in $shade {
-      --color-#{$name}-#{$index}: var(--#{$name}-#{$index});
-    }
-  }
+  //@each $name, $shade in $shades {
+  //  @each $index, $value in $shade {
+  //    --color-#{$name}-#{$index}: var(--#{$name}-#{$index});
+  //  }
+  //}
 }

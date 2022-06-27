@@ -31,15 +31,15 @@ a.box, button.box, label.box, .boxi {
   cursor: pointer;
   //background-color: var(--color-bg-1, var(--color-main-2));
   &:hover {
-    background-color: var(--color-bg-2, var(--color-prime-1));
+    background-color: var(--color-bg-2, var(--color-link-1));
     z-index: 3;
-     .link { color: var(--color-bg-7, var(--color-prime-7)) }
-    //.link { color: var(--color-prime-5)}
+     .link { color: var(--color-bg-7, var(--color-link-7)) }
+    //.link { color: var(--color-link-5)}
   }
   &:focus { @extend .focus; }
 }
 
 //.boxi.active {
-//  //background-color: var(--color-bg-2, var(--color-prime-2));
-//  background-color: var(--color-bg-3, var(--color-prime-3));
+//  //background-color: var(--color-bg-2, var(--color-link-2));
+//  background-color: var(--color-bg-3, var(--color-link-3));
 //}
