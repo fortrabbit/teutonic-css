@@ -12,8 +12,8 @@
 // Usage (will use the 4th color from the main line):
 //.test { color: color(main, 4) }
 
-$all-colors: map-merge($colors, $shades);
-
-@function color($scheme, $tone) {
-  @return map-get(map-get($all-colors, $scheme), $tone);
-}
+// $all-colors: map-merge($colors, $shades);
+// 
+// @function color($scheme, $tone) {
+//   @return map-get(map-get($all-colors, $scheme), $tone);
+// }
