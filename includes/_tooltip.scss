@@ -30,7 +30,8 @@
     visibility: hidden;
     pointer-events: none;
     left:      50%;
-    top:       -100%;
+    bottom:    calc(100% + var(--space-s));
+    top:       auto;
     transform: translateX(-50%);
   }
 
@@ -52,14 +53,16 @@
 
 [data-tooltip].tooltip-b:after {
   left:     50%;
-  top:     100%;
+  top:     calc(100% + var(--space-s));
+  bottom:  auto;
   transform: translateX(-50%);
 }
 
 [data-tooltip].tooltip-l:after {
   left:    auto;
   right:   calc(100% + var(--space-s));
-  top:      50%;  
+  top:      50%;
+  bottom:  auto;  
   transform: translateY(-50%);
 }
 
