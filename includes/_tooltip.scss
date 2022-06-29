@@ -47,6 +47,7 @@
 
 [data-tooltip].tooltip-r:after {
   left:    calc(100% + var(--space-s));
+  bottom:   auto;
   top:      50%;
   transform: translateY(-50%);
 }
