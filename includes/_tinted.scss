@@ -3,7 +3,7 @@
 // TODO: Separate these files here
 // TODO: Loop over color map
 
-$tinted-states: "yellow", "green", "red", "link";
+$tinted-states: "yellowish", "greenish", "redish", "link";
 
 // Border + text color (and some magic)
 @each $state in $tinted-states {
