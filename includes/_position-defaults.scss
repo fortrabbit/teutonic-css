@@ -11,6 +11,35 @@
 .pos-bl     { top: auto; right: auto; bottom: 0;     left:  0     }
 .pos-br     { top: auto; right: 0;    bottom: 0;     left:  auto  }
 
+
+// spaced positions 
+// 2022-07-12 11:07:28
+
+.pos-t       { top: 0; }
+.pos-t-xs    { top: var(--space-xs); }
+.pos-t-s     { top: var(--space-s); }
+.pos-t-m     { top: var(--space-m); }
+.pos-t-l     { top: var(--space-l); }
+
+.pos-r       { right: 0; }
+.pos-r-xs    { right: var(--space-xs); }
+.pos-r-s     { right: var(--space-s); }
+.pos-r-m     { right: var(--space-m); }
+.pos-r-l     { right: var(--space-l); }
+
+.pos-b       { bottom: 0; }
+.pos-b-xs    { bottom: var(--space-xs); }
+.pos-b-s     { bottom: var(--space-s); }
+.pos-b-m     { bottom: var(--space-m); }
+.pos-b-l     { bottom: var(--space-l); }
+
+.pos-l       { left: 0; }
+.pos-l-xs    { left: var(--space-xs); }
+.pos-l-s     { left: var(--space-s); }
+.pos-l-m     { left: var(--space-m); }
+.pos-l-l     { left: var(--space-l); }
+
+
 // Monie in the middle
 .pos-c      { top: 50%;  right: auto; bottom: auto;  left: 50%; transform: translate(-50%, -50%) }
 
