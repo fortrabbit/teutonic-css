@@ -1,14 +1,11 @@
 // Gaps
 // Vertically stacked gutters
 
-$gap-sizes: "xs", "s", "m", "l";
+$gap-sizes: "px", "xs", "s", "m", "l";
 
-// Exclude Flexbox and CSS Grids but include CSS Columns!
 @each $gap-size in $gap-sizes {
-  .gap-#{$gap-size}:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child)
-  { margin-top: var(--space-#{$gap-size}) }
-}
-
-.gap-custom:not(.columns.no-inner-gap):not(.grid):not(.grid-auto):not(.flex) > *:not(:first-child) {
-  margin-top: var(--gap-size)
+  .gap-#{$gap-size} {
+    //gap: var(--space-#{$gap-size});
+    --gap-space: var(--space-#{$gap-size})
+  }
 }

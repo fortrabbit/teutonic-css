@@ -94,14 +94,14 @@
 // CSS Grid
 @import "includes/grid";               // CSS grid base — Z style rows
 @import "includes/grid-spans";         // CSS grid child spans
-@import "includes/grid-gaps";          // CSS grid gaps
+//@import "includes/grid-gaps";          // CSS grid gaps
 @import "includes/grid-auto";          // CSS grid alternative layout, container query style
 @import "includes/grid-breakpoints";   // CSS grid media queries
 
 // Flexbox Grid
 @import "includes/flex";               // Flexbox grid system — Z style rows
 @import "includes/flex-spans";         // Flexbox grid child spans
-@import "includes/flex-gaps";          // Flexbox grid child gaps
+//@import "includes/flex-gaps";          // Flexbox grid child gaps
 @import "includes/flex-breakpoints";   // CSS grid media queries
 @import "includes/flex-align-content"; // Helper classes to distribute stuff
 @import "includes/flex-align-items";   // Helper classes to distribute stuff
@@ -113,13 +113,13 @@
 @import "includes/columns";            // И - column content wrapping
 @import "includes/column-count";       // Border Columns
 @import "includes/column-breakpoints"; // Breakpoints for columns
-@import "includes/column-gaps";        // Gutters for columns
+//@import "includes/column-gaps";        // Gutters for columns
 @import "includes/column-borders";     // Border Columns
 
 
 // Layout helpers
 @import "includes/gap-no";             // Overlapping boxes for all grid flavors
-@import "includes/gaps";               // Gaps for vertically stacked elems
+@import "includes/gaps";               // Gaps for flex, grid etc
 @import "includes/box-shadow";         // Box shadow
 @import "includes/borders";            // borders size helpers
 @import "includes/border-colors";      // borders colors

@@ -1,10 +1,11 @@
-// Grid
+// Flex grid system
 // 
 // This is a flexbox based grid system. 
 // It's based on rows, that can "float".
 
 .flex {
   display: flex;
+  gap: var(--gap-space, 0);
   &.wrap { flex-wrap: wrap;}
 
   > div,
@@ -12,14 +13,13 @@
   > .button,
   > .input
   {
-    display: block;
-    //overflow: hidden; // required for span issues
+    //display: block;
     flex-grow: 1
   }
 }
 
 // Reset! for childs of flex
-.flex .flex  { display: flex }
+//.flex .flex  { display: flex }
 
 // Flex directon column
 .flex.column { flex-direction: column }
