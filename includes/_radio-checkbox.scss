@@ -2,7 +2,7 @@
 //
 // Part of any good form.
 
-$radio-check-size: 12px;
+$radio-check-size: 11px;
 
 // Some shared styling for checkboxes & radios
 //input[type=radio], input[type=checkbox] {
@@ -16,10 +16,7 @@ $radio-check-size: 12px;
   margin: 0; // reset
   font-size: 100%;
   outline: none;
-  //background-image: linear-gradient(transparent, var(--color-shadow-2));
-  border: 1px solid var(--color, var(--color-link-3));
-  //box-shadow: 0 0 0 var(--space-px) var(--color, var(--color-link-2));
-  //background-color: transparent; // iOS reset
+  border: 1px solid var(--color, var(--color-link-2));
   background-color: var(--color, var(--color-link-1));
   outline: none;
   width:  $radio-check-size;
@@ -27,20 +24,17 @@ $radio-check-size: 12px;
   position: relative;
   display: inline-block;
   cursor: pointer;
-  border-radius: 0;// ios7 reset 
 
   align-self: center; // opinionated smart default for checkboxed within flex rows
   &:focus {
     background-color: var(--color, var(--color-accent-2));
     border-color: var(--color, var(--color-accent-4));
-    //@extend .focus;
   }
   &:checked {
-    border-color: var(--color, var(--color-link-6));
-    // background-color: var(--color, var(--color-link-1));
+    border-color: var(--color, var(--color-link-3));
   }
   &:disabled {
-    border: 1px solid var(--color, var(--color-main-4));
+    border-color: var(--color, var(--color-main-4));
     background-color: var(--color, var(--color-main-1));
     cursor: not-allowed;
   }
@@ -94,8 +88,8 @@ $radio-check-size: 12px;
   // right part
   &:before {
     transform: scale(0) translateX(7px) translateY(-5px) rotate(45deg);
-    transform-origin: 2px 7px;
-    height: 14px;
+    transform-origin: 0 6px;
+    height: 10px;
   }
   &:checked {
     &:after  { transform: scale(1) translateX(2px) translateY(2px)  rotate(-45deg); }
