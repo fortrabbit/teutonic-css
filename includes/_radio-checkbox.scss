@@ -24,14 +24,18 @@ $radio-check-size: 11px;
   position: relative;
   display: inline-block;
   cursor: pointer;
-
   align-self: center; // opinionated smart default for checkboxed within flex rows
   &:focus {
     background-color: var(--color, var(--color-accent-2));
     border-color: var(--color, var(--color-accent-4));
   }
   &:checked {
-    border-color: var(--color, var(--color-link-3));
+    background-color: var(--color, var(--color-link-6));
+    border-color: var(--color, var(--color-link-7));
+  }
+  &:focus:checked {
+    background-color: var(--color, var(--color-accent-5));
+    border-color: var(--color, var(--color-accent-7));
   }
   &:disabled {
     border-color: var(--color, var(--color-main-4));
@@ -46,9 +50,10 @@ $radio-check-size: 11px;
     border-color: var(--color, var(--color-main-4));
   }
   &:after, &:before {
+    //transition: transform .2s;
     content: '';
     position: absolute;
-    background-color: var(--color, var(--color-main-7));
+    background-color: var(--color, var(--color-link-1));
   }
 }
 
@@ -56,10 +61,9 @@ $radio-check-size: 11px;
 .radio {
   border-radius: 50%;
   &:after {
-    //border: 1px solid var(--color, var(--color-main-7));
     border-radius: 50%;
-    width:  6px;
-    height: 6px;
+    width:  4px;
+    height: 4px;
     top:  50%;
     left: 50%;
     transform: scale(0) translateX(-50%) translateY(-50%);
@@ -76,24 +80,18 @@ $radio-check-size: 11px;
   position: relative;
   border-radius: var(--space-px);
   &:before, &:after {
-    width:  3px;
+    width:  2px;
     height: 6px;
-    top:  0;
-    left: 0;
+    border-radius: 2px;
+    transform-origin: 50% 50%;
+    top:  50%;
+    left: 50%;
+    transform: scale(0);
   }
-  // left part
-  &:after {
-    transform: scale(0) translateX(2px) translateY(2px)  rotate(-45deg);
-  }
-  // right part
-  &:before {
-    transform: scale(0) translateX(7px) translateY(-5px) rotate(45deg);
-    transform-origin: 0 6px;
-    height: 10px;
-  }
+
   &:checked {
-    &:after  { transform: scale(1) translateX(2px) translateY(2px)  rotate(-45deg); }
-    &:before { transform: scale(1) translateX(7px) translateY(-5px) rotate(45deg); }
+    &:after  { transform: scale(1) translateX(calc(-50% - 1.5px)) translateY(-50%)  rotate(-45deg); }
+    &:before { transform: scale(1) translateX(calc(-50% + 1.5px)) translateY(-50%) rotate(45deg); }
   }
 }
 
