@@ -36,6 +36,9 @@ $radio-check-size: 11px;
   &:focus:checked {
     background-color: var(--color, var(--color-accent-5));
     border-color: var(--color, var(--color-accent-7));
+    &::after, &::before {
+      background-color: var(--color, var(--color-accent-1));
+    }
   }
   &:disabled {
     border-color: var(--color, var(--color-main-4));
