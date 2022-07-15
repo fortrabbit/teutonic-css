@@ -1,6 +1,10 @@
 # TODO for Teutonic CSS
 
-
++ [ ] CSS Bar charts
++ [ ] Keys.css
++ [ ] Smooth scroll class
++ [ ] mobile 100% height class
++ [ ] line-width: 80ch; /* get rid of dirty hacks  */
 + [ ] BG hover classes only the hover state is defined?
 + [ ] BG hover classes to make things lighter not darker?
 + [ ] Fix tooltips to the right, why? and other direction to aligned center!
