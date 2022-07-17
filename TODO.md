@@ -1,5 +1,10 @@
 # TODO for Teutonic CSS
 
++ [ ] Think about combining utilities with some convenience classes
+  + [ ] Think about removing .box im favor of utility classes (pa-s ra-xs bg-main-1)
+  + [ ] Think about removing .link im favor of utility classes
+  + [ ] Maybe it is more about components (markup + classes)
++ [ ] Remove color variables? Never used.
 + [ ] CSS Bar charts
 + [ ] Keys.css
 + [ ] Smooth scroll class
