@@ -43,8 +43,10 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
     z-index: 2;
   }
   &:focus { 
-    //@extend .focus;
     border-color: var(--color-accent-3);
+  }
+  &:focus:hover { 
+    border-color: var(--color-accent-4);
   }
 }
 
