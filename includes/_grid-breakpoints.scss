@@ -19,7 +19,7 @@
 
 @media #{$phone} {
   [class*="grid"].collapse-p { grid-template-columns: 1fr; }
-  @for $i from 6 through 12 {
+  @for $i from 3 through 12 {
     [class*="grid"]  > .span-#{$i}-p { grid-column: span #{$i} }
   }
 }

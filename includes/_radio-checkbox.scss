@@ -2,7 +2,7 @@
 //
 // Part of any good form.
 
-$radio-check-size: 11px;
+$radio-check-size: 13px;
 
 // Some shared styling for checkboxes & radios
 //input[type=radio], input[type=checkbox] {
@@ -17,7 +17,7 @@ $radio-check-size: 11px;
   font-size: 100%;
   outline: none;
   //border: 1px solid var(--color, var(--color-link-2));
-  background-color: var(--color, var(--color-link-1));
+  background-color: var(--color, var(--color-link-2));
   outline: none;
   width:  $radio-check-size;
   height: $radio-check-size;
