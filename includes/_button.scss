@@ -16,9 +16,9 @@
 
   
   color: var(--color-bg-6, var(--color-link-6));
-  background-color: var(--color-bg-1, var(--color-link-1));
+  background-color: var(--color-bg-1, var(--color-link-2));
   &:hover {
-    background-color: var(--color-bg-2, var(--color-link-2));
+    background-color: var(--color-bg-2, var(--color-link-3));
     z-index: 2;
   }
   &:focus  { @extend .focus; }
