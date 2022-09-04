@@ -101,7 +101,7 @@
 // Flexbox Grid
 @import "includes/flex";               // Flexbox grid system — Z style rows
 @import "includes/flex-spans";         // Flexbox grid child spans
-//@import "includes/flex-gaps";          // Flexbox grid child gaps
+@import "includes/flex-gaps";          // Flexbox grid child gaps
 @import "includes/flex-breakpoints";   // CSS grid media queries
 @import "includes/flex-align-content"; // Helper classes to distribute stuff
 @import "includes/flex-align-items";   // Helper classes to distribute stuff

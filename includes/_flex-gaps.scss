@@ -1,0 +1,20 @@
+// Flexbox Grid gap spans
+// Hacky solution for now
+// Linear Issue 389
+// https://stackoverflow.com/questions/72116170/account-for-gap-when-calculating-flex-basis/73592903#73592903
+// TODO: Better general fix
+
+$f-gap-sizes: "px", "xs", "s", "m", "l";
+
+@each $gap-size in $f-gap-sizes {
+  .flex.gap-#{$gap-size} {
+    margin-right: calc(-1 * var(--space-#{$gap-size}));
+    >.span-full        { flex-basis: calc(100% - var(--space-#{$gap-size}));  }
+    >.span-twothird    { flex-basis: calc(66.6666% - var(--space-#{$gap-size})); }
+    >.span-half        { flex-basis: calc(50% - var(--space-#{$gap-size})); }
+    >.span-third       { flex-basis: calc(33.3333% - var(--space-#{$gap-size})); }
+    >.span-quarter     { flex-basis: calc(25% - var(--space-#{$gap-size})); }
+    >.span-fifth       { flex-basis: calc(20% - var(--space-#{$gap-size})); }
+    >.span-auto        { margin-right: var(--space-#{$gap-size}); }
+  }
+}
