@@ -2,15 +2,32 @@
 // best used in combination with labelbox
 
 .mini-label {
-  background-color: transparent; // textarea overflow
-  // color: var(--color-main-4);
+  background-color: var(--color-main-2);
   font-size: var(--text-s);
   position: absolute;
   white-space: nowrap;
   pointer-events: none;
-  z-index: 3;
-  left: var(--space-s);
-  top:  var(--space-s);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  border-radius: var(--space-xs) 0 var(--space-xs) 0;
+  padding: var(--space-xs) var(--space-s);
   font-weight: normal;
   font-family: var(--font-standard);
+}
+
+.form-box:hover .mini-label {
+  background-color: var(--color-main-3);
+}
+
+.form-box .textarea:focus ~ .mini-label, 
+.form-box .input:focus ~ .mini-label, 
+.form-box .select:focus ~ .mini-label { 
+  background-color: var(--color-accent-3);
+}
+
+.form-box .textarea:focus:hover ~ .mini-label,
+.form-box .input:focus:hover ~ .mini-label,
+.form-box .select:focus:hover ~ .mini-label { 
+  background-color: var(--color-accent-4);
 }

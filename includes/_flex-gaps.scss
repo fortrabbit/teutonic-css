@@ -7,7 +7,7 @@
 $f-gap-sizes: "px", "xs", "s", "m", "l";
 
 @each $gap-size in $f-gap-sizes {
-  .flex.gap-#{$gap-size} {
+  .flex.wrap.gap-#{$gap-size} {
     margin-right: calc(-1 * var(--space-#{$gap-size}));
     >.span-full        { flex-basis: calc(100% - var(--space-#{$gap-size}));  }
     >.span-twothird    { flex-basis: calc(66.6666% - var(--space-#{$gap-size})); }

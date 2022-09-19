@@ -28,7 +28,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   font-family: var(--font-standard); // reset
   text-align: left;
   line-height: var(--line-height);
-  border: var(--space-px) solid var(--border-color, var(--color-main-3));
+  border: var(--space-px) solid var(--border-color, var(--color-main-2));
   //border: 0;
   //border: 1px solid var(--color-shadow-1);
   outline: none;
@@ -39,7 +39,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
 
   &:hover {
     //background-color: var(--color-bg-2, var(--color-link-1));
-    border-color: var(--color-main-4);
+    border-color: var(--color-main-3);
     z-index: 2;
   }
   &:focus { 
