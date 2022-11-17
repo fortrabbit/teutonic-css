@@ -1,0 +1,14 @@
+// Opacity
+//
+
+$opacities: (
+  20:   0.2,
+  50:   0.5,
+  70:   0.7,
+  100:  1,
+);
+
+@each $o-key, $o-value in $opacities {
+  .o-#{$o-key}   { opacity: #{$o-value}; }
+  .o-#{$o-key}-h { opacity: #{$o-value}; }
+}
