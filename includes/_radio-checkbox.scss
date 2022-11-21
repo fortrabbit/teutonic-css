@@ -103,6 +103,11 @@ $radio-check-size: 13px;
       transform: scale(1) translateX(calc(-50% + 2.5px)) translateY(calc(-50% - 2px)) rotate(45deg);
     }
   }
+  &:disabled {
+    &:after { 
+      box-shadow: 0 0 0 1px var(--color-main-3);
+    }
+  }
   &:focus {
     &:checked {
       &:after {
