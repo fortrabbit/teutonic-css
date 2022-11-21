@@ -2,10 +2,11 @@
 // Helps with nasty chrome new lines bugs
 
 .text-clip {
+  //outline: 1px solid green;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-width: 0
+  //min-width: 0
 }
 
 .text-keep     { white-space: nowrap } // Just don't wrap text!
