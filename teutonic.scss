@@ -5,7 +5,7 @@
 @use "sass:math";
 
 // Debug position stuff:
-//* { outline: 1px solid red }
+// * { outline: 1px solid red }
 
 
 // Variables & helpers
@@ -86,7 +86,7 @@
 @import "includes/position-helpers";   // relative, absolute, sticky …
 @import "includes/position-defaults";  // top right bottom left etc
 @import "includes/disabled";           // helper class for disabled stuff
-@import "includes/kbd";                // keyboard keys styles
+//@import "includes/kbd";                // keyboard keys styles REMOVE
 @import "includes/details-summary";    // details summary element
 @import "includes/opacity";            // opacity
 //@import "includes/definition-list";    // definition list element
