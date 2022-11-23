@@ -35,3 +35,7 @@
   option:disabled { color: var(--color-main-4) }
   &:-ms-expand { display: none } // IE reset
 }
+
+.form-box .select {
+  background-position: right .9rem top calc(70%);
+}
