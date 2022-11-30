@@ -1,7 +1,7 @@
 # TODO for Teutonic CSS
 
 + [ ] Think about combining utilities with some convenience classes
-  + [ ] Think about removing .box im favor of utility classes (pa-s ra-xs bg-main-1)
+  + [ ] Think about removing .box im favor of utility classes (pa-s ra-xs bg-ma-1)
   + [ ] Think about removing .link im favor of utility classes
   + [ ] Maybe it is more about components (markup + classes)
 + [ ] Remove color variables? Never used.
@@ -178,7 +178,7 @@ More info and automated migrator: https://sass-lang.com/d/slash-div
 + [ ] ~~inputs > no padding right for more text? clip by border, not by padding~~ < no, buggy
 + [ ] ~~Table "caption"?~~ < Too obscure
 + [ ] ~~Clean up graphs/charts: Horizontal & Vertical + SB~~ Too much work for now, do later
-+ [x] rethink coloring modes: active VS bg-main-5 VS inverted > test with zebra
++ [x] rethink coloring modes: active VS bg-ma-5 VS inverted > test with zebra
 + [x] ~~row-list sucks?! should accept paddings? how?~~ < no more row-list
 + [x] `.span-all` for columns?! (not span-2) ?
 + [x] Enhanced table styles (see below) 
@@ -217,7 +217,7 @@ More info and automated migrator: https://sass-lang.com/d/slash-div
 + [x] form errors! (with demo)
 + [x] Chrome footer nav bugs > real-wrld, css grid (nach breakpoints Ok 5 > auto-height, auto-grid), …?
 + [x] Decide: will it need an extra class? `input[type="color"].color`
-+ [x] Redo fallback VARS like: `var(--border-color, var(--color-main-5))`
++ [x] Redo fallback VARS like: `var(--border-color, var(--color-ma-5))`
 + [x] ~~Default list style type? after .row-list is gone?~
 + [x] ~~Padding via CSS vars and default~~
 + [x] Rethink starts with [^=] as this only works when that's the first class!
@@ -225,7 +225,7 @@ More info and automated migrator: https://sass-lang.com/d/slash-div
 + [x] Modular Scale as SCCS version, test both in parallel!
 + [x] Input range Slider SCSS styling!
 + [x] Gather and unite rgba values in vars! disabled, skeuo?, placeholder?!
-+ [x] static background colors: `.bg-main-1` ………
++ [x] static background colors: `.bg-ma-1` ………
 + [x] Box min-height problem with absoulte positioned search?! and? 
 + [x] `.media` container + `.ar` figure.media > img (auto-size) << more easy!
 + [x] "colored" images mix mit blend mode
@@ -263,7 +263,7 @@ More info and automated migrator: https://sass-lang.com/d/slash-div
 + [ ] ~~Media: Video-thumbnails with play button (triangle)~~
 + [x] .article : EM based for small large small ?!
 + [x] size: width containers + height containers?
-+ [x] main-colors as bg-colors?!
++ [x] ma-colors as bg-colors?!
 + [x] Flex helpers for reverse, inline-flex, justify content...
 + [x] Refactor Flex aligment helpers
 + [x] Real world cards last item `span-auto`: no effect.

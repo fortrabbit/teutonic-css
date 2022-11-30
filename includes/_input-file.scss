@@ -4,14 +4,14 @@
 
   line-height: 1;
   font-size: 14px;
-  color: var(--color-main-4);
+  color: var(--color-ma-4);
   font-family: var(--font-standard);
 
   &:focus { outline: none }
   &::-webkit-file-upload-button {
     font-size: 12px;
-    background-color: var(--color-main-5);
-    color: var(--color-main-1);
+    background-color: var(--color-ma-5);
+    color: var(--color-ma-1);
     padding: 1px 3px;
     font-weight: bold;
     border: 0;

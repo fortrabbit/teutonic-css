@@ -1,8 +1,8 @@
 // Simple step navigaton 
 
 .steps {
-  border-top: var(--space-px) solid var(--color-main-1);
-  background-color: var(--color-main-3);
+  border-top: var(--space-px) solid var(--color-ma-1);
+  background-color: var(--color-ma-3);
   > * {
     counter-increment: steps-counter;
     padding-right: var(--space-px);

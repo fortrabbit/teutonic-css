@@ -2,11 +2,11 @@
 // active box
 
 .box.active-tab, a.active-tab, button.active-tab, label.active-tab {
-  background-color:    var(--color-main-1); // for safety
-  border-bottom-color: var(--color-main-1);
+  background-color:    var(--color-ma-1); // for safety
+  border-bottom-color: var(--color-ma-1);
   &:hover {
-    background-color:    var(--color-main-1);
-    border-bottom-color: var(--color-main-1);
+    background-color:    var(--color-ma-1);
+    border-bottom-color: var(--color-ma-1);
     cursor: default;
   }
 }

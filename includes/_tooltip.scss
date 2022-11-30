@@ -16,15 +16,15 @@
     font-weight: normal;
     font-size:   10px;
     line-height: 10px;
-    background:  var(--color-main-5);
-    color:       var(--color-main-1);
+    background:  var(--color-ma-5);
+    color:       var(--color-ma-1);
     padding:     var(--space-xs) var(--space-xs);
     white-space: nowrap;
     font-family: var(--font-standard); // reset
     transition: opacity .1s;
     //transition-delay: 100ms;
     //box-shadow: 0 var(--space-xs) var(--space-m) var(--space-xs) var(--shadow-2);
-    box-shadow: 0 0 0 var(--space-px)  var(--color-main-1);
+    box-shadow: 0 0 0 var(--space-px)  var(--color-ma-1);
     opacity: 0;
     position: absolute;
     visibility: hidden;

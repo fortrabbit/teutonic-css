@@ -15,11 +15,11 @@ $track-border-width:  1px                                    !default;
 $track-radius:        229939393px                            !default;
 
 $thumb-shadow-color:  var(--color-shadow-2)                  !default;
-$thumb-border-color:  var(--colored-5, var(--color-main-5))  !default;
-$thumb-color:         var(--colored-2, var(--color-link-2)) !default;
-$thumb-color-h:       var(--colored-3, var(--color-link-3)) !default;
-$track-color:         var(--colored-4, var(--color-main-4))  !default;
-$track-border-color:  var(--colored-5, var(--color-main-5))  !default;
+$thumb-border-color:  var(--colored-5, var(--color-ma-5))  !default;
+$thumb-color:         var(--colored-2, var(--color-li-2)) !default;
+$thumb-color-h:       var(--colored-3, var(--color-li-3)) !default;
+$track-color:         var(--colored-4, var(--color-ma-4))  !default;
+$track-border-color:  var(--colored-5, var(--color-ma-5))  !default;
 
 // MS Edge debugging
 // CSS variables don't inherit into range input track, fill, thumb
@@ -125,8 +125,8 @@ $track-border-color:  var(--colored-5, var(--color-main-5))  !default;
 
   // outer ring on focus
   &:focus, &:active  {
-    &::-moz-range-thumb      { box-shadow: 0 0 0 2px var(--color-main-5) }
-    &::-webkit-slider-thumb  { box-shadow: 0 0 0 2px var(--color-main-5) }
+    &::-moz-range-thumb      { box-shadow: 0 0 0 2px var(--color-ma-5) }
+    &::-webkit-slider-thumb  { box-shadow: 0 0 0 2px var(--color-ma-5) }
     &::-ms-thumb             { box-shadow: 0 0 0 2px color(main, 5) }
   }
 }

@@ -11,20 +11,20 @@
   cursor: not-allowed;
   //* { color: var(--color-shadow-2) }
 
-  .mini-label { color: var(--color-main-3)  }
+  .mini-label { color: var(--color-ma-3)  }
   &:not(.loading):not(.range) {
-                   //border-color: var(--color, var(--color-main-5));
-                          //color: var(--color-main-3);
-               //background-color: var(--color-bg-1, var(--color-link-1));
-    //&:hover  { background-color: var(--color-bg-1, var(--color-link-1)) } // reset
+                   //border-color: var(--color, var(--color-ma-5));
+                          //color: var(--color-ma-3);
+               //background-color: var(--color-bg-1, var(--color-li-1));
+    //&:hover  { background-color: var(--color-bg-1, var(--color-li-1)) } // reset
     //@include striped;
   }
 
   // That's an ugly overwrite
   &.button {
-    //color: var(--colored-3, var(--color-main-3));
-    border-color: var(--color-5, var(--color-main-5));
-    &:hover { background-color: var(--color--bg-1, var(--color-link-1)) }
+    //color: var(--colored-3, var(--color-ma-3));
+    border-color: var(--color-5, var(--color-ma-5));
+    &:hover { background-color: var(--color--bg-1, var(--color-li-1)) }
   }
 
   // disabled prime button
@@ -32,8 +32,8 @@
     cursor: not-allowed;
     
     @mixin prime-disabled {
-             background-color: var(--color-bg-3, var(--color-link-3));
-                        color: var(--color-link-2);
+             background-color: var(--color-bg-3, var(--color-li-3));
+                        color: var(--color-li-2);
     }
 
     @include prime-disabled;

@@ -45,7 +45,7 @@ time { white-space: nowrap; }
 // Link reset
 a {
   text-decoration: none;
-  //color: var(--color-main-5);
+  //color: var(--color-ma-5);
   outline: 0;
 }
 
@@ -60,18 +60,18 @@ hr {
 // Text select coroporated
 *::selection
 { 
-  background-color: var(--color-bg-2, var(--color-accent-1));
+  background-color: var(--color-bg-2, var(--color-ac-1));
 }
 
 // marked text
 mark, .marked {
-  background-color: var(--color-bg-2, var(--color-accent-1));
-  box-shadow: 0 0 0 2px var(--color-bg-2, var(--color-accent-1));
+  background-color: var(--color-bg-2, var(--color-ac-1));
+  box-shadow: 0 0 0 2px var(--color-bg-2, var(--color-ac-1));
 }
 
 // acronym[title]    // Acronym is Obsolete
 abbr {
   text-decoration: none; // reset
-  //box-shadow: inset 0 0px 0 white, inset 0 -1px 0 var(--color-main-5);
-  border-bottom: 1px dotted var(--color-main-5);
+  //box-shadow: inset 0 0px 0 white, inset 0 -1px 0 var(--color-ma-5);
+  border-bottom: 1px dotted var(--color-ma-5);
 }

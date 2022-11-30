@@ -4,7 +4,7 @@
 
 // Passive box
 .box {
-  background-color: var(--color-bg-1, var(--color-main-2));
+  background-color: var(--color-bg-1, var(--color-ma-2));
   position: relative;
   display: block; // just in case
   min-width: 0px; // fix size to match with clip FF
@@ -23,14 +23,14 @@
 a.box, button.box, label.box, .boxi {
   cursor: pointer;
   &:hover {
-    background-color: var(--color-bg-2, var(--color-link-1));
+    background-color: var(--color-bg-2, var(--color-li-1));
     z-index: 3;
-     .link { color: var(--color-bg-7, var(--color-link-7)) }
+     .link { color: var(--color-bg-7, var(--color-li-7)) }
   }
   &:focus { @extend .focus; }
 }
 
 //.boxi.active {
-//  //background-color: var(--color-bg-2, var(--color-link-2));
-//  background-color: var(--color-bg-3, var(--color-link-3));
+//  //background-color: var(--color-bg-2, var(--color-li-2));
+//  background-color: var(--color-bg-3, var(--color-li-3));
 //}

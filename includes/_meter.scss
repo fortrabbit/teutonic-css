@@ -6,12 +6,12 @@
 .meter { 
 
   --bar-border-color:       var(--color-shadow-2);
-  --bar-color:              var(--color-main-1);
+  --bar-color:              var(--color-ma-1);
   --optimum-color:          var(--color-success-2);
   --suboptimum-color:       var(--color-warn-2);
   --even-less-good-color:   var(--color-danger-2);
 
-  //border: var(--space-px) solid var(--color-main-5);
+  //border: var(--space-px) solid var(--color-ma-5);
   border: 0;
   outline: var(--space-px) solid;
   background: var(--bar-color);

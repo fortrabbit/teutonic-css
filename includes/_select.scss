@@ -31,8 +31,8 @@
   //  background-position: left top; // reset
   //}
 
-  optgroup        { color: var(--colored-5, var(--color-main-5)); font-style: normal; }
-  option:disabled { color: var(--color-main-4) }
+  optgroup        { color: var(--colored-5, var(--color-ma-5)); font-style: normal; }
+  option:disabled { color: var(--color-ma-4) }
   &:-ms-expand { display: none } // IE reset
 }
 

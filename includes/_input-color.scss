@@ -24,8 +24,8 @@
   }
 
   &:focus    { outline: none }
-  &:disabled::-moz-color-swatch    { background: var(--color-main-2) !important }
-  &:disabled::-webkit-color-swatch { background: var(--color-main-2) !important }
+  &:disabled::-moz-color-swatch    { background: var(--color-ma-2) !important }
+  &:disabled::-webkit-color-swatch { background: var(--color-ma-2) !important }
 }
 
 .color-box {

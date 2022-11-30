@@ -15,10 +15,10 @@
   cursor: pointer;
 
   
-  color: var(--color-bg-6, var(--color-link-6));
-  background-color: var(--color-bg-1, var(--color-link-2));
+  color: var(--color-bg-6, var(--color-li-6));
+  background-color: var(--color-bg-1, var(--color-li-2));
   &:hover {
-    background-color: var(--color-bg-2, var(--color-link-3));
+    background-color: var(--color-bg-2, var(--color-li-3));
     z-index: 2;
   }
   &:focus  { @extend .focus; }
@@ -29,25 +29,25 @@
       color:            currentColor;
     }
   }
-  &:hover { color: var(--color, var(--color-link-6)) }
+  &:hover { color: var(--color, var(--color-li-6)) }
 
   &.prime {
-    color: var(--color-bg-5, var(--color-link-1));
-    background-color: var(--color-bg-6, var(--color-link-6));
+    color: var(--color-bg-5, var(--color-li-1));
+    background-color: var(--color-bg-6, var(--color-li-6));
     cursor: pointer;  // for HTML buttons
     &:hover {
       z-index: 2;
-      background-color: var(--color-bg-7, var(--color-link-7));
+      background-color: var(--color-bg-7, var(--color-li-7));
     }
-    &:focus        { background-color: var(--color-accent-5); }
-    &:focus:hover  { background-color: var(--color-accent-6); }
+    &:focus        { background-color: var(--color-ac-5); }
+    &:focus:hover  { background-color: var(--color-ac-6); }
   }
 
   &.ghost {
     background-color: transparent;
     border: 0;
     &:hover {
-      background-color: var(--color-bg-2, var(--color-link-1));
+      background-color: var(--color-bg-2, var(--color-li-1));
     }
   }
 }

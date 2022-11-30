@@ -19,7 +19,7 @@
   width:        0;
   height:       0;
   border-style: solid;
-  border-color: var(--color, var(--color-main-5)) transparent transparent transparent;
+  border-color: var(--color, var(--color-ma-5)) transparent transparent transparent;
   border-width: var(--t-size) var(--t-size) 0 var(--t-size);
   transform:    translateX( calc(var(--t-size) * -1));
 }

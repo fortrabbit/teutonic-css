@@ -1,9 +1,10 @@
 // Colors everything within a container
 
+// TODO: Remove?!
 // TODO: Separate these files here
 // TODO: Loop over color map
 
-$tinted-states: "yellowish", "greenish", "redish", "link";
+$tinted-states: "ye", "gr", "re", "bl", "link", "accent";
 
 // Border + text color (and some magic)
 @each $state in $tinted-states {

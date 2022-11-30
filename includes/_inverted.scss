@@ -5,61 +5,68 @@
 
   // Manually re-setting vars (for now)
 
-  --color-main-1: var(--main-7);
-  --color-main-2: var(--main-6);
-  --color-main-3: var(--main-5);
-  --color-main-4: var(--main-4);
-  --color-main-5: var(--main-3);
-  --color-main-6: var(--main-2);
-  --color-main-7: var(--main-1);
+  // main
+  --color-ma-1: var(--ma-7);
+  --color-ma-2: var(--ma-6);
+  --color-ma-3: var(--ma-5);
+  --color-ma-4: var(--ma-4);
+  --color-ma-5: var(--ma-3);
+  --color-ma-6: var(--ma-2);
+  --color-ma-7: var(--ma-1);
 
-  --color-link-1: var(--link-7);
-  --color-link-2: var(--link-6);
-  --color-link-3: var(--link-5);
-  --color-link-4: var(--link-4);
-  --color-link-5: var(--link-3);
-  --color-link-6: var(--link-2);
-  --color-link-7: var(--link-1);
+  // link
+  --color-li-1: var(--li-7);
+  --color-li-2: var(--li-6);
+  --color-li-3: var(--li-5);
+  --color-li-4: var(--li-4);
+  --color-li-5: var(--li-3);
+  --color-li-6: var(--li-2);
+  --color-li-7: var(--li-1);
 
-  --color-accent-1: var(--accent-7);
-  --color-accent-2: var(--accent-6);
-  --color-accent-3: var(--accent-5);
-  --color-accent-4: var(--accent-4);
-  --color-accent-5: var(--accent-3);
-  --color-accent-6: var(--accent-2);
-  --color-accent-7: var(--accent-1);
+  // accent
+  --color-ac-1: var(--ac-7);
+  --color-ac-2: var(--ac-6);
+  --color-ac-3: var(--ac-5);
+  --color-ac-4: var(--ac-4);
+  --color-ac-5: var(--ac-3);
+  --color-ac-6: var(--ac-2);
+  --color-ac-7: var(--ac-1);
 
-  --color-yellowish-1: var(--yellowish-7);
-  --color-yellowish-2: var(--yellowish-6);
-  --color-yellowish-3: var(--yellowish-5);
-  --color-yellowish-4: var(--yellowish-4);
-  --color-yellowish-5: var(--yellowish-3);
-  --color-yellowish-6: var(--yellowish-2);
-  --color-yellowish-7: var(--yellowish-1);
+  // yellow
+  --color-ye-1: var(--ye-7);
+  --color-ye-2: var(--ye-6);
+  --color-ye-3: var(--ye-5);
+  --color-ye-4: var(--ye-4);
+  --color-ye-5: var(--ye-3);
+  --color-ye-6: var(--ye-2);
+  --color-ye-7: var(--ye-1);
 
-  --color-redish-1: var(--redish-7);
-  --color-redish-2: var(--redish-6);
-  --color-redish-3: var(--redish-5);
-  --color-redish-4: var(--redish-4);
-  --color-redish-5: var(--redish-3);
-  --color-redish-6: var(--redish-2);
-  --color-redish-7: var(--redish-1);
+  // red
+  --color-re-1: var(--re-7);
+  --color-re-2: var(--re-6);
+  --color-re-3: var(--re-5);
+  --color-re-4: var(--re-4);
+  --color-re-5: var(--re-3);
+  --color-re-6: var(--re-2);
+  --color-re-7: var(--re-1);
 
-  --color-greenish-1: var(--greenish-7);
-  --color-greenish-2: var(--greenish-6);
-  --color-greenish-3: var(--greenish-5);
-  --color-greenish-4: var(--greenish-4);
-  --color-greenish-5: var(--greenish-3);
-  --color-greenish-6: var(--greenish-2);
-  --color-greenish-7: var(--greenish-1);
+  // green
+  --color-gr-1: var(--gr-7);
+  --color-gr-2: var(--gr-6);
+  --color-gr-3: var(--gr-5);
+  --color-gr-4: var(--gr-4);
+  --color-gr-5: var(--gr-3);
+  --color-gr-6: var(--gr-2);
+  --color-gr-7: var(--gr-1);
 
-  --color-blueish-1: var(--blueish-7);
-  --color-blueish-2: var(--blueish-6);
-  --color-blueish-3: var(--blueish-5);
-  --color-blueish-4: var(--blueish-4);
-  --color-blueish-5: var(--blueish-3);
-  --color-blueish-6: var(--blueish-2);
-  --color-blueish-7: var(--blueish-1);
+  // blue
+  --color-bl-1: var(--bl-7);
+  --color-bl-2: var(--bl-6);
+  --color-bl-3: var(--bl-5);
+  --color-bl-4: var(--bl-4);
+  --color-bl-5: var(--bl-3);
+  --color-bl-6: var(--bl-2);
+  --color-bl-7: var(--bl-1);
 
 
   --color-shadow-1: var(--highlight-1);
@@ -70,7 +77,7 @@
 
   .progress, .meter { --bar-border-color: var(--highlight-1) }
 
-  background-color: var(--color-main-1);
+  background-color: var(--color-ma-1);
   
   .disabled, :disabled { 
     * { color: var(--color-shadow-2) }
@@ -79,9 +86,4 @@
       &:hover { color: var(--color-highlight-2) }
     }
   }
-
-//  .input, .textarea {
-//    &::placeholder           { color: var(--color-highlight-2);}
-//    &:-ms-input-placeholder  { color: var(--color-highlight-2);}
-//  }
 }

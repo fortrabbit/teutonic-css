@@ -33,11 +33,11 @@ $scrollbar-size: 8px;
 // Visible scollbar for Webkit/Blink
 .scroll-h.show-scrollbar, .scroll-v.show-scrollbar {
   &::-webkit-scrollbar-track { 
-    background: var(--color-main-5);
+    background: var(--color-ma-5);
   }
   &::-webkit-scrollbar-thumb {
-    border: 2px solid var(--color-main-5);
+    border: 2px solid var(--color-ma-5);
     border-radius: #{$scrollbar-size};
-    background: var(--color-main-3);
+    background: var(--color-ma-3);
   }
 }

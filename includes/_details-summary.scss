@@ -20,7 +20,7 @@
     position: absolute;
     width:  $size;
     height: $size;
-    // background-color: var(--color-main-1);
+    // background-color: var(--color-ma-1);
     // border-radius: 50%;
     background-image: url('#{$svg-triangle}'); // See SVG helpers
     background-size: $svg-size $svg-size;  
@@ -30,7 +30,7 @@
     top: calc(50% - $size/2);
     //left: calc(var(--space-s));
     left: .3rem;
-    color: var(--color-link-3);
+    color: var(--color-li-3);
     transform: rotate(-90deg);
     transition: transform 0.2s ease-out
   }

@@ -17,7 +17,7 @@
   img {
     width: 100%;
     margin: 0;
-    border: var(--space-px) solid var(--color-main-5);
+    border: var(--space-px) solid var(--color-ma-5);
   }
 
   a {
@@ -29,7 +29,7 @@
   pre { margin: var(--space-xs); }
 
   // Accronym
-  accr { border-bottom: 1px dotted var(--color-main-5); }
+  accr { border-bottom: 1px dotted var(--color-ma-5); }
 
   // Horizontal line
   hr {  margin: var(--space-l) 0 }
@@ -48,7 +48,7 @@
 
   blockquote {
     font-size: 120%;
-    border-left:  var(--space-xs) solid var(--color-main-5);
+    border-left:  var(--space-xs) solid var(--color-ma-5);
     margin-left:  calc(-1 * var(--space-m) );
     padding-left: calc(var(--space-m)  - var(--space-xs));
   }

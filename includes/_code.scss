@@ -19,7 +19,7 @@ pre {
   > code {
     //display: block;
     margin: 0;
-    color: var(--color, var(--color-main-5));
+    color: var(--color, var(--color-ma-5));
     overflow-y: auto;
     display: block;
     padding:   var(--padding, 0); 
@@ -31,14 +31,14 @@ pre {
 
 // Code in a pre block
 pre > code {
-  background-color: var(--color-bg-2, var(--color-main-2));
+  background-color: var(--color-bg-2, var(--color-ma-2));
 }
 
 // Inline code within normal text
 div > code, p > code, li > code {
   font-size: .9em; // code is a bit smaller than usual text
-  background-color: var(--color-bg-2, var(--color-main-2));
-  box-shadow: 0 0 0 1px var(--color-bg-2, var(--color-main-2));
+  background-color: var(--color-bg-2, var(--color-ma-2));
+  box-shadow: 0 0 0 1px var(--color-bg-2, var(--color-ma-2));
   white-space: nowrap;
   user-select: all;
 }

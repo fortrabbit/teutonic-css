@@ -23,6 +23,6 @@ h1, h2, h3, h4, h5, h6 {
 // Inline links (hashlinks) colored, when called
 // Used mostly for headlines
 *:target {
-  background-color: var(--color-accent-1);
-  box-shadow: 0 0 0 var(--space-xs) var(--color-accent-1);
+  background-color: var(--color-ac-1);
+  box-shadow: 0 0 0 var(--space-xs) var(--color-ac-1);
 }

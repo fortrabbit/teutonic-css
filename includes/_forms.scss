@@ -28,25 +28,25 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   font-family: var(--font-standard); // reset
   text-align: left;
   line-height: var(--line-height);
-  border: var(--space-px) solid var(--border-color, var(--color-main-2));
+  border: var(--space-px) solid var(--border-color, var(--color-ma-2));
   //border: 0;
   //border: 1px solid var(--color-shadow-1);
   outline: none;
   background-color: transparent;
-  //background-color: var(--color-bg-1, var(--color-main-2));
-  color: var(--color, var(--color-main-7));
+  //background-color: var(--color-bg-1, var(--color-ma-2));
+  color: var(--color, var(--color-ma-7));
   cursor: pointer;
 
   &:hover {
-    //background-color: var(--color-bg-2, var(--color-link-1));
-    border-color: var(--color-main-3);
+    //background-color: var(--color-bg-2, var(--color-li-1));
+    border-color: var(--color-ma-3);
     z-index: 2;
   }
   &:focus { 
-    border-color: var(--color-accent-3);
+    border-color: var(--color-ac-3);
   }
   &:focus:hover { 
-    border-color: var(--color-accent-4);
+    border-color: var(--color-ac-4);
   }
 }
 
@@ -72,14 +72,14 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0; }
   &[readonly] {
     user-select: all; // select all, when clicked
     -moz-user-select: text; // FF BUG!
-    // background-color: var(--color-main-1);
-    // &:hover, &:focus { background-color: var(--color-link-1); }
+    // background-color: var(--color-ma-1);
+    // &:hover, &:focus { background-color: var(--color-li-1); }
   }
 }
 
 // Moderate styling for not (yet) valid inputs
 .input:invalid { 
-  //border-color: var(--color, var(--color-main-5)) ;
+  //border-color: var(--color, var(--color-ma-5)) ;
   color: var(--color-danger-4);
 }
 

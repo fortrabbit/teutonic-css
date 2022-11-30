@@ -3,13 +3,13 @@
 * { 
   box-sizing: border-box; // inline padding everywhere, hello IE!
   -webkit-overflow-scrolling: touch; // scrolling smooth as butter Momentum Scrolling TODO
-  color:            var(--color, var(--color-main-7));
+  color:            var(--color, var(--color-ma-7));
 }
 
 // init some opinionated styles
 body {
   font-family:      var(--font-family, var(--font-standard));
-  background-color: var(--color-bg-1,  var(--color-main-1));
+  background-color: var(--color-bg-1,  var(--color-ma-1));
   --line-height:    var(--text-ratio); // 1.25, see modular-scale-vars
   line-height:      var(--line-height);
   --font-size:      var(--text-base);  // 1rem, see modular-scale-vars
