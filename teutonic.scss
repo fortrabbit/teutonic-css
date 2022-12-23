@@ -5,7 +5,7 @@
 @use "sass:math";
 
 // Debug position stuff:
-// * { outline: 1px solid red }
+//* { outline: 1px solid green }
 
 
 // Variables & helpers
@@ -125,6 +125,7 @@
 @import "includes/borders";            // borders size helpers
 @import "includes/border-colors";      // borders colors
 @import "includes/border-colors-hover";// Hoverable wborders colors
+@import "includes/outlines";           // Outlines
 @import "includes/margin";             // margin classes for layout
 @import "includes/radius";             // margin classes for layout
 @import "includes/visibility";         // visually hidden and shown

@@ -1,13 +1,11 @@
 // Box shadow
-// A little bit of Marterial design
-
 
 // Basic box shadow
 [class*="bs-"] {
   --shadow-left: 0;
   --shadow-top:  0;
   --shadow-size: 0;
-  box-shadow:     var(--shadow-left) var(--shadow-top) var(--shadow-size) var(--shadow-color, var(--color-shadow-2));
+  box-shadow:     var(--shadow-left) var(--shadow-top) var(--shadow-size) var(--shadow-color, var(--shadow-2));
 }
 
 // Sizes

@@ -1,0 +1,38 @@
+// Outlines helper classes
+// Use case: anywhere you want to have a custom outline
+
+// outline direction + general
+[class*="out-"] {
+  --outline-color: var(--color);
+  outline-style: var(--outline-style, solid); 
+  outline-color: var(--outline-color, var(--color-ma-5));
+}
+
+// Individual setting size
+$outline-sizes: "px", "xs", "s";
+$outline-directions: ( top : t, right : r, bottom : b, left : l ); 
+
+@each $size in $outline-sizes {
+  .out-#{$size} {
+    --outline-width: var(--space-#{$size});
+    outline-width: var(--outline-width);
+    outline-offset: calc(-1 * var(--outline-width))
+  }
+  @each $direction, $letter in $outline-directions {
+    .out-#{$letter}-#{$size} {
+      --outline-#{$direction}-width: var(--space-#{$size});
+      outline-#{$direction}-width: var(--outline-#{$direction}-width) }
+  }
+}
+
+@each $item, $color in $colors {
+  @each $index, $value in $color {
+    .out-#{$item}-#{$index} {
+      outline-color: var(--color-#{$item}-#{$index});
+    }
+  }
+}
+
+
+// Reset, over-rule
+.out-no { outline: none !important }
