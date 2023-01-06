@@ -1,0 +1,90 @@
+// Inverted inverted
+// reorders colors back in normal order for .inverted in .inverted
+
+.inverted .inverted {
+
+  // Manually re-setting vars (for now)
+
+  // main
+  --color-ma-1: var(--ma-1);
+  --color-ma-2: var(--ma-2);
+  --color-ma-3: var(--ma-3);
+  --color-ma-4: var(--ma-4);
+  --color-ma-5: var(--ma-5);
+  --color-ma-6: var(--ma-6);
+  --color-ma-7: var(--ma-7);
+
+  // link
+  --color-li-1: var(--li-1);
+  --color-li-2: var(--li-2);
+  --color-li-3: var(--li-3);
+  --color-li-4: var(--li-4);
+  --color-li-5: var(--li-5);
+  --color-li-6: var(--li-6);
+  --color-li-7: var(--li-7);
+
+  // accent
+  --color-ac-1: var(--ac-1);
+  --color-ac-2: var(--ac-2);
+  --color-ac-3: var(--ac-3);
+  --color-ac-4: var(--ac-4);
+  --color-ac-5: var(--ac-5);
+  --color-ac-6: var(--ac-6);
+  --color-ac-7: var(--ac-7);
+
+  // yellow
+  --color-ye-1: var(--ye-1);
+  --color-ye-2: var(--ye-2);
+  --color-ye-3: var(--ye-3);
+  --color-ye-4: var(--ye-4);
+  --color-ye-5: var(--ye-5);
+  --color-ye-6: var(--ye-6);
+  --color-ye-7: var(--ye-7);
+
+  // red
+  --color-re-1: var(--re-1);
+  --color-re-2: var(--re-2);
+  --color-re-3: var(--re-3);
+  --color-re-4: var(--re-4);
+  --color-re-5: var(--re-5);
+  --color-re-6: var(--re-6);
+  --color-re-7: var(--re-7);
+
+  // green
+  --color-gr-1: var(--gr-1);
+  --color-gr-2: var(--gr-2);
+  --color-gr-3: var(--gr-3);
+  --color-gr-4: var(--gr-4);
+  --color-gr-5: var(--gr-5);
+  --color-gr-6: var(--gr-6);
+  --color-gr-7: var(--gr-7);
+
+  // blue
+  --color-bl-1: var(--bl-1);
+  --color-bl-2: var(--bl-2);
+  --color-bl-3: var(--bl-3);
+  --color-bl-4: var(--bl-4);
+  --color-bl-5: var(--bl-5);
+  --color-bl-6: var(--bl-6);
+  --color-bl-7: var(--bl-7);
+
+  --color-shadow-1: var(--highlight-1);
+  --color-shadow-2: var(--highlight-2);
+  --color-shadow-3: var(--highlight-3);
+
+  --color-highlight-1: var(--shadow-1);
+  --color-highlight-2: var(--shadow-2);
+  --color-highlight-3: var(--shadow-3);
+
+  .progress, .meter { --bar-border-color: var(--highlight-1) }
+
+  background-color: var(--color-ma-1);
+  
+  .disabled, :disabled { 
+    * { color: var(--color-shadow-2) }
+    &:not(.loading):not(.range) { 
+      color: var(--color-highlight-3);
+      &:hover { color: var(--color-highlight-2) }
+    }
+  }
+}
