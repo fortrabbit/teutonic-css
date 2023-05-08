@@ -1,4 +1,6 @@
-# Teutonic CSS
+# Teutonic CSS (retired)
+
+As of 2023-05 Teutonic CSS will no longer be continued. More details [here](https://medium.com/teutonic-css/retiring-my-own-little-css-framework-e0a130ca2a33).
 
 Teutonic CSS is a modern web design system to develop responsive, accessible websites and web applications. It's based on CSS Variables for easy customization and extension. It features cool tech like CSS Grid. The source is a collection of SCSS modules, but you can use the minified version, as it can be modified using CSS Vars.
 
